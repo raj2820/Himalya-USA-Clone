@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 .header{
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
-position: absolute;
+/* position: absolute;
 left: 0;
 right: 0;
-top: 0;
+top: 0; */
+
 }
 .menu{
     display: flex;
@@ -15,22 +16,29 @@ body{
 	font-family: 'Poppins', sans-serif;
 	font-weight: 400;
 	overflow-x: hidden;
+    margin:0px;
+    padding:0px;
 }
 *{
-	margin:0;
+	margin:0px;
 	box-sizing: border-box;
 }
 :before,:after{
 	box-sizing: border-box;
 }
-.container{
+.containers{
     
-	width: 100%;
+	width:105%;
 	margin:auto;
-    position: absolute;
-left: 0;
+   
+    margin-top:-15px;
+    margin-left:-15px;
+
+    /* position: absolute
+    ; */
+/* left: 0;
 right: 0;
-top: 0;
+top: 0; */
 
 }
 .row{
@@ -220,7 +228,7 @@ a{
     color: rgb(119, 119, 119,0.7);
 }
 /* banner section */
-.banner-section{
+/* .banner-section{
 
   background-size: cover;
   background-position: center;
@@ -231,7 +239,7 @@ a{
 .mobile-menu-head,
 .mobile-menu-trigger{
 	display: none;
-}
+} */
 
 /*responsive*/
 @media(max-width: 991px){
@@ -479,3 +487,71 @@ right: 0;
    height: 600px;
    
 } */
+#store{
+    width:100%;
+    height:800px;
+    /* border:1px solid red; */
+    margin:auto;
+    font-size: 44px;
+    font-family: Poppins, sans-serif;
+   
+}
+#s_head{
+    width:65%;
+    height:100%;
+    /* border:1px solid rgb(76, 0, 255); */
+    margin:auto;
+}
+#inp{
+    width:100%;
+    height:130px;
+    /* border:1px solid red; */
+    margin:auto;
+}
+#inp>#box{
+    margin-bottom:60px;
+    height:35px;
+    width:95%;
+    text-indent:10px;
+}
+#s_bot{
+    display:flex;
+    width:100%;
+    height:84%;
+    /* border:1px solid green; */
+    margin:auto;
+    gap:10px;
+    margin-top:20px;
+}
+ #one{
+    display:flex;
+    width:35%;
+    height:100%;
+    /* border:1px solid rgb(117, 0, 128); */
+    border-top:dotted ;
+    border-color: #777777;
+    border-width: 2px; 
+    gap:2px;
+} 
+#two{
+    width:100%;
+    height:auto;
+    /* border:1px solid rgb(117, 0, 128); */
+
+} 
+#btn{
+    background-color:black ;
+    height:34px;
+    width:40px;
+}
+#data{
+    font-size: 14.9px;
+    font-family: Poppins, sans-serif;
+}
+#pic{
+    width:15px;
+    height:15px;
+    margin-top:5px;
+
+}
+
