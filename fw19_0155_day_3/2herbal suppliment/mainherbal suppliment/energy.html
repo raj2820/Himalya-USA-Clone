@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy & Vitality</title>
+    <link rel="icon" href="//cdn.shopify.com/s/files/1/0399/1728/9633/files/H_Logo-01_32x32.png?v=1591028931" type="image/png">
+    <link rel="stylesheet" href="hs.css">
+</head>
+<body>
+    <div id="navbar"></div>
+    <h1>Energy & Vitality</h1>
+    <select id="sortName">
+      <option>Sort By Name</option>
+      <option value="Name Ascending">Name Ascending</option>
+      <option value="Name Descending"> Name Descending</option>
+      <option value="Price Ascending">Price Ascending</option>
+      <option value="Price Descending">Price Descending</option>
+    </select>
+    
+    <div id="hs">
+      <div id="side">
+        <h3>Health Interest</h3>
+        <a href="blood.html">Blood Suger</a><br>
+        <a href="brain.html">Brain & Cognitive</a><br>
+        <a href="digesition.html">Digestion</a><br>
+        <a href="energy.html">Energy & Vitality</a><br>
+        <a href="hair.html">Hair,Skin Nails</a><br>
+        <a href="heart.html">Heart & Cardio</a><br>
+        <a href="immune.html">Immune Support</a><br>
+        <a href="joint.html">Joint & Mobility</a><br>
+        <a href="liver.html">Liver & Cleanse</a><br>
+        <a href="mens.html">Men's Wellness</a><br>
+        <a href="res.html">Respiratory</a><br>
+        <a href="sleep.html">Sleep</a><br>
+        <a href="stres.html">Stress & Mood</a><br>
+        <a href="uranary.html">Urinary</a><br>
+        <a href="weight.html">Weight Management</a><br>
+        <a href="womens.html">Women's Wellness</a><br>
+      </div>      
+      <div id="container"></div>
+    </div>
+    <div id="footer"></div>
+    
+</body>
+</html>
+<script>
+    let data=[
+    {
+      "image": "https://himalayausa.com/collections/health-interests/products/organic-ashwagandha",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/organic-ashwagandha-119670_800x.png?v=1660858343",
+      "title": "Organic Ashwagandha",
+      "price": "$14.95",
+      "description": "Ashwagandha has been used for centuries for stress and energy. Himalaya’s Organic Ashwagandha is a clinically-studied blend of Ashwagandha root powder and root extract that provides stress relief by supporting...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$14.95",
+      "active": "30 Caplets",
+      "active href": "https://himalayausa.com/collections/health-interests?view=all#",
+      "pt-options-swatch": "60 Caplets",
+      "pt-options-swatch href": "https://himalayausa.com/collections/health-interests?view=all#"
+    },
+    {
+      "image": "https://himalayausa.com/collections/health-interests/products/chyavanprash",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/chyavanprash-105275_800x.png?v=1660858328",
+      "title": "Chyavanprash",
+      "price": "$15.95",
+      "description": "Chyavanprash has been used for centuries as an Ayurvedic superfood for energy, strength, vitality, immunity and good digestion. Himalaya Chyavanprash is an easy-to-take, convenient once-a-day vegetarian capsule.* Suggested Use Adults...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$15.95",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/health-interests/products/organic-amla",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/organic-amla-944817_800x.png?v=1660858354",
+      "title": "Organic Amla",
+      "price": "$19.95",
+      "description": "As an antioxidant for immune support, India’s famous Amla fruit, also known as Amalaki or Indian Gooseberry, has been used for thousands of years for reinforcing immune cell defense and...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$19.95",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/health-interests/products/back-to-balance-cleanse",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/back-to-balance-cleanse-297598_800x.png?v=1660858351",
+      "title": "Back to Balance Cleanse™",
+      "price": "$29.95",
+      "description": "To keep your body cleaner and feel less bloated, you deserve more than just a quick herbal purge. You deserve the morning and evening wisdom of Himalaya Back to Balance...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$29.95",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/health-interests/products/back-to-balance-cleanse",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/back-to-balance-cleanse-297598_800x.png?v=1660858351",
+      "title": "Back to Balance Cleanse™",
+      "price": "$29.95",
+      "description": "To keep your body cleaner and feel less bloated, you deserve more than just a quick herbal purge. You deserve the morning and evening wisdom of Himalaya Back to Balance...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$29.95",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/health-interests/products/hello-energy",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/hello-energy-997862_800x.jpg?v=1660858334",
+      "title": "Hello Energy®",
+      "price": "$23.99",
+      "description": "Who couldn't use a little extra help to boost energy throughout their day? Say goodbye to burnout and say hello to achieving your daily tasks without having to use stimulants...",
+      "pt-btn-addtocart": "",
+      "price 2": "",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/health-interests/products/organic-licorice",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/organic-licorice-304556_800x.png?v=1660813420",
+      "title": "Organic Licorice",
+      "price": "$15.95",
+      "description": "For healthy digestion and occasional stomach upset, people of many different countries and medicinal cultures have turned to licorice root for thousands of years. For digestive relief and support, Himalaya...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$15.95",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/health-interests/products/organic-ashwagandha-root-powder",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/organic-ashwagandha-root-powder-568653_800x.png?v=1660858340",
+      "title": "Organic Ashwagandha Root Powder",
+      "price": "$16.95",
+      "description": "Ashwagandha has been used for centuries for stress and energy. It’s one of history’s most famous balancing herbs. In a fast-paced world, Himalaya Organic Ashwagandha keeps you going on busy...",
+      "pt-btn-addtocart": "",
+      "price 2": "",
+      "active": "45 Day Supply",
+      "active href": "https://himalayausa.com/collections/health-interests?view=all#",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    ]
+    
+
+
+    let cartArr=JSON.parse(localStorage.getItem("cart"))||[]
+   let cont=document.getElementById("container")
+   diaspalyTable(data)
+   function diaspalyTable(data){
+   cont.innerHTML=null
+    data.forEach((el)=> {
+        let div=document.createElement("div")
+        let image=document.createElement("img")
+        image.src=el.lazyload
+        let title=document.createElement("h3")
+        title.innerText=el.title
+        let price=document.createElement("h1")
+        price.innerText=el.price
+        let btn=document.createElement("button")
+        btn.innerText="ADD TO CART"
+        btn.addEventListener("click",function(){
+          addcart(el)
+        })
+        div.append(image,title,price,btn)
+        cont.append(div)
+        
+    });
+   }
+ 
+   function addcart(el){
+    cartArr.push(el)
+    console.log(cartArr)
+    localStorage.setItem("cart",JSON.stringify(cartArr))
+    alert("Added to cart")
+    
+}
+
+
+
+
+  
+document.querySelector("#sortName").addEventListener("change",nameSort)
+
+    function nameSort(){
+      let selected=document.querySelector("#sortName").value
+      if(selected=="Name Ascending"){
+        
+        data.sort(function(a,b){
+        let x=a.title.toUpperCase()
+        let y=b.title.toUpperCase()
+          if(x>y) return 1
+          if(y>x) return -1
+          return 0
+        })
+        
+      }
+      if(selected=="Name Descending"){
+        data.sort(function(a,b){
+        let x=a.title.toUpperCase()
+        let y=b.title.toUpperCase()
+          if(x>y) return -1
+          if(y>x) return  1
+          return 0
+        })
+        
+        
+      }
+      if(selected=="Price Ascending"){
+        
+        data.sort(function(a,b){
+        let x=a.price.toUpperCase()
+        let y=b.price.toUpperCase()
+          if(x>y) return 1
+          if(y>x) return -1
+          return 0
+        })
+        
+      }
+      if(selected=="Price Descending"){
+        data.sort(function(a,b){
+        let x=a.price.toUpperCase()
+        let y=b.price.toUpperCase()
+          if(x>y) return -1
+          if(y>x) return  1
+          return 0
+        })
+        
+        
+      }
+      
+      diaspalyTable(data)
+      
+    }
+
+   
+</script>
