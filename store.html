@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Himalaya Wellness: Herbal Supplements, Toothpaste & More!
+    <title>Store
         – Himalaya Wellness (US)</title>
     <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0399/1728/9633/files/H_Logo-01_32x32.png?v=1591028931" type="image/png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
 	<link rel="stylesheet" type="text/css" href="store.css">
 </head>
 <body>
  
  <!-- header start -->
  <header class="header">
- 	<div class="containers">
- 	</div>
- </header>
+    <div class="container">
+       
+      
+    </div>
+</header>
  <!-- header end -->
  <!-- banner end -->
  <div id="store">
@@ -44,17 +46,24 @@
     </div>
 </div>
 </div>
-
     </div>
 <script src="navbar-style.js"></script>
+<footer>
+
+</footer>
 </body>
 </html>
 <script type="module">
-    import navbar from './navbar.js'
+    import {toggle,navbar,footer} from './navbar-footer.js'
     console.log(navbar)
     
-    let container=document.querySelector(".containers")
+    let container=document.querySelector(".container")
     container.innerHTML=navbar();
+    toggle()
+
+    let footerDiv=document.querySelector("footer")
+    footerDiv.innerHTML=footer()
 </script>
+
 <script src="store.js"></script>
 
