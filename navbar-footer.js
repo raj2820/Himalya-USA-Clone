@@ -1,5 +1,64 @@
-function navbar(){
-   return `   <div id="orange-bar">
+function toggle(){let menu = document.querySelector(".menu");
+ let menuMain = menu.querySelector(".menu-main");
+let goBack = menu.querySelector(".go-back");
+let menuTrigger = document.querySelector(".mobile-menu-trigger");
+let closeMenu = menu.querySelector(".mobile-menu-close");
+ let subMenu;
+ menuMain.addEventListener("click", (e) =>{
+ 	if(!menu.classList.contains("active")){
+ 		return;
+ 	}
+   if(e.target.closest(".menu-item-has-children")){
+   	 const hasChildren = e.target.closest(".menu-item-has-children");
+      showSubMenu(hasChildren);
+   }
+ });
+ goBack.addEventListener("click",() =>{
+ 	 hideSubMenu();
+ })
+ menuTrigger.addEventListener("click",() =>{
+ 	 toggleMenu();
+ })
+ closeMenu.addEventListener("click",() =>{
+ 	 toggleMenu();
+ })
+ document.querySelector(".menu-overlay").addEventListener("click",() =>{
+ 	toggleMenu();
+ })
+ function toggleMenu(){
+ 	menu.classList.toggle("active");
+ 	document.querySelector(".menu-overlay").classList.toggle("active");
+ }
+ function showSubMenu(hasChildren){
+    subMenu = hasChildren.querySelector(".sub-menu");
+    subMenu.classList.add("active");
+    subMenu.style.animation = "slideLeft 0.5s ease forwards";
+    const menuTitle = hasChildren.querySelector("i").parentNode.childNodes[0].textContent;
+    menu.querySelector(".current-menu-title").innerHTML=menuTitle;
+    menu.querySelector(".mobile-menu-head").classList.add("active");
+ }
+
+ function  hideSubMenu(){  
+    subMenu.style.animation = "slideRight 0.5s ease forwards";
+    setTimeout(() =>{
+       subMenu.classList.remove("active");	
+    },300); 
+    menu.querySelector(".current-menu-title").innerHTML="";
+    menu.querySelector(".mobile-menu-head").classList.remove("active");
+ }
+ 
+ window.onresize = function(){
+ 	if(this.innerWidth >991){
+ 		if(menu.classList.contains("active")){
+ 			toggleMenu();
+ 		}
+
+ 	}
+ }
+}
+ function navbar(){
+  
+   return`   <div id="orange-bar">
    <p><strong id="strong">FREE SHIPPING</strong> ON ALL ORDERS OVER $35!</p>
    </div>
 <div class="row v-center">
@@ -508,20 +567,50 @@ function navbar(){
                </svg></a>
     </div>
  </div>
+ <div id="right-nav" class="mobile-menu-trigger">
+   <a href="search.html">  <div id="search">
+         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                 <path fill="currentColor" d="M23.6,22.4l-4.3-4.3C21,16.3,22,13.7,22,11c0-6.1-4.9-11-11-11S0,4.9,0,11s4.9,11,11,11c2.7,0,5.3-1,7.2-2.7
+                     l4.3,4.3L23.6,22.4z M1.6,11c0-5.2,4.2-9.4,9.4-9.4c5.2,0,9.4,4.2,9.4,9.4c0,5.2-4.2,9.4-9.4,9.4C5.8,20.4,1.6,16.2,1.6,11z"></path>
+                 </svg>
+     </div></a>
+     <a href="register.html">
+     <div id="account">
+         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+             <g>
+                 <path fill="currentColor" d="M12,13C6.4,13,2,17.8,2,24h20C22,17.8,17.6,13,12,13z M12,14.6c4.2,0,7.6,3.3,8.3,7.8H3.7
+                     C4.4,17.9,7.8,14.6,12,14.6z"></path>
+                 <path fill="currentColor" d="M12,12c3.3,0,6-2.7,6-6s-2.7-6-6-6S6,2.7,6,6S8.7,12,12,12z M12,1.6c2.4,0,4.4,2,4.4,4.4s-2,4.4-4.4,4.4
+                     c-2.4,0-4.4-2-4.4-4.4S9.6,1.6,12,1.6z"></path>
+             </g>
+             </svg>
+     </div>
+     </a>
+     <a href="cart.html">
+     <div id="cart">
+         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+             <path fill="currentColor" d="M22,8c0-1.1-0.9-2-2-2h-2.7c-0.9-3.4-2.9-5.8-5.3-5.8C9.6,0.2,7.6,2.6,6.7,6H4C2.9,6,2,6.9,2,8L0,22l0,0.1
+                 C0,23.2,0.9,24,2,24h20c1.1,0,2-0.8,2-1.9l0-0.1L22,8z M12,1.8c1.5,0,2.9,1.7,3.6,4.2H8.4C9.1,3.5,10.5,1.8,12,1.8z M22,22.4H2
+                 c-0.2,0-0.4-0.1-0.4-0.3l2-13.8l0-0.2c0-0.2,0.2-0.4,0.4-0.4h2.4C6.3,8.4,6.2,9.2,6.2,10h1.6c0-0.8,0.1-1.6,0.2-2.4h8
+                 c0.1,0.8,0.2,1.6,0.2,2.4h1.6c0-0.8-0.1-1.6-0.2-2.4H20c0.2,0,0.4,0.2,0.4,0.5l2,14C22.4,22.3,22.2,22.4,22,22.4z"></path>
+             </svg>
+     </div></a>
+ </div>
  <!-- menu start here -->
  <div class="header-item item-center">
     <div class="menu-overlay">
     </div>
     <nav class="menu">
        <div class="mobile-menu-head">
-          <div class="go-back"><i class="fa fa-angle-left"></i></div>
+          <div class="go-back"><<i class="fa fa-angle-left"></i></div>
           <div class="current-menu-title"></div>
           <div class="mobile-menu-close">&times;</div>
        </div>
+      
        <ul class="menu-main">
        
           <li class="menu-item-has-children">
-             <a href="#">Shop <i class="fa fa-angle-down"></i></a>
+             <a style="font-size: 18px;    letter-spacing: 0.04em;" href="#">Shop <i class="fa fa-angle-down"></i></a>
              <div class="sub-menu mega-menu mega-menu-column-4">
                       <div class="list-item">
                            <h4 class="title">Herbal Suppliments</h4>
@@ -530,6 +619,7 @@ function navbar(){
                                <li><a href="#">Multi-Ingredient Suppliments</a></li>
                                
                            </ul>
+                        
                            <h4 class="title">Health Intrests</h4>
                            <ul>
                                <li><a href="#">Blood Sugar</a></li>
@@ -548,7 +638,7 @@ function navbar(){
                                <li><a href="#">Kids Toothpaste</a></li>
                                
                            </ul>
-                   
+                  
                       </div>
                       <div class="list-item">
                          <h4 class="title">Personal Care</h4>
@@ -565,57 +655,103 @@ function navbar(){
              </div>
           </li>
           <li class="menu-item-has-children">
-             <a href="about.html">About <i class="fas fa-angle-down"></i></a>
+             <a href="about.html" style="font-size: 18px;     letter-spacing: 0.04em;">About <i class="fas fa-angle-down"></i></a>
              
           </li>
           <li class="menu-item-has-children">
-             <a href="storelocator.html">Store Locator <i class="fas fa-angle-down"></i></a>
+             <a href="storelocator.html" > <p style="font-size: 18px;    letter-spacing: 0.04em;">Store Locator </p><i class="fas fa-angle-down"></i></a>
              
           </li>
              
               
           
        </ul>
-            <div id="left-nav">
-             <a href="search.html">  <div id="search">
-                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
-                           <path fill="currentColor" d="M23.6,22.4l-4.3-4.3C21,16.3,22,13.7,22,11c0-6.1-4.9-11-11-11S0,4.9,0,11s4.9,11,11,11c2.7,0,5.3-1,7.2-2.7
-                               l4.3,4.3L23.6,22.4z M1.6,11c0-5.2,4.2-9.4,9.4-9.4c5.2,0,9.4,4.2,9.4,9.4c0,5.2-4.2,9.4-9.4,9.4C5.8,20.4,1.6,16.2,1.6,11z"></path>
-                           </svg>
-               </div></a>
-               <a href="register.html">
-               <div id="account">
-                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
-                       <g>
-                           <path fill="currentColor" d="M12,13C6.4,13,2,17.8,2,24h20C22,17.8,17.6,13,12,13z M12,14.6c4.2,0,7.6,3.3,8.3,7.8H3.7
-                               C4.4,17.9,7.8,14.6,12,14.6z"></path>
-                           <path fill="currentColor" d="M12,12c3.3,0,6-2.7,6-6s-2.7-6-6-6S6,2.7,6,6S8.7,12,12,12z M12,1.6c2.4,0,4.4,2,4.4,4.4s-2,4.4-4.4,4.4
-                               c-2.4,0-4.4-2-4.4-4.4S9.6,1.6,12,1.6z"></path>
-                       </g>
-                       </svg>
-               </div>
-               </a>
-               <a href="cart.html">
-               <div id="cart">
-                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
-                       <path fill="currentColor" d="M22,8c0-1.1-0.9-2-2-2h-2.7c-0.9-3.4-2.9-5.8-5.3-5.8C9.6,0.2,7.6,2.6,6.7,6H4C2.9,6,2,6.9,2,8L0,22l0,0.1
-                           C0,23.2,0.9,24,2,24h20c1.1,0,2-0.8,2-1.9l0-0.1L22,8z M12,1.8c1.5,0,2.9,1.7,3.6,4.2H8.4C9.1,3.5,10.5,1.8,12,1.8z M22,22.4H2
-                           c-0.2,0-0.4-0.1-0.4-0.3l2-13.8l0-0.2c0-0.2,0.2-0.4,0.4-0.4h2.4C6.3,8.4,6.2,9.2,6.2,10h1.6c0-0.8,0.1-1.6,0.2-2.4h8
-                           c0.1,0.8,0.2,1.6,0.2,2.4h1.6c0-0.8-0.1-1.6-0.2-2.4H20c0.2,0,0.4,0.2,0.4,0.5l2,14C22.4,22.3,22.2,22.4,22,22.4z"></path>
-                       </svg>
-               </div></a>
-           </div>
+            
     </nav>
  </div>
  <!-- menu end here -->
- <div class="header-item item-right">
-    <a href="#"><i class="fas fa-search"></i></a>
-    <a href="#"><i class="far fa-heart"></i></a>
-    <a href="#"><i class="fas fa-shopping-cart"></i></a>
-    <!-- mobile menu trigger -->
-    
+ <div id="left-nav" class="header-item item-right">
+   <a href="search.html">  <div id="search">
+         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                 <path fill="currentColor" d="M23.6,22.4l-4.3-4.3C21,16.3,22,13.7,22,11c0-6.1-4.9-11-11-11S0,4.9,0,11s4.9,11,11,11c2.7,0,5.3-1,7.2-2.7
+                     l4.3,4.3L23.6,22.4z M1.6,11c0-5.2,4.2-9.4,9.4-9.4c5.2,0,9.4,4.2,9.4,9.4c0,5.2-4.2,9.4-9.4,9.4C5.8,20.4,1.6,16.2,1.6,11z"></path>
+                 </svg>
+     </div></a>
+     <a href="register.html">
+     <div id="account">
+         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+             <g>
+                 <path fill="currentColor" d="M12,13C6.4,13,2,17.8,2,24h20C22,17.8,17.6,13,12,13z M12,14.6c4.2,0,7.6,3.3,8.3,7.8H3.7
+                     C4.4,17.9,7.8,14.6,12,14.6z"></path>
+                 <path fill="currentColor" d="M12,12c3.3,0,6-2.7,6-6s-2.7-6-6-6S6,2.7,6,6S8.7,12,12,12z M12,1.6c2.4,0,4.4,2,4.4,4.4s-2,4.4-4.4,4.4
+                     c-2.4,0-4.4-2-4.4-4.4S9.6,1.6,12,1.6z"></path>
+             </g>
+             </svg>
+     </div>
+     </a>
+     <a href="cart.html">
+     <div id="cart">
+         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+             <path fill="currentColor" d="M22,8c0-1.1-0.9-2-2-2h-2.7c-0.9-3.4-2.9-5.8-5.3-5.8C9.6,0.2,7.6,2.6,6.7,6H4C2.9,6,2,6.9,2,8L0,22l0,0.1
+                 C0,23.2,0.9,24,2,24h20c1.1,0,2-0.8,2-1.9l0-0.1L22,8z M12,1.8c1.5,0,2.9,1.7,3.6,4.2H8.4C9.1,3.5,10.5,1.8,12,1.8z M22,22.4H2
+                 c-0.2,0-0.4-0.1-0.4-0.3l2-13.8l0-0.2c0-0.2,0.2-0.4,0.4-0.4h2.4C6.3,8.4,6.2,9.2,6.2,10h1.6c0-0.8,0.1-1.6,0.2-2.4h8
+                 c0.1,0.8,0.2,1.6,0.2,2.4h1.6c0-0.8-0.1-1.6-0.2-2.4H20c0.2,0,0.4,0.2,0.4,0.5l2,14C22.4,22.3,22.2,22.4,22,22.4z"></path>
+             </svg>
+     </div></a>
  </div>
   
 </div>`
-}
-export default navbar
+ }
+
+
+ function footer(){
+    return `          <div id="footer-div">
+    <div>
+        <h2>Info</h2>
+        <a href="#"><p>Contact Us</p></a>
+        <a href="#"><p>FAQ</p></a>
+        <a href="#"><p>Blog</p></a>
+        <a href="#"><p>Store Locator</p></a>
+        <a href="#"><p>Careers</p></a>
+    </div>
+    <div>
+        <h2>Policies</h2>
+        <a href="#"><p>Shipping & Returns</p></a>
+        <a href="#"><p>Terms & Conditions</p></a>
+        <a href="#"><p>Privacy</p></a>
+        <a href="#"><p>CCPA</p></a>
+        <a href="#"><p>Accessibility</p></a>
+    </div>
+    <div>
+        <h2>Contact Us</h2>
+        <h2>Email:</h2>
+        <p>writetous@himalayausa.com</p>
+        <h2>Phone:</h2>
+        <p>1-800-869-4640</p>
+        <h2>Mail:</h2>
+        <p>Himalaya Wellness</p>
+        <p>1101 Gillingham Lane</p>
+        <p>Sugar Land, TX 77478​</p>
+    
+       
+    </div>
+    <div >
+        <h2>Subscribe to Our Newsletter!</h2>
+        <div id="email-div">
+        <div ><input type="text" placeholder="Enter your e-mail"></div>
+        <div id="footer-email"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+            <path fill="currentColor" d="M0,4v16h24V4H0z M21,5.6L12,12L3,5.6H21z M1.6,18.4V6.6L12,14l10.4-7.4v11.8H1.6z"></path>
+            </svg>
+        </div>
+        </div>
+        <h2>By entering your email, you agree to our Terms & </h2>
+        <p>Conditions and Privacy Policy</p>
+    </div>
+                </div>
+                <div id="footer-bottom">
+                    <p>© 2022 Himalaya Wellness. All rights reserved.</p>
+                
+    <div id="dis"><p style="text-align:center;">*THESE STATEMENTS HAVE NOT BEEN EVALUATED BY THE FOOD AND DRUG ADMINISTRATION. THIS PRODUCT IS NOT INTENDED TO DIAGNOSE, TREAT, CURE OR PREVENT ANY DISEASE.</p></div>         
+       </div>`
+ }
+export {toggle,navbar,footer}
