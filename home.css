@@ -1,3 +1,18 @@
+.swiper-navBtn{
+    /* display: block;
+    position: absolute;
+    top: 7px;
+    font-family: 'fyanka';
+    font-size: 23px;
+    line-height: 1; */
+    color: #777777;
+}
+.swiper-navBtn::before,.swiper-navBtn::after{
+    font-size: 20px;
+}
+.swiper-button-next{
+top: 0;
+}
 #slider-body{
     margin-top: 40px;
     width: 80%;
@@ -7,21 +22,40 @@
     align-items: center;
     justify-content: center;
 }
-.card{
+@media screen and (max-width: 768px) {
+    .slide-content{
+      margin: 0 10px;
+    }
+    .swiper-navBtn{
+      display: none;
+    }
+  }
+/* .card{
 width: 320px;
-}
+} */
 .name{
     font-size: 18px;
     font-weight: 500px;
+    color: #333333;
+}
+.description{
+    font-size: 14px;
+    color: #777777;
+    text-align: center;
 }
 .slide-content{
     margin:0 40px; ;
+    overflow: hidden;
+  
 }
 .image-content,.card-content{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px 14px;
+}
+.image-content{
+    row-gap: 5px;
 }
 .card-image{
     position: relative;
@@ -33,6 +67,28 @@ width: 320px;
     width: 100%;
     object-fit: cover;
 }
+.button{
+    /* display: flex; */
+    border: none;
+    font-size: 10px;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background-color: #a3b49b;
+    margin: 14px;
+    cursor: pointer;
+ 
+}
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    /* background-color: ; */
+}
+/* .overlay{
+    position: absolute;
+     
+}*/
+
 
 #top{
     background-image: url("https://cdn.shopify.com/s/files/1/0399/1728/9633/files/hero-desktop-ashwagandha_x720_78e6b5a9-d578-413f-8100-33c881ca05f7.webp?v=1660561979");
@@ -151,6 +207,7 @@ padding: 10px;
 	margin: auto;
 	margin-top: -200px;
 	/* overflow: hidden; */
+    margin-bottom: 50px;
 }
 #shop-by-category img{
 	
