@@ -12,6 +12,7 @@ function RegisterConstructorFun(name, last_name, email, password) {
 
 function RegisterFun(event) {
     event.preventDefault()
+    console.log("Hello");
     document.querySelector("#errMsg").innerHTML=null
     let name = document.querySelector("#userFirstName").value;
     let last_name = document.querySelector("#userLastName").value;
