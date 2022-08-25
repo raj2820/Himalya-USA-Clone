@@ -567,35 +567,7 @@ let closeMenu = menu.querySelector(".mobile-menu-close");
                </svg></a>
     </div>
  </div>
- <div id="right-nav" class="mobile-menu-trigger">
-   <a href="search.html">  <div id="search">
-         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
-                 <path fill="currentColor" d="M23.6,22.4l-4.3-4.3C21,16.3,22,13.7,22,11c0-6.1-4.9-11-11-11S0,4.9,0,11s4.9,11,11,11c2.7,0,5.3-1,7.2-2.7
-                     l4.3,4.3L23.6,22.4z M1.6,11c0-5.2,4.2-9.4,9.4-9.4c5.2,0,9.4,4.2,9.4,9.4c0,5.2-4.2,9.4-9.4,9.4C5.8,20.4,1.6,16.2,1.6,11z"></path>
-                 </svg>
-     </div></a>
-     <a href="register.html">
-     <div id="account">
-         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
-             <g>
-                 <path fill="currentColor" d="M12,13C6.4,13,2,17.8,2,24h20C22,17.8,17.6,13,12,13z M12,14.6c4.2,0,7.6,3.3,8.3,7.8H3.7
-                     C4.4,17.9,7.8,14.6,12,14.6z"></path>
-                 <path fill="currentColor" d="M12,12c3.3,0,6-2.7,6-6s-2.7-6-6-6S6,2.7,6,6S8.7,12,12,12z M12,1.6c2.4,0,4.4,2,4.4,4.4s-2,4.4-4.4,4.4
-                     c-2.4,0-4.4-2-4.4-4.4S9.6,1.6,12,1.6z"></path>
-             </g>
-             </svg>
-     </div>
-     </a>
-     <a href="cart.html">
-     <div id="cart">
-         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
-             <path fill="currentColor" d="M22,8c0-1.1-0.9-2-2-2h-2.7c-0.9-3.4-2.9-5.8-5.3-5.8C9.6,0.2,7.6,2.6,6.7,6H4C2.9,6,2,6.9,2,8L0,22l0,0.1
-                 C0,23.2,0.9,24,2,24h20c1.1,0,2-0.8,2-1.9l0-0.1L22,8z M12,1.8c1.5,0,2.9,1.7,3.6,4.2H8.4C9.1,3.5,10.5,1.8,12,1.8z M22,22.4H2
-                 c-0.2,0-0.4-0.1-0.4-0.3l2-13.8l0-0.2c0-0.2,0.2-0.4,0.4-0.4h2.4C6.3,8.4,6.2,9.2,6.2,10h1.6c0-0.8,0.1-1.6,0.2-2.4h8
-                 c0.1,0.8,0.2,1.6,0.2,2.4h1.6c0-0.8-0.1-1.6-0.2-2.4H20c0.2,0,0.4,0.2,0.4,0.5l2,14C22.4,22.3,22.2,22.4,22,22.4z"></path>
-             </svg>
-     </div></a>
- </div>
+ 
  <!-- menu start here -->
  <div class="header-item item-center">
     <div class="menu-overlay">
@@ -649,7 +621,7 @@ let closeMenu = menu.querySelector(".mobile-menu-close");
                               
                            </ul>
                       </div>
-                      <div class="list-item">
+                      <div class="list-item" id="nav-image">
                           <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/HUSA_Ashwagandha_90ct_Carton_Bottle_410x.jpg?v=1603142607" alt="shop">
                       </div>
              </div>
@@ -659,7 +631,7 @@ let closeMenu = menu.querySelector(".mobile-menu-close");
              
           </li>
           <li class="menu-item-has-children">
-             <a href="storelocator.html" > <p style="font-size: 18px;    letter-spacing: 0.04em;">Store Locator </p><i class="fas fa-angle-down"></i></a>
+             <a href="store.html" > <p style="font-size: 18px;    letter-spacing: 0.04em;">Store Locator </p><i class="fas fa-angle-down"></i></a>
              
           </li>
              

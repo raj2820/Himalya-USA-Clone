@@ -7,6 +7,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <style>
+        #nav-image{
+            display: block;
+            overflow: hidden;
+        
+        }
+        #nav-image img{
+            transition: transform(2s);
+        }
+        #nav-image :hover img{
+            transform: scale(1.3);
+        }
+    </style>
 </head>
 <body>
  
@@ -17,13 +31,9 @@
        
  	</div>
  </header>
- <!-- header end -->
 
- <!-- banner start -->
- <section class="banner-section">
- 	
- </section>
- <!-- banner end -->
+
+ </div>
  <div id="body-container">
     <div id="top">
         <img class="hero-header__mobile-image" src="//cdn.shopify.com/s/files/1/0399/1728/9633/files/767_x_476_HUSA_NEW_WEB_Carousel_Banners_v7_White_box_x720_0c169a8c-9cc5-488a-8ec1-6ff362e645e1_small.webp?v=1660561657" alt="" srcset="
@@ -31,11 +41,83 @@
         ,//cdn.shopify.com/s/files/1/0399/1728/9633/files/767_x_476_HUSA_NEW_WEB_Carousel_Banners_v7_White_box_x720_0c169a8c-9cc5-488a-8ec1-6ff362e645e1_720x.webp?v=1660561657 720w
         ,//cdn.shopify.com/s/files/1/0399/1728/9633/files/767_x_476_HUSA_NEW_WEB_Carousel_Banners_v7_White_box_x720_0c169a8c-9cc5-488a-8ec1-6ff362e645e1_900x.webp?v=1660561657 900w 
         " sizes="(min-width: 960px) 450px, (min-width: 720px) 50vw, 100vw">
+   <div id="aswagandha">
+    <p>ASHWAGANDHA</p>
+    <p>
+        A star performer for stress and energy in a
+    </p>
+    <p>
+        potent, organic caplet.
+    </p>
+    <button id="aswagandha-btn">
+        Shop Now
+    </button>
+   </div>
+   <!-- <div>
+    <p>
+        A star performer for stress and energy in a
+    </p>
+    <p>
+        potent, organic caplet.
+    </p>
+    <button id="aswagandha-btn">
+        Shop Now
+    </button>
+   </div> -->
+   
     </div>
+   
+            
+       
         </div>
-        <footer>
+        <div id="mid-section">
+         <h3>Shop by Categories</h3>
+            <div id="shop-by-category">
+             
+                <div>
+                    <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/HUSA-Ashwagandha-90ct-Carton_Bottle-square_1024x.png?v=1607451904" alt="">
+                <h2>Suppliments</h2>
+                <a href="#"><p >See all Suppliments</p></a>
+                </div>
+                <div>
+                    <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/WCC-SIMPLY-MINT-RENDER-WITH-BRUSH-High-Res_grande.png?v=1607451904" alt="">
+                <h2>Oral Care</h2>
+                <a href="#"><p>See All Oral Care</p></a>
+                </div>
+                <div>
+                    <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/Face_Wash-Balancing-Box-Bottle-square_grande.png?v=1607451904" alt="">
+               <h2>Personal care</h2>
+               <a href="#"><p>See All Personal Care</p></a>
+                </div>
+                    </div>
+                </div>
+                <div id="slider-body">
+                    <div class="slide-container">
+                        <div class="slide-content">
+                            <div class="card-wraper">
+                                <div class="card">
+                                    <div class="image-content">
+                                        <span class="overlay"></span>
+                                        <div class="card-image">
+                                            <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/organic-ashwagandha-119670_800x.png?v=1660858343" alt="" class="card-img">
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <h2 class="name">Organic Ashwagandha</h2>
+                                    <p class="description">$14.9</p>
+                                    <button class="button">Add To Cart</button>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+        <div id="footer">
   
-        </footer>
+        </div>
+        
 <!-- <script src="navbar-style.js"></script> -->
 </body>
 </html>
@@ -47,6 +129,6 @@
     container.innerHTML=navbar();
     toggle()
 
-    let footerDiv=document.querySelector("footer")
+    let footerDiv=document.getElementById("footer")
     footerDiv.innerHTML=footer()
 </script>
