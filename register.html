@@ -8,11 +8,19 @@
     <title>Create Account - Himalaya Wellness (US)</title>
     <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0399/1728/9633/files/H_Logo-01_32x32.png?v=1591028931"type="image/x-icon">
     <link rel="stylesheet" href="./register.css">
+    <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
 
-
+<!-- header start -->
+<header class="header">
+    <div class="container">
+       
+      
+    </div>
+</header>
+<!-- header end -->
     <!-- register -->
 
     <div id="main">
@@ -49,10 +57,25 @@
         
     </div>
 
-    
+    <footer>
+  
+    </footer>
    
 
 </body>
 
 </html>
+
+<script type="module">
+    import {toggle,navbar,footer} from './navbar-footer.js'
+    console.log(navbar)
+    
+    let container=document.querySelector(".container")
+    container.innerHTML=navbar();
+    toggle()
+
+    let footerDiv=document.querySelector("footer")
+    footerDiv.innerHTML=footer()
+</script>
+
 <script src="./register.js"></script>
