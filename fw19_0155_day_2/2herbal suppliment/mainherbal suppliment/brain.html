@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain & Cognitive</title>
+    <link rel="icon" href="//cdn.shopify.com/s/files/1/0399/1728/9633/files/H_Logo-01_32x32.png?v=1591028931" type="image/png">
+    <link rel="stylesheet" href="hs.css">
+</head>
+<body>
+    <div id="navbar"></div>
+    <h1>Brain & Cognitive</h1>
+    <select id="sortName">
+      <option>Sort By Name</option>
+      <option value="Name Ascending">Name Ascending</option>
+      <option value="Name Descending"> Name Descending</option>
+      <option value="Price Ascending">Price Ascending</option>
+      <option value="Price Descending">Price Descending</option>
+    </select>
+    
+    <div id="hs">
+      <div id="side">
+        <h3>Health Interest</h3>
+        <a href="blood.html">Blood Suger</a><br>
+        <a href="brain.html">Brain & Cognitive</a><br>
+        <a href="digesition.html">Digestion</a><br>
+        <a href="energy.html">Energy & Vitality</a><br>
+        <a href="hair.html">Hair,Skin Nails</a><br>
+        <a href="heart.html">Heart & Cardio</a><br>
+        <a href="immune.html">Immune Support</a><br>
+        <a href="joint.html">Joint & Mobility</a><br>
+        <a href="liver.html">Liver & Cleanse</a><br>
+        <a href="mens.html">Men's Wellness</a><br>
+        <a href="res.html">Respiratory</a><br>
+        <a href="sleep.html">Sleep</a><br>
+        <a href="stres.html">Stress & Mood</a><br>
+        <a href="uranary.html">Urinary</a><br>
+        <a href="weight.html">Weight Management</a><br>
+        <a href="womens.html">Women's Wellness</a><br>
+      </div>      
+      <div id="container"></div>
+    </div>
+    <div id="footer"></div>
+    
+</body>
+</html>
+<script>
+
+    let data=[
+    {
+      "image": "https://himalayausa.com/collections/health-interests/products/mindcare",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/mindcare-700685_800x.png?v=1660858331",
+      "title": "MindCare®",
+      "price": "$24.49",
+      "description": "In our fast-paced world, focus and forgetfulness are a challenge for everybody. Himalaya MindCare supports memory, focus and logic, helps with occasional absentmindedness and the occasional lack of concentration.* Suggested...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$24.49",
+      "active": "60 Capsules",
+      "active href": "https://himalayausa.com/collections/health-interests?view=all#",
+      "pt-options-swatch": "120 Capsules",
+      "pt-options-swatch href": "https://himalayausa.com/collections/health-interests?view=all#"
+    },
+    {
+      "image": "https://himalayausa.com/collections/health-interests/products/organic-bacopa",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/organic-bacopa-858092_800x.png?v=1660858317",
+      "title": "Organic Bacopa",
+      "price": "$17.29",
+      "description": "Himalaya Organic Bacopa supports memory and learning and empowers your clarity of thought. For cognitive support and mental alertness, this plant-based nootropic calms the senses and helps rest the preoccupied...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$17.29",
+      "active": "30 Caplets",
+      "active href": "https://himalayausa.com/collections/health-interests?view=all#",
+      "pt-options-swatch": "60 Caplets",
+      "pt-options-swatch href": "https://himalayausa.com/collections/health-interests?view=all#"
+    },
+    {
+      "image": "https://himalayausa.com/collections/health-interests/products/organic-gotu-kola",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/organic-gotu-kola-470239_800x.png?v=1660858345",
+      "title": "Organic Gotu Kola",
+      "price": "$19.99",
+      "description": "Gotu Kola has long been considered one of Ayurveda's primary memory and brain booster herbs.* Suggested Use Adults take 1 caplet twice daily with food. Days of Supply Size (Caplets)...",
+      "pt-btn-addtocart": "",
+      "price 2": "",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/health-interests/products/hello-calm-mind",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/hello-calm-mind-673401_800x.png?v=1660858335",
+      "title": "Hello Calm Mind",
+      "price": "$23.99",
+      "description": "Because days are so much easier with fewer racing thoughts, Himalaya Calm Mind is formulated to help you concentrate and be calm as you navigate through your day.* Suggested Use...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$23.99",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    }
+    ]
+    let cartArr=JSON.parse(localStorage.getItem("cart"))||[]
+   let cont=document.getElementById("container")
+   diaspalyTable(data)
+   function diaspalyTable(data){
+   cont.innerHTML=null
+    data.forEach((el)=> {
+        let div=document.createElement("div")
+        let image=document.createElement("img")
+        image.src=el.lazyload
+        let title=document.createElement("h3")
+        title.innerText=el.title
+        let price=document.createElement("h1")
+        price.innerText=el.price
+        let btn=document.createElement("button")
+        btn.innerText="ADD TO CART"
+        btn.addEventListener("click",function(){
+          addcart(el)
+        })
+        div.append(image,title,price,btn)
+        cont.append(div)
+        
+    });
+   }
+ 
+   function addcart(el){
+    cartArr.push(el)
+    console.log(cartArr)
+    localStorage.setItem("cart",JSON.stringify(cartArr))
+    alert("Added to cart")
+    
+}
+
+
+
+
+  
+document.querySelector("#sortName").addEventListener("change",nameSort)
+
+    function nameSort(){
+      let selected=document.querySelector("#sortName").value
+      if(selected=="Name Ascending"){
+        
+        data.sort(function(a,b){
+        let x=a.title.toUpperCase()
+        let y=b.title.toUpperCase()
+          if(x>y) return 1
+          if(y>x) return -1
+          return 0
+        })
+        
+      }
+      if(selected=="Name Descending"){
+        data.sort(function(a,b){
+        let x=a.title.toUpperCase()
+        let y=b.title.toUpperCase()
+          if(x>y) return -1
+          if(y>x) return  1
+          return 0
+        })
+        
+        
+      }
+      if(selected=="Price Ascending"){
+        
+        data.sort(function(a,b){
+        let x=a.price.toUpperCase()
+        let y=b.price.toUpperCase()
+          if(x>y) return 1
+          if(y>x) return -1
+          return 0
+        })
+        
+      }
+      if(selected=="Price Descending"){
+        data.sort(function(a,b){
+        let x=a.price.toUpperCase()
+        let y=b.price.toUpperCase()
+          if(x>y) return -1
+          if(y>x) return  1
+          return 0
+        })
+        
+        
+      }
+      
+      diaspalyTable(data)
+      
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

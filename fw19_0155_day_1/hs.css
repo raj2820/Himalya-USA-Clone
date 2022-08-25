@@ -1,0 +1,16 @@
+*{
+    text-align: center;
+}
+#container{    
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 50px;
+}
+#container img{
+    width: 200px;
+    height: 200px;
+   margin-bottom: 30px;
+}
+#container div{
+    color: rgb(87, 76, 55);
+}
