@@ -1,4 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+#footer,footer{
+    width: 100%;
+    background-color: #eef2f0;
+    color: #777777;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+	/* position: absolute;
+	bottom: 0;
+	width: 100%; */
+}
+
+#footer-div{
+  
+    width: 80%;
+    margin: auto;
+	
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+	font-size: 18px;
+	margin-bottom: 40px;
+}
+#footer-email{
+    width: 24px;
+    height: 24px;
+
+}
+#footer-bottom{
+    width: 80%;
+    margin: auto;
+}
+#dis{
+border: 1px solid black;
+font-size: 13px;
+color: #333333;
+padding: 10px;
+}
+#email-div{
+    background-color: white;
+  display: flex;
+  width: 70%;
+  padding: 5px;
+  
+}
+/* #footer-email{
+	
+} */
+#email-div input{
+    border: none;
+}
+#right-nav{
+	display: none;
+}
+
+
+#footer-div h2{
+	font-size: 18px;
+	color: #333333;
+	
+}
+#footer-div p{
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+#footer-div a{
+	text-decoration: none;
+	color:#888888 ;
+	
+	
+}
+#footer-div div{
+	line-height: 1.35;
+}
+#footer-div div h2:first-child{
+	margin-bottom: 15px;
+}
+#footer-bottom p{
+	margin-bottom: 10px;
+}
+
 .header{
     position: absolute;
     width: 100%;
@@ -8,7 +90,7 @@ right: 0;
 top: 0;
 }
 #nav-image{
-	display: block;
+	/* display: block; */
 	overflow: hidden;
 
 }
@@ -156,6 +238,7 @@ a{
     margin-top: 15px;
     text-align: center;  
 }
+
 .header .menu > ul > li .sub-menu{
 	position: absolute;
 	z-index: 500;
@@ -181,7 +264,20 @@ a{
 	right: 0;
 	margin-right: 40px;
 }
+#nav-image{
+	display: none;
+	
 
+}
+/* #gayab3{
+	color: #333333;
+}
+#gayab4 a{
+	color: #333333;
+}
+.gayab5{
+	color: #333333;
+} */
 
 }
 .menu-item-has-children a{

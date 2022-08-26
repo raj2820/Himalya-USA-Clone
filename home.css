@@ -1,3 +1,74 @@
+#insta-grid{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+#insta-feed{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 40px;
+    display: flex;
+}
+
+#insta-grid img{
+
+width: 100%;
+}
+
+#insta-grid div:hover{
+   /* background-color: black; */
+    opacity: 0.6;
+     background-image: url("https://instafeed.nfcube.com/assets/img/instagram-icon.svg");
+     background-size: 20px 20px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: 20px 20px; */
+ overflow: hidden;
+ 
+}
+#wisdom{
+    display: flex;
+    /* flex-wrap:wrap ; */
+    text-align:start;
+    width: 80%;
+    margin: auto;
+    align-items: flex-start;
+   background-color: #f6faf8;
+   padding: 1.5rem !important;
+gap: 20px;
+margin-bottom: 40px;
+}
+#wisdom img{
+    width: 150px;
+  
+    
+}
+/* #right-wisdom{
+    text-align: justify;
+   
+} */
+#right-wisdom h1{
+    font-size: 29px;
+    line-height: 1.4;
+    padding-bottom: 15px;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+}
+#right-wisom p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+   
+}
 .swiper-navBtn{
     /* display: block;
     position: absolute;
@@ -33,6 +104,16 @@ top: 0;
 /* .card{
 width: 320px;
 } */
+#mid-section{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 500;
+    padding-bottom: 23px;
+}
 .name{
     font-size: 18px;
     font-weight: 500px;
@@ -92,7 +173,7 @@ width: 320px;
 
 #top{
     background-image: url("https://cdn.shopify.com/s/files/1/0399/1728/9633/files/hero-desktop-ashwagandha_x720_78e6b5a9-d578-413f-8100-33c881ca05f7.webp?v=1660561979");
-    display: flex;
+    /* display: flex; */
     min-height: 500px;
     align-items: center;
     width: 100%;
@@ -256,35 +337,81 @@ h1, h2, h3, h4, h5, h6 {
 	
 	
 }
+#hide-aswa{
+    display: none;
+
+}
 #aswagandha{
-  margin-top: -100px;
-    background: rgb(255, 255, 255,0.8);
+  margin-top: 150px;
+   
     color: #333333;
-    padding-left: 140px;
-    padding-right: 20px;
-    padding-top:5px;
+   
     height: 83px;
     text-align: center;
-    font-size: 26px;
+    font-size:46px;
     line-height: 60px;
-    font-weight: 100;
+    font-weight: 500;
     letter-spacing: 0.03em;
-   
+   width: 40%;
+   overflow:inherit;
 }
+/* #aswagandha ~ div{
+    margin-left: 140px;
+    margin-top: 15px;
+} */
 #aswagandha h1{
     font-size: 46px;
+        position: relative;
+    z-index: 0;
+    display: inline-block;
+    margin-bottom: 5px;
+    padding-left: 190px;
+    padding-right: 20px;
+    padding-top:5px;
+    background: rgb(255, 255, 255,0.8);
+}
+#aswagandha p{
+    font-size: 16px;
 }
 #aswagandha-btn{
     padding: 15px 30px;
     border:none;
     color: rgb(255, 255, 255);
     background: rgb(72, 202, 178);
-    
+    margin-top: 15;
 }
 #aswagandha-btn:hover{
     background-color: rgb(51, 51, 51);
     transition: all 0.2s linear;
 }
+/* #shop-by-category p:hover{
+
+} */
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color:#333333
+ 
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: 
+     #777777;
+    transform-origin: bottom right;
+    transition: transform 0.2s ease;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin:center;
+  }
 @media(max-width: 991px){
 	#footer-div{
   
@@ -295,6 +422,9 @@ h1, h2, h3, h4, h5, h6 {
 	}
     #aswagandha{
 display: none;
+    }
+    #aswagandha ~ div{
+     display: none;
     }
 	#shop-by-category{
 	
@@ -311,6 +441,14 @@ display: none;
 	#shop-by-category div:nth-child(2){
 		margin-bottom: -180px;
 	}
+    #wisdom{
+flex-wrap: wrap;
+    }
+    #hide-aswa{
+        display: block;
+    color: #333333;
+    margin-top: 150px;
+    }
 	
 }
 @media(max-width:720px){
@@ -335,6 +473,12 @@ display: none;
 		overflow: hidden;
 		width: 50%;
 		}
+        #gayab1{
+            display: none;
+        }
+        #gayab2{
+            display: none;
+        }
 }
 @media(max-width:432px){
 
@@ -371,4 +515,10 @@ display: none;
 				grid-template-columns: repeat(1,1fr);
 			gap: 5px;
 			}
+            #gayab1{
+                display: none;
+            }
+            #gayab2{
+                display: none;
+            }
 }

@@ -565,6 +565,7 @@ let closeMenu = menu.querySelector(".mobile-menu-close");
                    </g>
                </g>
                </svg></a>
+               
     </div>
  </div>
  
@@ -626,6 +627,7 @@ let closeMenu = menu.querySelector(".mobile-menu-close");
                       </div>
              </div>
           </li>
+        
           <li class="menu-item-has-children">
              <a href="about.html" style="font-size: 18px;     letter-spacing: 0.04em;">About <i class="fas fa-angle-down"></i></a>
              
@@ -634,8 +636,8 @@ let closeMenu = menu.querySelector(".mobile-menu-close");
              <a href="store.html" > <p style="font-size: 18px;    letter-spacing: 0.04em;">Store Locator </p><i class="fas fa-angle-down"></i></a>
              
           </li>
-             
-              
+    
+         
           
        </ul>
             
@@ -671,7 +673,7 @@ let closeMenu = menu.querySelector(".mobile-menu-close");
              </svg>
      </div></a>
  </div>
-  
+ 
 </div>`
  }
 
@@ -683,14 +685,14 @@ let closeMenu = menu.querySelector(".mobile-menu-close");
         <a href="#"><p>Contact Us</p></a>
         <a href="#"><p>FAQ</p></a>
         <a href="#"><p>Blog</p></a>
-        <a href="#"><p>Store Locator</p></a>
+        <a href="store.html"><p>Store Locator</p></a>
         <a href="#"><p>Careers</p></a>
     </div>
     <div>
         <h2>Policies</h2>
         <a href="#"><p>Shipping & Returns</p></a>
-        <a href="#"><p>Terms & Conditions</p></a>
-        <a href="#"><p>Privacy</p></a>
+        <a href="Terms&condition.html"><p>Terms & Conditions</p></a>
+        <a href="privacy.html"><p>Privacy</p></a>
         <a href="#"><p>CCPA</p></a>
         <a href="#"><p>Accessibility</p></a>
     </div>
@@ -781,3 +783,5 @@ function swiperfunctionality(){
 }
 
 export {toggle,navbar,footer,swiper,swiperfunctionality}
+
+
