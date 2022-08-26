@@ -1,37 +1,38 @@
 
 
-let cartData = JSON.parse(localStorage.getItem("cart"))
+let cartData = JSON.parse(localStorage.getItem("cart"))||[]
 // console.log(cartData);
 let arr = [];
 
+    if (cartData === "") {
 
-if (cartData === [] || cartData == null) {
+
+        let Title = document.createElement("h1");
+        Title.innerText = `Shopping cart is empty`
+        // let Line= document.createElement("hr");
+    
+        let des = document.createElement("p");
+        des.innerText = `You have no items in your shopping cart.`
+    
+        let btn = document.createElement("button");
+        btn.innerText = `Continue Shopping`
+        btn.setAttribute("id", "shoppingBtn")
+        btn.addEventListener("click", function () {
+            ADDCART()
+        })
+    
+        document.querySelector("#cartLogo").append(Title, des, btn);
+    
+    }
 
 
-    let Title = document.createElement("h1");
-    Title.innerText = `Shopping cart is empty`
-    // let Line= document.createElement("hr");
-
-    let des = document.createElement("p");
-    des.innerText = `You have no items in your shopping cart.`
-
-    let btn = document.createElement("button");
-    btn.innerText = `Continue Shopping`
-    btn.setAttribute("id", "shoppingBtn")
-    btn.addEventListener("click", function () {
-        ADDCART()
-    })
-
-    document.querySelector("#cartLogo").append(Title, des, btn);
-
-}
 
 
 function display(cartData) {
 
     document.querySelector("#cartLogo").innerHTML=null;
 
-    cartData.forEach(function (ele, index) {
+    cartData.forEach(function (el, index) {
        
 
 
@@ -45,7 +46,7 @@ function display(cartData) {
         Trash.setAttribute("id", "TrashImg");
 
         Trash.addEventListener("click", function () {
-            remove(ele, index)
+            remove(el, index)
         })
 
 
@@ -98,7 +99,7 @@ function ADDCART() {
 
 // remove function
 
-function remove(ele,index){
+function remove(el,index){
     let abc = cartData.filter(function(el,i){
 
         if(i == index)

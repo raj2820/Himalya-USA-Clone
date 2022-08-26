@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
+#footer_main1,#footer_main_inner1{
+	display: none;
+}
 #footer,footer{
     width: 100%;
     background-color: #eef2f0;
@@ -773,6 +775,9 @@ padding: 10px;
 		}
 		.logo{
 			margin-left:10px ;
+			}
+			#footer_main1,#footer_main_inner1{
+				display: block;
 			}
 }
 #footer-div h2{
