@@ -1,0 +1,242 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<style>
+   
+         #main{
+            height:70%;
+            width:100%;
+          
+            text-align: center;
+            margin-top: 100px;
+            font-size: 40px;
+            color: aliceblue;
+            background-image: url("https://i.shgcdn.com/f95290db-d02e-433c-9564-4766788d684c/-/format/auto/-/preview/3000x3000/-/quality/lighter/");
+            display: flex;
+    min-height: 500px;
+    align-items: center;
+   
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+         }
+         #hima{
+            display: grid;
+            height: 70px;
+          
+            grid-template-columns: repeat(5,1fr);
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+         }
+         #hima>div{
+           
+            text-align: center;
+            font-size: 30px;
+            margin-top: 30px;
+            color: rgba(0, 102, 102, 1);
+         }
+         #hima>:nth-child(1){
+            background-color: #006666;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+         }
+         #king,.first-div{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            height:800px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            
+         }
+         
+         #king,.first-div>:nth-child(2)>h1{
+            color: #006666;
+    font-weight: 600;
+            
+         }
+         #king,.first-div>:nth-child(2)>p{
+            font-size: 20px;
+    color: #333;
+    
+}
+         
+         #rani,.second-div{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+           
+            height:500px;
+
+         }
+         
+         #rani,.second-div>:nth-child(2)>img{
+            width:100%
+         }
+         #rani,.second-div>:nth-child(1)>h1{
+            color: #006666;
+    font-weight: 600;
+
+         }
+         #rani,.second-div>:nth-child(1)>p,.second-div>:nth-child(1)>p{
+            font-size: 20px;
+    color: #333;
+            
+            
+
+         }
+   
+    
+        #roots1,#roots2{
+            display: none;
+        }    
+        #roots1>:nth-child(1)>img{
+            width:90%;
+        }
+        #roots1>:nth-child(1)>p{
+            margin-left: 50px;
+        }
+        #top{
+/* background-image: url("https://i.shgcdn.com/f95290db-d02e-433c-9564-4766788d684c/-/format/auto/-/preview/3000x3000/-/quality/lighter/"); */
+    display: flex;
+    min-height: 500px;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+left: 0;
+right: 0;
+
+}
+#body-container{
+    width: 100%;
+   margin-top:-600px;
+   height: 600px;
+
+}
+#top>img{
+    width:100%;
+    height:100%
+}
+         
+         
+</style>
+    
+<body>
+    <header class="header">
+        <div class="container">
+           
+          
+        </div>
+    </header>
+    
+
+    
+    <div id="main" >
+        <h1>Our story</h1>
+        <h4>Founded in 1930, Himalaya remains family owned with
+
+            products offered in over 100 countries.</h4>
+    </div>
+    <div id="hima">
+        <div>OUR STORY</div>
+        <div onclick="pagechange()">OUR ROOTS</div>
+        <div>OUR PROCESS</div>
+        <div>OUR SCIENCE</div>
+        <div>OUR INITIATIVES</div>
+    </div>
+
+    <div id="king" class="first-div">
+        <div>
+            <img src="https://i.shgcdn.com/4075e3a0-9129-48bd-bfe7-42fc93fe2397/-/format/auto/-/preview/3000x3000/-/quality/lighter/">
+
+        </div>
+        <div>
+            <h1>From Humble Beginnings</h1>
+            <p>While riding through the forests of Burma, our founder, Mr. M. Manal, saw a villager pacify a restless elephant by feeding it the root of the plant Rauwolfia serpentina
+
+            </p>
+            <p>Once he fully understood the science behind this special botanical, Mr. Manal bought a hand-operated, tablet-compressing machine and began his work. At night, his shoulders would ache from producing a few hundred tablets, one small tablet at a time. But his hard work paid off. This remarkable plant would later become Serpina, the world’s first anti-hypertensive drug in 1934.</p>
+            <p>We remain in awe of the man who began our company, and the grandfather of our current CEO, Nabeel Manal. Himalaya’s legacy has always been one of researching nature and using the tools of modern science to develop and produce Ayurveda-based, pharmaceutical-grade herbal medicine products. And today, that legacy continues.</p>
+            <p>
+                Mr. Manal had a vision of helping people be well. Today, Himalaya Herbal Healthcare has turned a time-honored herbal tradition into a complete range of contemporary, proprietary formulas and single herbs dedicated to making the world well one person at a time.
+            </p>
+
+        </div>
+    </div>
+    <div id="rani" class="second-div">
+        <div>
+            <h1>The Himalaya Legacy Now Spans Over 90 Years</h1>
+
+            <p>Founded in 1930, the Himalaya legacy now spans over 90 years, stretching from one man, to his son, to his grandson. From our humble beginnings in India, our products are now offered in over 100 countries, yet we’re still family owned.</p>
+            <p>Himalaya offers a full line of clinically-studied herbal formulations, certified USDA organic Single herbs, and a full line of body care products. Integrating the principles of traditional medicine with modern science, Himalaya is a worldwide pioneer in the field of scientifically validated herbal healthcare.</p>
+            <p>products. Integrating the principles of traditional medicine with modern science, Himalaya is a worldwide pioneer in the field of scientifically validated herbal healthcare.</p>
+            
+            
+            
+        </div>
+        <div>
+            <img src="https://i.shgcdn.com/59ff8391-0e4c-47df-9848-556c4521753e/-/format/auto/-/preview/3000x3000/-/quality/lighter/">
+        </div>
+
+    </div>
+    <div id="roots1" class="first-div">
+        <div>
+            <img src="https://i.shgcdn.com/a802e384-7312-4d13-bda1-8859e1afaecf/-/format/auto/-/preview/3000x3000/-/quality/lighter/">
+
+
+        </div>
+        <div>
+            <h1>Purity and Efficacy</h1>
+            <p>The complexity and timing of the entire seed-to-shelf process for Himalaya and for the plants themselves, is highlighted by three important mandates: purity, efficacy, and batch-to-batch consistency.
+            
+            </p>
+            <p>We know the success of traditional plant medicine is based on several integral parts that extend from the most advanced agricultural research and practices, to extraction methodologies, to formulating approaches and dosage strategies</p>
+            <p>To accomplish all of this, Himalaya maintains total control over the farming, harvesting, research, manufacturing, and distribution of all our products.</p>
+            
+
+        </div>
+    </div>
+    <div id="roots2" class="second-div">
+        <div>
+            <h1>Our Farms</h1>
+
+<p>Himalaya's herbs are grown on over 1,000 acres of farmland through fair trade, farming partnerships. Herbs are also sustainably wildcrafted on over 5,000 acres.</p>
+<p>Farms are located in regions most suitable to the individual herb so that the best possible quality and potency are achieved in the harvest. Just as one wine grape has more character and flavor when grown in a very specific region, the plants used in healthcare often perform best when they’re grown and harvested in their own unique native soil.</p>
+
+            
+            
+        </div>
+        <div>
+            <img src="https://i.shgcdn.com/6fdef74e-1e57-4bd4-8f3f-617132184feb/-/format/auto/-/preview/3000x3000/-/quality/lighter/">
+
+        </div>
+
+    </div>
+    <footer>
+  
+    </footer>
+    
+
+</body>
+    
+    
+
+</html>
+<script type="module">
+    import {toggle,navbar,footer} from './navbar-footer.js'
+    console.log(navbar)
+    
+    let container=document.querySelector(".container")
+    container.innerHTML=navbar();
+    toggle()
+
+    let footerDiv=document.querySelector("footer")
+    footerDiv.innerHTML=footer()
+</script>
+
+<script src="about.js"></script>

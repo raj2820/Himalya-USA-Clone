@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adult Toothpaste
+    </title>
+    <link rel="icon" href="//cdn.shopify.com/s/files/1/0399/1728/9633/files/H_Logo-01_32x32.png?v=1591028931" type="image/png">
+    <link rel="stylesheet" href="hs.css">
+    <link rel="stylesheet" type="text/css" href="index.css">    
+   <!-- swiper css -->
+   <link rel="stylesheet" type="text/css" href="swiper-bundle.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container"></div>
+</header>
+    <h1>Adult Toothpaste
+    </h1>
+    <select id="sortName">
+        <option>Sort By Name</option>
+        <option value="Name Ascending">Name Ascending</option>
+        <option value="Name Descending"> Name Descending</option>
+        <option value="Price Ascending">Price Ascending</option>
+        <option value="Price Descending">Price Descending</option>
+      </select>
+      
+      <div id="hs">
+        <div id="side">
+          <h3>Product type</h3>
+          <a href="adult.html">Adult Toothpaste</a><br>
+          <a href="kids.html">Kids Toothpaste</a><br>
+          
+          
+        </div>      
+        <div id="container"></div>
+      </div>
+    
+    <div id="footer"></div>
+    
+</body>
+</html>
+<script type="module">
+  import {toggle,navbar,footer,swiper,swiperfunctionality} from './navbar-footer.js'
+    console.log(navbar)
+    
+    let container=document.querySelector(".container")
+    container.innerHTML=navbar();
+    toggle()
+
+    let footerDiv=document.getElementById("footer")
+    footerDiv.innerHTML=footer()
+    swiper()
+    swiperfunctionality
+    let data=[
+ {
+   "image": "https://himalayausa.com/collections/adult-toothpaste/products/neem-pomegranate-original-toothpaste",
+   "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/neem-pomegranate-original-toothpaste-399591_800x.png?v=1660858351",
+   "title": "Neem & Pomegranate Original Toothpaste",
+   "description": "Did you know that Neem and Pomegranate are two of history’s most famous traditional choices for cleaning? Neem and Pomegranate help fight plaque, brighten your teeth, and leave your mouth...",
+   "pt-btn-addtocart": "ADD TO CART",
+   "price": "$5.99"
+ },
+ {
+   "image": "https://himalayausa.com/collections/adult-toothpaste/products/simply-mint-whitening-toothpaste",
+   "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/simply-mint-whitening-toothpaste-687185_800x.png?v=1660858335",
+   "title": "Simply Mint Whitening Toothpaste",
+   "description": "Ditch your whitening routine and come to the plant-based side! Whitening Complete Care Simply Mint Toothpaste leverages the enzymes from Papaya and Pineapple to help whiten your teeth while removing...",
+   "pt-btn-addtocart": "ADD TO CART",
+   "price": "$5.99"
+ },
+ {
+   "image": "https://himalayausa.com/collections/adult-toothpaste/products/simply-mint-complete-care-toothpaste",
+   "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/simply-mint-complete-care-toothpaste-964667_800x.png?v=1660858348",
+   "title": "Simply Mint Complete Care Toothpaste",
+   "description": "Ahhhh. There’s nothing like the cool, refreshing flavor of Complete Care Simply Mint Toothpaste in the morning! This toothpaste will excite your senses with the cool, tingling flavor of Mint...",
+   "pt-btn-addtocart": "ADD TO CART",
+   "price": "$5.99"
+ },
+ {
+   "image": "https://himalayausa.com/collections/adult-toothpaste/products/simply-peppermint-whitening-toothpaste",
+   "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/simply-peppermint-whitening-toothpaste-812965_800x.png?v=1660858328",
+   "title": "Simply Peppermint Whitening Toothpaste",
+   "description": "Brace yourself! Our Whitening Complete Care Simply Peppermint Toothpaste offers a wide-awake Peppermint flavor with the antioxidants of Pomegranate and enzymes from Papaya and Pineapple to help whiten your teeth,...",
+   "pt-btn-addtocart": "ADD TO CART",
+   "price": "$5.99"
+ },
+ {
+   "image": "https://himalayausa.com/collections/adult-toothpaste/products/simply-cinnamon-complete-care-toothpaste",
+   "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/CC-Cinnamon---Box-Tube_800x.png?v=1597743708",
+   "title": "Simply Cinnamon Complete Care Toothpaste",
+   "description": "Wake up those taste buds! Nothing can kick start your day quite like the tingling sensation of Complete Care Simply Cinnamon Toothpaste. Get long-lasting fresh breath and a sense of...",
+   "pt-btn-addtocart": "ADD TO CART",
+   "price": "$5.99"
+ },
+ {
+   "image": "https://himalayausa.com/collections/adult-toothpaste/products/charcoal-black-seed-oil-whitening-antiplaque-toothpaste",
+   "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/charcoal-black-seed-oil-whitening-antiplaque-toothpaste-174005_800x.png?v=1660858351",
+   "title": "Charcoal & Black Seed Oil Whitening Antiplaque Toothpaste",
+   "description": "Let the powerful whitening action of Charcoal (derived from Coconut Shell Powder) and the famous cleansing ability of Black Seed Oil leave your mouth feeling fresher and brighter than ever....",
+   "pt-btn-addtocart": "",
+   "price": "5.33"
+ },
+ {
+   "image": "https://himalayausa.com/collections/adult-toothpaste/products/simply-peppermint-complete-care-toothpaste",
+   "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/simply-peppermint-complete-care-toothpaste-417879_800x.png?v=1660858326",
+   "title": "Simply Peppermint Complete Care Toothpaste",
+   "description": "Goooood morning! Complete Care Simply Peppermint Toothpaste will wake you right up, morning, noon or night! Get long-lasting fresh breath with the cooling and cleansing power of Peppermint, while you...",
+   "pt-btn-addtocart": "ADD TO CART",
+   "price": "$5.99"
+ },
+ {
+   "image": "https://himalayausa.com/collections/adult-toothpaste/products/turmeric-coconut-oil-whitening-antiplaque-toothpaste",
+   "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/turmeric-coconut-oil-whitening-antiplaque-toothpaste-868330_800x.jpg?v=1660813421",
+   "title": "Turmeric & Coconut Oil Whitening Antiplaque Toothpaste",
+   "description": "Golden yellow Turmeric, known for generations for its cleansing abilities, is combined with a kiss of soothing Coconut Oil and Mint-fresh flavor for a taste you’ll love, and a fresh...",
+   "pt-btn-addtocart": "ADD TO CART",
+   "price": "$5.99"
+ },
+ {
+   "image": "https://himalayausa.com/collections/adult-toothpaste/products/simply-spearmint-complete-care-toothpaste",
+   "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/simply-spearmint-complete-care-toothpaste-221182_800x.png?v=1660858355",
+   "title": "Simply Spearmint Complete Care Toothpaste",
+   "description": "What a sweet way to start the day! Complete Care Simply Spearmint Toothpaste brightens smiles with a cool, gentle sweetness that leaves you with a clean-feeling mouth and extra-fresh breath....",
+   "pt-btn-addtocart": "ADD TO CART",
+   "price": "$5.99"
+ },
+ {
+   "image": "https://himalayausa.com/collections/adult-toothpaste/products/bamboo-sea-salt-whitening-antiplaque-toothpaste",
+   "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/bamboo-sea-salt-whitening-antiplaque-toothpaste-363920_800x.png?v=1660858353",
+   "title": "Bamboo & Sea Salt Whitening Antiplaque Toothpaste",
+   "description": "Get the smile you’ve been looking for with gentle Bamboo, which is famous for its strong fibers and silica, and purified Sea Salt for a clean, fresh mouth and healthy-looking...",
+   "pt-btn-addtocart": "ADD TO CART",
+   "price": "$5.99"
+ },
+ {
+   "image": "https://himalayausa.com/collections/adult-toothpaste/products/xylitol-toothpaste",
+   "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/xylitol-toothpaste-556254_800x.png?v=1660858352",
+   "title": "Xylitol Toothpaste",
+   "description": "Brighten your smile with a sweet kiss of Xylitol, which helps reduce plaque with regular brushing, while enzymes from Papaya and Pineapple help whiten your teeth and remove surface stains....",
+   "pt-btn-addtocart": "",
+   "price": "5.66"
+ }
+]
+let cartArr=JSON.parse(localStorage.getItem("cart"))||[]
+   let cont=document.getElementById("container")
+   diaspalyTable(data)
+   function diaspalyTable(data){
+   cont.innerHTML=null
+    data.forEach((el)=> {
+        let div=document.createElement("div")
+        let image=document.createElement("img")
+        image.src=el.lazyload
+        let title=document.createElement("h3")
+        title.innerText=el.title
+        let price=document.createElement("h1")
+        price.innerText=el.price
+        let btn=document.createElement("button")
+        btn.innerText="ADD TO CART"
+        btn.addEventListener("click",function(){
+          addcart(el)
+        })
+        div.append(image,title,price,btn)
+        cont.append(div)
+        
+    });
+   }
+ 
+   function addcart(el){
+    cartArr.push(el)
+    console.log(cartArr)
+    localStorage.setItem("cart",JSON.stringify(cartArr))
+    alert("Added to cart")
+    
+}
+
+
+
+
+  
+document.querySelector("#sortName").addEventListener("change",nameSort)
+
+    function nameSort(){
+      let selected=document.querySelector("#sortName").value
+      if(selected=="Name Ascending"){
+        
+        data.sort(function(a,b){
+        let x=a.title.toUpperCase()
+        let y=b.title.toUpperCase()
+          if(x>y) return 1
+          if(y>x) return -1
+          return 0
+        })
+        
+      }
+      if(selected=="Name Descending"){
+        data.sort(function(a,b){
+        let x=a.title.toUpperCase()
+        let y=b.title.toUpperCase()
+          if(x>y) return -1
+          if(y>x) return  1
+          return 0
+        })
+        
+        
+      }
+      if(selected=="Price Ascending"){
+        
+        data.sort(function(a,b){
+        let x=a.price.toUpperCase()
+        let y=b.price.toUpperCase()
+          if(x>y) return 1
+          if(y>x) return -1
+          return 0
+        })
+        
+      }
+      if(selected=="Price Descending"){
+        data.sort(function(a,b){
+        let x=a.price.toUpperCase()
+        let y=b.price.toUpperCase()
+          if(x>y) return -1
+          if(y>x) return  1
+          return 0
+        })
+        
+        
+      }
+      
+      diaspalyTable(data)
+      
+    }
+</script>
