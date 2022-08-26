@@ -2,6 +2,8 @@ let roots1=document.getElementById("roots1")
 let roots2=document.getElementById("roots2")
 let king=document.getElementById("king")
 let rani=document.getElementById("rani")
+let our=document.getElementById("our")
+
 function pagechange(){
    roots1.style="display:block; display: grid;grid-template-columns: repeat(2,1fr);height:800px;box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;"
    roots2.style="display:block; display: grid;grid-template-columns: repeat(2,1fr);height:500px;"
@@ -14,5 +16,5 @@ function nextpage(){
 rani.style="display:none"
 roots1.style="display:none"
 roots2.style="display:none"
-outerH.style="display:block;display:grid:grid-template-columns:repeat(2,1fr);height:400px"
+
 }
