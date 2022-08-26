@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liver & Cleanse</title>
+    <link rel="icon" href="//cdn.shopify.com/s/files/1/0399/1728/9633/files/H_Logo-01_32x32.png?v=1591028931" type="image/png">
+    <link rel="stylesheet" href="hs.css">
+    <link rel="stylesheet" type="text/css" href="index.css">    
+   <!-- swiper css -->
+   <link rel="stylesheet" type="text/css" href="swiper-bundle.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container"></div>
+</header>
+    <h1>Liver & Cleanse</h1>
+    <select id="sortName">
+      <option>Sort By Name</option>
+      <option value="Name Ascending">Name Ascending</option>
+      <option value="Name Descending"> Name Descending</option>
+      <option value="Price Ascending">Price Ascending</option>
+      <option value="Price Descending">Price Descending</option>
+    </select>
+    
+    <div id="hs">
+      <div id="side">
+        <h1><a href="hs.html">Health-Interests</a></h1>
+        <a href="blood.html">Blood Suger</a><br>
+        <a href="brain.html">Brain & Cognitive</a><br>
+        <a href="digesition.html">Digestion</a><br>
+        <a href="energy.html">Energy & Vitality</a><br>
+        <a href="hair.html">Hair,Skin Nails</a><br>
+        <a href="heart.html">Heart & Cardio</a><br>
+        <a href="immune.html">Immune Support</a><br>
+        <a href="joint.html">Joint & Mobility</a><br>
+        <a href="liver.html">Liver & Cleanse</a><br>
+        <a href="mens.html">Men's Wellness</a><br>
+        <a href="res.html">Respiratory</a><br>
+        <a href="sleep.html">Sleep</a><br>
+        <a href="stres.html">Stress & Mood</a><br>
+        <a href="uranary.html">Urinary</a><br>
+        <a href="weight.html">Weight Management</a><br>
+        <a href="womens.html">Women's Wellness</a><br>
+      </div>      
+      <div id="container"></div>
+    </div>
+    <div id="footer"></div>
+    
+</body>
+</html>
+<script type="module">
+  import {toggle,navbar,footer,swiper,swiperfunctionality} from './navbar-footer.js'
+    console.log(navbar)
+    
+    let container=document.querySelector(".container")
+    container.innerHTML=navbar();
+    toggle()
+
+    let footerDiv=document.getElementById("footer")
+    footerDiv.innerHTML=footer()
+    swiper()
+    swiperfunctionality()
+    let data=[
+    {
+      "image": "https://himalayausa.com/collections/health-interests/products/back-to-balance-cleanse",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/back-to-balance-cleanse-297598_800x.png?v=1660858351",
+      "title": "Back to Balance Cleanse™",
+      "price": "$29.95",
+      "description": "To keep your body cleaner and feel less bloated, you deserve more than just a quick herbal purge. You deserve the morning and evening wisdom of Himalaya Back to Balance...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$29.95",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/health-interests/products/boswellia",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/boswellia-829056_800x.png?v=1660858338",
+      "title": "Boswellia",
+      "price": "$15.95",
+      "description": "The crystalized resin from the Indian Frankincense tree known as Boswellia is famous throughout herbal history for supporting muscle relaxation and normal joint function to promote flexibility, movement and range...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$15.95",
+      "active": "60 Capsules",
+      "active href": "https://himalayausa.com/collections/health-interests?view=all#",
+      "pt-options-swatch": "120 Capsules",
+      "pt-options-swatch href": "https://himalayausa.com/collections/health-interests?view=all#"
+    },
+    {
+      "image": "https://himalayausa.com/collections/health-interests/products/chyavanprash",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/chyavanprash-105275_800x.png?v=1660858328",
+      "title": "Chyavanprash",
+      "price": "$15.95",
+      "description": "Chyavanprash has been used for centuries as an Ayurvedic superfood for energy, strength, vitality, immunity and good digestion. Himalaya Chyavanprash is an easy-to-take, convenient once-a-day vegetarian capsule.* Suggested Use Adults...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$15.95",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/health-interests/products/comfortcleanse",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/comfortcleanse-636861_800x.png?v=1660858348",
+      "title": "ComfortCleanse®",
+      "price": "$22.95",
+      "description": "If you're seeking gentle, reliable colon cleansing and relief from occasional constipation, without the purging and cramping of other herbs you’ve tried, Himalaya’s ComfortCleanse with no Senna and no Cascara...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$22.95",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/health-interests/products/curcumin-complete",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/curcumin-complete-187497_800x.png?v=1660858326",
+      "title": "Curcumin Complete™",
+      "price": "$19.99",
+      "description": "Try Curcumin Complete to promote range of motion and comfortable movement, and to assist your body in its own natural mechanisms that affect your joints.* Suggested Use Adults take 1...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$19.99",
+      "active": "30 Capsules",
+      "active href": "https://himalayausa.com/collections/health-interests?view=all#",
+      "pt-options-swatch": "60 Capsules",
+      "pt-options-swatch href": "https://himalayausa.com/collections/health-interests?view=all#"
+    },
+    ]
+    let cartArr=JSON.parse(localStorage.getItem("cart"))||[]
+   let cont=document.getElementById("container")
+   diaspalyTable(data)
+   function diaspalyTable(data){
+   cont.innerHTML=null
+    data.forEach((el)=> {
+        let div=document.createElement("div")
+        let image=document.createElement("img")
+        image.src=el.lazyload
+        let title=document.createElement("h3")
+        title.innerText=el.title
+        let price=document.createElement("h1")
+        price.innerText=el.price
+        let btn=document.createElement("button")
+        btn.innerText="ADD TO CART"
+        btn.addEventListener("click",function(){
+          addcart(el)
+        })
+        div.append(image,title,price,btn)
+        cont.append(div)
+        
+    });
+   }
+ 
+   function addcart(el){
+    cartArr.push(el)
+    console.log(cartArr)
+    localStorage.setItem("cart",JSON.stringify(cartArr))
+    alert("Added to cart")
+    
+}
+
+
+
+
+  
+document.querySelector("#sortName").addEventListener("change",nameSort)
+
+    function nameSort(){
+      let selected=document.querySelector("#sortName").value
+      if(selected=="Name Ascending"){
+        
+        data.sort(function(a,b){
+        let x=a.title.toUpperCase()
+        let y=b.title.toUpperCase()
+          if(x>y) return 1
+          if(y>x) return -1
+          return 0
+        })
+        
+      }
+      if(selected=="Name Descending"){
+        data.sort(function(a,b){
+        let x=a.title.toUpperCase()
+        let y=b.title.toUpperCase()
+          if(x>y) return -1
+          if(y>x) return  1
+          return 0
+        })
+        
+        
+      }
+      if(selected=="Price Ascending"){
+        
+        data.sort(function(a,b){
+        let x=a.price.toUpperCase()
+        let y=b.price.toUpperCase()
+          if(x>y) return 1
+          if(y>x) return -1
+          return 0
+        })
+        
+      }
+      if(selected=="Price Descending"){
+        data.sort(function(a,b){
+        let x=a.price.toUpperCase()
+        let y=b.price.toUpperCase()
+          if(x>y) return -1
+          if(y>x) return  1
+          return 0
+        })
+        
+        
+      }
+      
+      diaspalyTable(data)
+      
+    }
+</script>

@@ -25,7 +25,7 @@ html, body {
     /* border: 1px solid red; */
     max-width: 350px;
     margin: auto;
-    padding-top: 150px;
+    padding-top: 80px;
     padding-bottom: 50px;
 }
 
@@ -127,8 +127,3 @@ sup {
     
 }
 
-
-#create_account{
-    text-align: center;
-    word-spacing: 10px;
-}

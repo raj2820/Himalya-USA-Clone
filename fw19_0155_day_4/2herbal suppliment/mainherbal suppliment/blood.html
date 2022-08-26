@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Sugar</title>
+    <link rel="icon" href="//cdn.shopify.com/s/files/1/0399/1728/9633/files/H_Logo-01_32x32.png?v=1591028931" type="image/png">
+    <link rel="stylesheet" href="hs.css">
+    <link rel="stylesheet" type="text/css" href="index.css">    
+   <!-- swiper css -->
+   <link rel="stylesheet" type="text/css" href="swiper-bundle.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container"></div>
+</header>
+    <h1>Blood Sugar</h1>
+    <select id="sortName">
+      <option>Sort By Name</option>
+      <option value="Name Ascending">Name Ascending</option>
+      <option value="Name Descending"> Name Descending</option>
+      <option value="Price Ascending">Price Ascending</option>
+      <option value="Price Descending">Price Descending</option>
+    </select>
+    
+    <div id="hs">
+      <div id="side">
+        <h1><a href="hs.html">Health-Interests</a></h1>
+        <a href="blood.html">Blood Suger</a><br>
+        <a href="brain.html">Brain & Cognitive</a><br>
+        <a href="digesition.html">Digestion</a><br>
+        <a href="energy.html">Energy & Vitality</a><br>
+        <a href="hair.html">Hair,Skin Nails</a><br>
+        <a href="heart.html">Heart & Cardio</a><br>
+        <a href="immune.html">Immune Support</a><br>
+        <a href="joint.html">Joint & Mobility</a><br>
+        <a href="liver.html">Liver & Cleanse</a><br>
+        <a href="mens.html">Men's Wellness</a><br>
+        <a href="res.html">Respiratory</a><br>
+        <a href="sleep.html">Sleep</a><br>
+        <a href="stres.html">Stress & Mood</a><br>
+        <a href="uranary.html">Urinary</a><br>
+        <a href="weight.html">Weight Management</a><br>
+        <a href="womens.html">Women's Wellness</a><br>
+      </div>      
+      <div id="container"></div>
+    </div>
+    <div id="footer"></div>
+    
+</body>
+</html>
+<script type="module">
+  import {toggle,navbar,footer,swiper,swiperfunctionality} from './navbar-footer.js'
+    console.log(navbar)
+    
+    let container=document.querySelector(".container")
+    container.innerHTML=navbar();
+    toggle()
+
+    let footerDiv=document.getElementById("footer")
+    footerDiv.innerHTML=footer()
+    swiper()
+    swiperfunctionality()
+
+
+
+
+
+
+
+
+
+
+    let data=[
+    {
+      "image": "https://himalayausa.com/collections/health-interests/products/chyavanprash",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/chyavanprash-105275_800x.png?v=1660858328",
+      "title": "Chyavanprash",
+      "price": "$15.95",
+      "description": "Chyavanprash has been used for centuries as an Ayurvedic superfood for energy, strength, vitality, immunity and good digestion. Himalaya Chyavanprash is an easy-to-take, convenient once-a-day vegetarian capsule.* Suggested Use Adults...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$15.95",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/health-interests/products/glucocare",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/glucocare-445898_800x.png?v=1660858325",
+      "title": "GlucoCare®",
+      "price": "$26.49",
+      "description": "GlucoCare contains plant-based ingredients used for centuries in Ayurveda for supporting blood sugar levels already within normal range. It also provides support to the pancreas beta cells that store and...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$26.49",
+      "active": "90 Capsules",
+      "active href": "https://himalayausa.com/collections/health-interests?view=all#",
+      "pt-options-swatch": "180 Capsules",
+      "pt-options-swatch href": "https://himalayausa.com/collections/health-interests?view=all#"
+    },
+    {
+      "image": "https://himalayausa.com/collections/health-interests/products/organic-bitter-melon",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/organic-bitter-melon-139522_800x.png?v=1660858343",
+      "title": "Organic Bitter Melon",
+      "price": "$12.95",
+      "description": "In India and other parts of Asia, Bitter Melon is a commonly-enjoyed food. Himalaya Organic Bitter Melon supports your body’s blood sugar levels already within normal range. When taken along...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$12.95",
+      "active": "30 Caplets",
+      "active href": "https://himalayausa.com/collections/health-interests?view=all#",
+      "pt-options-swatch": "60 Caplets",
+      "pt-options-swatch href": "https://himalayausa.com/collections/health-interests?view=all#"
+    },
+    {
+      "image": "https://himalayausa.com/collections/health-interests/products/organic-gymnema",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/organic-gymnema-953558_800x.png?v=1660813421",
+      "title": "Organic Gymnema",
+      "price": "$14.95",
+      "description": "Gymnema supports blood sugar levels already within a normal range. Also, along with a healthy diet and regular exercise, Gymnema can help provide sweet support for your weight management. Himalaya...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$14.95",
+      "active": "30 Caplets",
+      "active href": "https://himalayausa.com/collections/health-interests?view=all#",
+      "pt-options-swatch": "60 Caplets",
+      "pt-options-swatch href": "https://himalayausa.com/collections/health-interests?view=all#"
+    }
+
+    ]
+
+    let cartArr=JSON.parse(localStorage.getItem("cart"))||[]
+   let cont=document.getElementById("container")
+   diaspalyTable(data)
+   function diaspalyTable(data){
+   cont.innerHTML=null
+    data.forEach((el)=> {
+        let div=document.createElement("div")
+        let image=document.createElement("img")
+        image.src=el.lazyload
+        let title=document.createElement("h3")
+        title.innerText=el.title
+        let price=document.createElement("h1")
+        price.innerText=el.price
+        let btn=document.createElement("button")
+        btn.innerText="ADD TO CART"
+        btn.addEventListener("click",function(){
+          addcart(el)
+        })
+        div.append(image,title,price,btn)
+        cont.append(div)
+        
+    });
+   }
+ 
+   function addcart(el){
+    cartArr.push(el)
+    console.log(cartArr)
+    localStorage.setItem("cart",JSON.stringify(cartArr))
+    
+    
+}
+
+
+
+
+  
+document.querySelector("#sortName").addEventListener("change",nameSort)
+
+    function nameSort(){
+      let selected=document.querySelector("#sortName").value
+      if(selected=="Name Ascending"){
+        
+        data.sort(function(a,b){
+        let x=a.title.toUpperCase()
+        let y=b.title.toUpperCase()
+          if(x>y) return 1
+          if(y>x) return -1
+          return 0
+        })
+        
+      }
+      if(selected=="Name Descending"){
+        data.sort(function(a,b){
+        let x=a.title.toUpperCase()
+        let y=b.title.toUpperCase()
+          if(x>y) return -1
+          if(y>x) return  1
+          return 0
+        })
+        
+        
+      }
+      if(selected=="Price Ascending"){
+        
+        data.sort(function(a,b){
+        let x=a.price.toUpperCase()
+        let y=b.price.toUpperCase()
+          if(x>y) return 1
+          if(y>x) return -1
+          return 0
+        })
+        
+      }
+      if(selected=="Price Descending"){
+        data.sort(function(a,b){
+        let x=a.price.toUpperCase()
+        let y=b.price.toUpperCase()
+          if(x>y) return -1
+          if(y>x) return  1
+          return 0
+        })
+        
+        
+      }
+      
+      diaspalyTable(data)
+      
+    }
+</script>

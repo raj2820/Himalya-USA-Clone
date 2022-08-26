@@ -8,11 +8,3 @@ function pagechange(){
 king.style="display:none"
 rani.style="display:none"
 }
-function nextpage(){
-    
-    king.style="display:none"
-rani.style="display:none"
-roots1.style="display:none"
-roots2.style="display:none"
-outerH.style="display:block;display:grid:grid-template-columns:repeat(2,1fr);height:400px"
-}
