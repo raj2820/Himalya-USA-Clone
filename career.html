@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Privacy Policy
+        – Himalaya Wellness (US)</title>
+    <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0399/1728/9633/files/H_Logo-01_32x32.png?v=1591028931" type="image/png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="stylesheet" type="text/css" href="css/font-awesome.css"> -->
+	<link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="career.css">
+
+</head>
+<body>
+ 
+ <!-- header start -->
+ <header class="header">
+ 	<div class="container">
+        
+       
+ 	</div>
+ </header>
+ <!-- header end -->
+
+ <!-- banner start -->
+ <div id=content>
+     <div id="cnt2">
+        <h2>Careers</h2>  
+     </div>
+     <div id="cnn">
+        <h1>Life at Himalaya</h1>
+        <p id="p">At Himalaya, we strive to recruit, hire, and retain a group of people who believe in our company and community mission. When you are a part of our team you will find yourself in an environment that cultivates career growth and opportunities. As the Himalaya team grows, we know it is of the utmost importance to invest in exceptional team members that contribute to our mission and vision.</p>
+     </div>
+     <div id="cn">
+        <h1>Our Mission</h1>
+        <div id=sub>
+            <div>
+                <img src="https://i.shgcdn.com/b17c4420-86b2-4912-936a-07eb7c69e1cf/-/format/auto/-/preview/3000x3000/-/quality/lighter/">
+                <h3>ESTABLISH THE BRAND</h3>
+                <p>Establish Himalaya as a science-based, problem-solving, head-to-heel brand, harnessed from nature’s wealth and characterized by trust and healthy lives.</p>
+            </div>
+            <div>
+                <img src="https://i.shgcdn.com/2c4f6909-cef4-47fb-bc55-17f643169fb8/-/format/auto/-/preview/3000x3000/-/quality/lighter/">
+                <h3>DEVELOP MARKETS</h3>
+                <p>Develop markets worldwide with an in-depth and long-term approach, maintaining at each step the highest ethical standards.</p>
+            </div>
+            <div id=th>
+                <img src="https://i.shgcdn.com/880d7b5f-07ac-43b7-b079-311585d62e42/-/format/auto/-/preview/3000x3000/-/quality/lighter/">
+                <h3>SEED-TO-SHELF</h3>
+                <p>Respect, collaborate with and utilize the talents of each member of the Himalaya family and the local communities where Himalaya products are developed and/or consumed, to drive our seed-to-shelf policy and to rigorously adopt eco-friendly practices to support the environment we inhabit.</p>
+            </div>
+            <div>
+                <img src="https://i.shgcdn.com/d4e9a260-be18-4511-b70b-44711c4d320e/-/format/auto/-/preview/3000x3000/-/quality/lighter/">
+                <h3>EXCEED EXPECTATIONS</h3>
+                <p>Ensure that each Himalaya employee strongly backs the Himalaya promise to exceed the expectations of the consumer, each time and every time. Nothing less is acceptable.</p>
+            </div>
+        </div>
+     </div>
+     <div id="lst">
+        <h3>Applying for a Position</h3>
+        <p>Himalaya Wellness is an Equal Opportunity employer. All qualified applicants will receive consideration for employment without regard to race, national origin, age, sex, religion, disability, sexual orientation, marital status, veteran status, gender identity or expression, or any other basis protected by local, state or federal law. This policy applies with regard to all aspects of one’s employment, including hiring, transfer, promotion, compensation, eligibility for benefits and termination. Himalaya Drug Company is committed to offering reasonable accommodations to job applicants with disabilities.</p>
+     </div>
+     <h1 id="h1">Open Positions</h1>
+     <div id="end">
+        <div id="AC"onclick="acfun()">
+            <h4>Key Account Manager - Amazon</h4>
+
+        </div>
+        <div id="AC-2"onclick="ac_closefun()">
+                
+                <h5>Position/Title: Key Account Manager - Amazon</h5>
+
+             <h5>Department: Director of Sales E-commerce</h5>                
+        </div>
+        
+        <div>
+            <h4>Financial Analyst</h4>
+        </div>
+        <div>
+            <h4>Ecommerce Marketing Manager - Amazon (Remote)</h4>
+        </div>
+        <div>
+            <h4> Inventory Planner/Analyst</h4>
+        </div>
+        <div>
+            <h4>Brand Manager - North America</h4>
+        </div>
+     </div>
+ </div>
+ 
+        
+        <footer>
+  
+        </footer>
+<!-- <script src="navbar-style.js"></script> -->
+</body>
+</html>
+<script type="module">
+    import {toggle,navbar,footer} from './navbar-footer.js'
+    console.log(navbar)
+    
+    let container=document.querySelector(".container")
+    container.innerHTML=navbar();
+    toggle()
+
+    let footerDiv=document.querySelector("footer")
+    footerDiv.innerHTML=footer()
+</script>
+<script>
+    let Ac=document.getElementById("AC")
+    let Ac2=document.getElementById("AC-2")
+   function acfun(){
+    Ac2.style=" display:block; width:100%;height:200px; margin-bottom:3px;margin-top:-3px;background-color:white;color:black"
+   }
+   function ac_closefun(){
+    Ac2.style="display:none"
+   }
+</script>

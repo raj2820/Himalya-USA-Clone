@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Himalaya Wellness: Blog-page=1</title>
+    <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0399/1728/9633/files/H_Logo-01_32x32.png?v=1591028931" type="image/png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="blog.css">
+    <style>
+        #one{
+            border:1px solid black;
+        }
+    
+    </style>
+  
+</head>
+<body>
+ <!-- header start -->
+ <header class="header">
+    <div class="container">
+    </div>
+</header>
+
+ 
+    <h1 class="top">Health</h1>
+    <div class="port">
+    </div>
+    <div id="btn">
+        <button id="one" onload="one()">1</button>
+        <button id="two" onclick="two()">2</button>
+        <button id="three" onclick="three()">3</button>
+    </div>
+ 
+<footer></footer>
+</body>
+</html>
+<script type="module">
+    import {toggle,navbar,footer} from './navbar-footer.js'
+    console.log(navbar)
+    
+    let container=document.querySelector(".container")
+    container.innerHTML=navbar();
+    toggle()
+
+    let footerDiv=document.querySelector("footer")
+    footerDiv.innerHTML=footer()
+</script>
+<script>
+let x=document.querySelector(".port")
+let data=[
+{
+image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/articles/improve-your-mood-by-supporting-your-gut-health-609785_1024x1024.jpg?v=1660813332",
+title:"Improve your mood by Supporting your Get Health",
+description:"Did you know that your gut influences your body’s overall health? Your gut is home to more than 100 trillion bacteria that play a very important role in your overall health.",
+dt:"June 27, 2022  in Health",
+},
+{
+image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/articles/ayurvedic-herbs-that-support-cognitive-function-can-improve-mood-912835_1024x1024.jpg?v=1660813340",
+title:"Ayurvedic Herbs That Support Cognitive Function Can Improve Mood",
+description:"Let's look at a few of the most common Ayurvedic herbs that can help give your brain and body the support it needs to get back to balance and functioning well.",
+dt:"June 16, 2022  in Health",
+},
+{
+image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/articles/10-emotional-signs-of-stress-what-to-do-about-it-146867_1024x1024.jpg?v=1660813336",
+title:"10 Emotional Signs of Stress (& What do Do About It)",
+description:"Experiencing occasional stress is a normal part of life, but when these feelings begin to affect our day-to-day routines, our ability to perform at work or in school.",
+dt:"June 09, 2022  in Health",
+},
+{
+image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/articles/the-power-of-adaptogens-and-what-they-can-do-for-stress-mood-857467_1024x1024.jpg?v=1660813344",
+title:"The Power of Adaptogens and What They Can Do For Stress + Mood",
+description:"Ayurvedic medicine is a “whole body” approach to wellness. It’s based on the belief that a balanced mind, body, and spirit promotes well-being.",
+dt:"June 06, 2022  in Health",
+},
+{
+image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/articles/a-balanced-lifestyle-starts-from-within-800779_1024x1024.jpg?v=1660813354",
+title:"A Balanced Lifestyle Starts from Within",
+description:"There are a number of simple ways to combat the things that cause us stress that we can start doing right now to improve our mood and bring us back to balance.",
+dt:"May 17, 2022  in Health",
+},
+{
+image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/articles/our-favorite-calming-herbs-to-promote-a-normal-stress-response-297769_1024x1024.jpg?v=1660813350",
+title:"Our Favorite Calming Herbs to Promote a Normal Stress Response",
+description:"If you are interested in natural products that work to help your body respond to stress in a safe and practical way, then you may have heard of adaptogens.",
+dt:"May 26, 2022  in Health",
+},
+{
+image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/articles/6-supplements-to-support-your-mood-while-working-from-home-368884_1024x1024.jpg?v=1660813361",
+title:"6 Supplements to Support Your Mood While Working from Home",
+description:"Whether in the office or at home, we could all benefit from something that promotes a normal stress and mood response as we take on our various everyday challenges.",
+dt:"April 19, 2022  in Health",
+},
+{
+image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/articles/bamboo-toothpaste-fall-in-love-with-a-plant-based-alternative-911719_1024x1024.jpg?v=1660858695",
+title:"Bamboo Toothpaste — Fall in Love with a Plant-Based Alternative",
+description:"Bamboo Toothpaste — Fall in Love with a Plant-Based Alternative...",
+dt:"September 08, 2021  in Health",
+},
+{
+image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/articles/moody-stressed-lets-talk-adaptogens-704673_1024x1024.jpg?v=1660813364",
+title:"Moody? Stressed? Let's Talk Adaptogens",
+description:"Adaptogens have supportive properties that can counteract stress and support your body’s response to stress..",
+dt:"April 19, 2022  in Health",
+},
+
+
+];
+for(let i=0;i<data.length;i++){
+    let j=document.createElement("div");
+    let p=document.createElement("img");
+ p.setAttribute("src",data[i].image)
+ let m=document.createElement("h4");
+ m.innerText=data[i].title
+ let mm=document.createElement("p");
+ mm.innerText=data[i].description
+ let n=document.createElement("p");
+ n.innerText=data[i].dt;
+ j.append(p,m,mm,n)
+ x.append(j)
+}
+let two=()=>{
+    window.location.href="blog2.html"
+}
+let three=()=>{
+    window.location.href="blog3.html"
+}
+let one=()=>{
+    window.location.href="blog.html"
+}
+
+</script>

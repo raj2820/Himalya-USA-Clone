@@ -1,0 +1,138 @@
+#content{
+    margin-top:160px;
+     width:100%;
+     height:1800px;
+ }
+ #content>#cnt2{
+     /* border:1px solid rgb(226, 19, 19); */
+     width:100%;
+     height:300px;
+     margin-top:20px;
+     background-image: url("https://i.shgcdn.com/73595007-ea45-4947-9f96-d4ae9f47f37c/-/format/auto/-/preview/3000x3000/-/quality/lighter/");
+     background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    background-position: center center;
+ }
+ #content>#cnt2>h2{
+    color: rgba(255, 255, 255, 1);
+    font-weight: 900;
+    font-family: "Poppins";
+    font-style: 72;
+    font-size: 72px;
+    line-height: 1.25em;
+    letter-spacing:2px ;
+    text-align: left;
+    padding-top: 90px;
+    margin-left: 150px;
+}
+#content>#cnn{
+    /* border:1px solid #008000; */
+    width:85%;
+    height:200px;
+    margin:auto;
+    margin-top: 30px;
+}
+h1{
+    text-align:center ;
+    color: rgba(3, 98, 105, 1);
+    font-weight:200 ;
+    font-style:72;
+    font-size: 32px;
+}
+#p{
+    margin-top: 20px;
+    width:94%;
+    text-align: center;
+    margin-left:30px;
+}
+#content>#cn{
+    /* border:1px solid green; */
+    width:85%;
+    height:450px;
+    margin:auto;
+    margin-top: 30px;
+}
+#content>#cn>#sub{
+    display:flex;
+    /* border:1px solid green; */
+    width:100%;
+    height:360px;
+    margin:auto;
+    margin-top:30px;
+    gap:27px;
+}
+#sub>div{
+    /* border:1px solid rgb(13, 0, 128); */
+    width:30%;
+    
+}
+#sub>div>img{
+    width:26%;
+}
+#sub>div>h3{
+    color: rgba(3, 98, 105, 1);
+    margin-top:5px; 
+}
+#th>img{
+    margin-top:16px;
+    width:39%;
+}
+#sub>div>p{
+    text-align: left;
+    margin-top: 20px;
+}
+#content>#lst{
+    /* border:1px solid green; */
+    width:85%;
+    height:250px;
+    margin:auto;
+    margin-top: 30px;
+    background-color:rgba(3, 98, 105, 1); 
+    color:white;
+}
+#lst>h3{
+    text-align: center;
+    margin-top:30px;
+    font-size: 25px;
+}
+#lst>p{
+    margin-top: 17px;
+    text-align: center;
+}
+ #h1{
+    color:black;
+    margin-top:30px;
+    font-weight:500;
+ }
+#end{
+        width:85%;
+        height:300px;
+        margin:auto;
+        margin-top:30px;
+       /* display:grid;
+       grid-template-columns: repeat(1,1fr); */
+       
+    }
+#content>#end>div{
+    display: flex;
+    /* justify-content:center ; */
+    align-items:center ;
+    width:100%;
+    height:49px;
+    /* border:1px solid red; */
+    background-color:rgba(3, 98, 105, 1);  
+    color:white;
+   margin-bottom:3px;
+    
+}
+h4{
+    margin-top: 5px;
+    font-size:15px;
+    padding-left: 18px;
+}
+#AC-2{
+    display:none;
+}
+
+ 

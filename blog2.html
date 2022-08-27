@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Himalaya Wellness: Blog-page=1</title>
+    <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0399/1728/9633/files/H_Logo-01_32x32.png?v=1591028931" type="image/png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="blog.css">
+    <style>
+        #two{
+            border:1px solid black;
+        }
+    
+    </style>
+  
+</head>
+<body>
+ <!-- header start -->
+ <header class="header">
+    <div class="container">
+    </div>
+</header>
+
+ 
+    <h1 class="top">Health</h1>
+    <div class="port">
+    </div>
+    <div id="btn">
+        <button id="one" onclick="one()">1</button>
+        <button id="two" onload="two()">2</button>
+        <button id="three" onclick="three()">3</button>
+    </div>
+ 
+<footer></footer>
+</body>
+</html>
+<script type="module">
+    import {toggle,navbar,footer} from './navbar-footer.js'
+    console.log(navbar)
+    
+    let container=document.querySelector(".container")
+    container.innerHTML=navbar();
+    toggle()
+
+    let footerDiv=document.querySelector("footer")
+    footerDiv.innerHTML=footer()
+</script>
+<script>
+let x=document.querySelector(".port")
+let data=[
+{
+image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/articles/did-you-know-ashwagandha-did-all-of-this-562605_1024x1024.jpg?v=1660858698",
+title:"Did You Know Ashwagandha Did All of This?",
+description:" Did You Know Ashwagandha Did All of This? Ashwagandha is...",
+dt:"August 12, 2020  in Health",
+},
+{
+image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/articles/the-whitening-power-of-charcoal-toothpaste-179164_1024x1024.jpg?v=1660858701",
+title:"The Whitening Power of Charcoal Toothpaste",
+description:"The Whitening Power of Charcoal Toothpaste We’re always looking for...",
+dt:"June 10, 2021  in Health",
+},
+{
+image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/articles/clean-without-the-compromise-with-fluoride-free-toothpaste-903837_1024x1024.jpg?v=1660858702",
+title:"Clean Without the Compromise with Fluoride-Free Toothpaste",
+description:"Clean Without the Compromise with Fluoride-Free Toothpaste Your smile is...",
+dt:"April 06, 2021  in Health",
+},
+{
+image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/articles/manage-your-stress-with-stress-relief-supplements-210677_1024x1024.jpg?v=1660858704",
+title:"Manage Your Stress Herbally",
+description:"Manage Your Stress Herbally As human beings, our bodies are...",
+dt:"March 29, 2021  in Health",
+},
+{
+image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/articles/ashwagandha-supplements-bring-on-the-balance-568351_1024x1024.jpg?v=1660858706",
+title:"Ashwagandha: Bring on the Balance",
+description:"Ashwagandha: Bring on the Balance Himalaya’s dedication to the traditional...",
+dt:"March 29, 2021  in Health",
+},
+{
+image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/articles/the-benefits-of-using-a-soap-free-face-wash-255635_1024x1024.jpg?v=1660858709",
+title:"The Benefits of Using a Soap Free Face Wash",
+description:"The Benefits of Using a Soap Free Face Wash Washing...",
+dt:"August 12, 2020  in Health",
+},
+{
+image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/articles/help-fight-acne-from-the-inside-out-949825_1024x1024.jpg?v=1660858710",
+title:"Help Fight Acne from the Inside Out",
+description:"Help Fight Acne from the Inside Out Acne is a...",
+dt:"August 12, 2020  in Health",
+},
+{
+image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/articles/herbs-good-for-your-hair-648007_1024x1024.jpg?v=1660858713",
+title:"Herbs That Are Good for Your Hair Caring for your...",
+description:"Herbs That Are Good for Your Hair Caring for your...",
+dt:"August 12, 2020  in Health",
+},
+{
+image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/articles/5-ways-to-improve-your-memory-today-542628_1024x1024.jpg?v=1660858715",
+title:"5 Ways to Improve Your Memory Today",
+description:"5 Ways to Improve Your Memory Today Forgetfulness can be...",
+dt:"August 12, 2020  in Health",
+},
+];
+for(let i=0;i<data.length;i++){
+    let j=document.createElement("div");
+    let p=document.createElement("img");
+ p.setAttribute("src",data[i].image)
+ let m=document.createElement("h4");
+ m.innerText=data[i].title
+ let mm=document.createElement("p");
+ mm.innerText=data[i].description
+ let n=document.createElement("p");
+ n.innerText=data[i].dt;
+ j.append(p,m,mm,n)
+ x.append(j)
+}
+let two=()=>{
+    window.location.href="blog2.html"
+}
+let three=()=>{
+    window.location.href="blog3.html"
+}
+let one=()=>{
+    window.location.href="blog.html"
+}
+
+</script>
