@@ -601,6 +601,8 @@ let closeMenu = menu.querySelector(".mobile-menu-close");
                             <li><a href="#">Energy & Vitality</a></li>
                             <li><a href="#">Hair,Skin & Nails</a></li>
                             <li><a href="#">Immune Support</a></li>
+                            <li><a href="#">Joint & Mobility</a></li>
+                            <li><a href="#">Liver & Cleanse</a></li>
                            </ul>
                       </div>
                       <div class="list-item">
@@ -619,7 +621,12 @@ let closeMenu = menu.querySelector(".mobile-menu-close");
                                <li><a href="#">Face Care</a></li>
                                <li><a href="#">Cleansing Bars</a></li>
                                <li><a href="#">Balm</a></li>
-                              
+                              <li><a href="#">Men's Wellness</a></li>
+                              <li><a href="#">Respiratory</a></li>
+                              <li><a href="#">Sleep</a></li>
+                              <li><a href="#">Urinary</a></li>
+                              <li><a href="#">Weight Management</a></li>
+                              <li><a href="#">Women's Wellness</a></li>
                            </ul>
                       </div>
                       <div class="list-item" id="nav-image">
