@@ -134,11 +134,11 @@ left: 0;
 right: 0;
 top: 0;
 }
-#nav-image{
-	/* display: block; */
+/* #nav-image{
+	
 	overflow: hidden;
 
-}
+} */
 #nav-image img{
 	transition: transform(2s);
 }
@@ -367,6 +367,7 @@ a{
   flex-wrap: wrap;
   padding:20px 15px;
   height: 500px;
+ 
 }
 .header .menu > ul > li .sub-menu.mega-menu-column-4 > .list-item{
   flex:0 0 25%;
