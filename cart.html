@@ -10,7 +10,7 @@
     <title>Your Shopping Cart - Himalaya Wellness (US) </title>
     <link rel="stylesheet" href="./cart.css">
     <link rel="stylesheet" href="./index.css">
-    
+
 </head>
 
 
@@ -26,34 +26,52 @@
     </header>
     <!-- header end -->
 
-   <!-- cart -->
-   <div id="cartPage">
-    <div id="cartLogo">
+    <!-- cart -->
+    <div id="cartPage">
+        <h1 id="HEAD">Shopping Cart</h1>
+       
+        <div id="cartLogo">
+
+        </div>
+
+        <div id="Total">
+        
+            <div id="insideDiv1ID">
+
+                <a href="index.html"<p id="continueShop"> <span>
+                        < </span> Continue Shopping </p></a>
+            </div>
+            <div id="insideDiv2ID">
+                <h2 class="subtotal">Subtotal <span id="subtotalspan">0</span></h2>
+                <h1 id="grandTotal">Grand Total: <span>0</span></h1>
+                <a href=""><button id="ProceedID" >PROCEED TO CHECKOUT</button></a>
+            </div>
+        </div>
+
+
+
     </div>
 
-   
-   </div>
 
 
-   
 
 
     <!-- footer -->
     <footer>
-  
+
     </footer>
 
 </body>
 
 </html>
 <script type="module">
-    import {toggle,navbar,footer} from './navbar-footer.js'
+    import { toggle, navbar, footer } from './navbar-footer.js'
     // console.log(navbar)
-    
-    let container=document.querySelector(".container")
-    container.innerHTML=navbar();toggle()
 
-    let footerDiv=document.querySelector("footer")
-    footerDiv.innerHTML=footer()
+    let container = document.querySelector(".container")
+    container.innerHTML = navbar(); toggle()
+
+    let footerDiv = document.querySelector("footer")
+    footerDiv.innerHTML = footer()
 </script>
 <script src="./cart.js"></script>
