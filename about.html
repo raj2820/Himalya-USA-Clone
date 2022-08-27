@@ -7,18 +7,32 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <style>
+    #main>h1{
+        text-align: center;
+        padding-top: 100px;
+        
+    }
+    #main>h4{
+        width:50%;
+        text-align: center;
+        margin: auto;
+        font-size: 22px;
+    
+    }
+
+    
    
          #main{
-            height:70%;
+            height:60%;
             width:100%;
           
             text-align: center;
             margin-top: 100px;
-            font-size: 40px;
+            font-size: 30px;
             color: aliceblue;
             background-image: url("https://i.shgcdn.com/f95290db-d02e-433c-9564-4766788d684c/-/format/auto/-/preview/3000x3000/-/quality/lighter/");
-            display: flex;
-    min-height: 500px;
+            padding-top: 50px;
+    min-height: 380px;
     align-items: center;
    
     background-position: center center;
@@ -28,23 +42,22 @@
          }
          #hima{
             display: grid;
-            height: 70px;
           
             grid-template-columns: repeat(5,1fr);
             box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            height: 80px;
+            width:100%
          }
          #hima>div{
            
             text-align: center;
-            font-size: 30px;
+            font-size: 20px;
             margin-top: 30px;
             color: rgba(0, 102, 102, 1);
          }
-         #hima>:nth-child(1){
-            background-color: #006666;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-         }
-         #king,.first-div{
+        
+         
+         #king{
             display: grid;
             grid-template-columns: repeat(2,1fr);
             height:800px;
@@ -52,18 +65,18 @@
             
          }
          
-         #king,.first-div>:nth-child(2)>h1{
+         #king>:nth-child(2)>h1{
             color: #006666;
     font-weight: 600;
             
          }
-         #king,.first-div>:nth-child(2)>p{
+         #king>:nth-child(2)>p{
             font-size: 20px;
     color: #333;
     
 }
          
-         #rani,.second-div{
+         #rani{
             display: grid;
             grid-template-columns: repeat(2,1fr);
            
@@ -71,20 +84,23 @@
 
          }
          
-         #rani,.second-div>:nth-child(2)>img{
+         #rani>:nth-child(2)>img{
             width:100%
          }
-         #rani,.second-div>:nth-child(1)>h1{
+         #rani>:nth-child(1)>h1{
             color: #006666;
     font-weight: 600;
 
          }
-         #rani,.second-div>:nth-child(1)>p,.second-div>:nth-child(1)>p{
+         #rani>:nth-child(1)>p,.second-div>:nth-child(1)>p{
             font-size: 20px;
     color: #333;
             
             
 
+         }
+         #about{
+            display: none;
          }
    
     
@@ -122,8 +138,209 @@ right: 0;
     width:100%;
     height:100%
 }
-         
-         
+#root1>div{
+    height:300px;
+}
+#our{display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 500px;
+   
+
+}
+
+#our>:nth-child(1)>img{
+    width:95%
+}
+#science{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height:500px;
+    
+}
+#science>:nth-child(2)>img{
+    width:95%
+
+}
+#about{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height:800px
+    
+
+}
+    
+#about>:nth-child(1)>img{
+    width:95%
+}
+#about>:nth-child(2)>h1{
+    color: #006666;
+    font-weight: 600;
+}
+#about>:nth-child(2)>p{
+    font-size: 20px;
+    color: #333;
+            
+
+
+}
+#our>:nth-child(2)>h1{
+    color: #006666;
+    font-weight: 600;
+
+}
+#our>:nth-child(2)>p{
+    font-size: 20px;
+    color: #333;
+
+}
+#science>:nth-child(1)>h1{
+    color: #006666;
+    font-weight: 600;
+
+}
+#science>:nth-child(1)>p{
+    font-size: 20px;
+    color: #333;
+
+}
+#roots2{
+    display: grid;
+    grid-template-columns:repeat(2,1fr)
+}
+#roots2>:nth-child(2)>img{
+    width:100%
+}
+#roots1>:nth-child(2)>h1{
+    color: #006666;
+    font-weight: 600;
+
+}
+#roots1>:nth-child(2)>p{
+    font-size: 20px;
+    color: #333;
+
+}
+#roots2>:nth-child(1)>h1{
+    color: #006666;
+    font-weight: 600;
+
+}
+#roots2>:nth-child(1)>p{
+    font-size: 20px;
+    color: #333;
+}
+#initi{
+    display: grid;
+    grid-template-columns:repeat(2,1fr)
+}
+#initi>:nth-child(2)>iframe{
+    margin-top: 20px;
+    margin-right:20px;
+}
+#initi>:nth-child(1)>h1{
+    color: #006666;
+    font-weight: 600;
+}
+#initi>:nth-child(1)>p{
+    font-size: 20px;
+    color: #333;
+}
+#initia{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#initia>:nth-child(1)>img{
+    width:95%;
+    margin-left:10px;
+}
+#initia>:nth-child(2)>h1{
+    color: #006666;
+    font-weight: 600;
+
+}
+#initia>:nth-child(2)>p{
+    font-size: 20px;
+    color: #333;
+}
+#initia{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#initia>:nth-child(1)>img{
+    width:95%;
+    margin-left:10px;
+}
+#initiav{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#initiav>:nth-child(2)>img{
+    width:95%
+}
+#initiav>:nth-child(1)>h1{
+    color: #006666;
+    font-weight: 600;
+
+}
+#initiav>:nth-child(1)>p{
+    font-size: 20px;
+    color: #333;
+}
+#initiave{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#initiave>:nth-child(1)>img{
+    width:95%
+}
+#initiave>:nth-child(2)>h1{
+    color: #006666;
+    font-weight: 600;
+
+}
+#initiave>:nth-child(2)>p{
+    font-size: 20px;
+    color: #333;
+}
+#initiatives{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#initiatives>:nth-child(2)>img{
+    width:95%
+}
+#initiatives>:nth-child(1)>h1{
+    color: #006666;
+    font-weight: 600;
+
+}
+#initiatives>:nth-child(1)>p{
+    font-size: 20px;
+    color: #333;
+}
+       
+#initiativesa{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#initiativesa>:nth-child(1)>img{
+    width:95%
+}
+#initiativesa>:nth-child(2)>h1{
+    color: #006666;
+    font-weight: 600;
+
+}
+#initiativesa>:nth-child(2)>p{
+    font-size: 20px;
+    color: #333;
+}
+#initi>:nth-child(2)>img{
+    width:95%;
+}
+
+
+
 </style>
     
 <body>
@@ -137,17 +354,17 @@ right: 0;
 
     
     <div id="main" >
-        <h1>Our story</h1>
+        <h1>Our Story</h1>
         <h4>Founded in 1930, Himalaya remains family owned with
 
             products offered in over 100 countries.</h4>
     </div>
     <div id="hima">
-        <div>OUR STORY</div>
-        <div onclick="pagechange()">OUR ROOTS</div>
-        <div>OUR PROCESS</div>
-        <div>OUR SCIENCE</div>
-        <div>OUR INITIATIVES</div>
+        <div id="boy"onclick="previous()">OUR STORY</div>
+        <div id="root" onclick="slide()">OUR ROOTS</div>
+        <div id="page"onclick="pagechange()"> OUR PROCESS</div>
+        <div id="next"onclick="nextpage()">OUR SCIENCE</div>
+    <div id="initi"onclick="inity()">OUR INITIATIVES</div>
     </div>
 
     <div id="king" class="first-div">
@@ -201,7 +418,7 @@ right: 0;
 
         </div>
     </div>
-    <div id="roots2" class="second-div">
+    <div id="roots2" class="second-div" style="display:none">
         <div>
             <h1>Our Farms</h1>
 
@@ -217,6 +434,184 @@ right: 0;
         </div>
 
     </div>
+    <div id="our" style="display:none"> 
+        <div>
+            <img src="https://i.shgcdn.com/a094b44f-0f48-4abf-b25b-549315cc3d98/-/format/auto/-/preview/3000x3000/-/quality/lighter/">
+
+
+        </div>
+        <div>
+            <h1>Our Science</h1>
+            <p>Himalaya's core interest has always been to ensure the health benefits of our herbal formulas and standalone solo herbs with product-specific, double-blind, placebo-controlled human clinical trials on all of our products.
+
+            </p>
+            <p>Our commitment to Ayurvedic principles, and research to produce natural, safe, and effective health products is driven by our soul mission, which is to help individual people maintain a healthy, long, and high-quality of life. We like to think of ourselves as providing solutions for you, which helps make our world well, one person at a time.
+
+            </p>
+            <p>
+                We take pride in the fact that our formulas undergo years of primary research before we offer them to you. Our commitment to ensure we have product-specific science on hand before we launch a product into the marketplace is exceptional within the natural products industry.
+            </p>
+            <p>
+                Himalaya has conducted over 1,200 clinical studies, many of which have been published in numerous, highly-regarded medical journals including The European Journal of Pharmacology, Phytotherapy Research, The Indian Journal of Clinical Practice, Australian Journal of Medical Herbalism, and JAMA, India.
+                
+            </p>
+        </div>
+        
+    </div>
+    <div id="science" style="display:none">
+        <div>
+            <h1>Our Distribution</h1>
+            <p>
+                After being grown, manufactured and packaged in India, finished Himalaya products are shipped to our North American corporate office, warehouse and distribution center located in Sugar Land, Texas.
+
+            </p>
+            <p>
+                Here we maintain state-of-the-art storage and shipping processes in climate-controlled environments until our products make their way to our retailers, and then to your home.
+
+            </p>
+
+        </div>
+        <div>
+            <img src="https://i.shgcdn.com/5a1a59af-3931-4d16-bff2-004468e44137/-/format/auto/-/preview/3000x3000/-/quality/lighter/">
+
+            
+        </div>
+
+    </div>
+    <div id="about" style="display:none">
+        <div>
+            <img src="https://i.shgcdn.com/f95290db-d02e-433c-9564-4766788d684c/-/format/auto/-/preview/3000x3000/-/quality/lighter/">
+
+        </div>
+        <div>
+            <h1>Our Roots</h1>
+            <p>The herbs used in Himalaya Herbal Healthcare's scientific product line are also used in the world's oldest traditional system of medicine, Ayurveda, which dates back over 4,000 years.</p>
+            <p>
+                The word Ayurveda comes from the Sanskrit root words ayur, meaning “life” and veda, meaning “to know.” Ayurveda literally means "to know life,” or in the language of today, “the science of life.”
+            </p>
+            <p>
+                Ayurveda had a profound, far-reaching influence on Traditional Chinese Medicine and the healthcare systems of many other countries and cultures that followed. Today, thanks to the dedicated efforts of Himalaya’s doctors and scientists, it’s been proven effective through scientific validation.
+            </p>
+            <p>
+                Ayurveda acknowledges there are five elements that make up the universe and the human body; earth, water fire, air and space. It seeks to bring the constellation and characteristics of the three body types defined by those elements – the vata, pitta and kapha – back into balance through proper diet, herbal treatment, and emotional well-being.
+
+            </p>
+            <p>
+                We’re proud of the ancient roots and our modern branches that allow us to continue unlocking the powerful healing benefits of Ayurveda, but our formulas are science-based and appropriate for all body types. They require no Ayurvedic knowledge to be used successfully.
+
+            </p>
+
+        </div>
+
+    </div>
+    <div id="initi" >
+        <div>
+            <h1>Biodiversity Conservation for Sustainable Living</h1>
+            <p>
+                Care for the earth remains a cornerstone of Himalaya Wellness Company’s core philosophy. Biodiversity for sustainable living is the practice of protecting and preserving the variety of species, habitats, ecosystems, and genetic diversity on earth, and Himalaya has made this an important part of our mission since we started over 90 years ago.
+
+            </p>
+            <p>
+                The video you're about to see shows Himalaya Wellness Company's initiatives in conservation, sustainability and replanting. Himalaya believes in nurturing the goodness of nature with a promise to safeguard the environment and a pledge to restore and conserve biodiversity.
+
+
+
+            </p>
+        </div>
+        <div>
+            <img src="data:image/jpeg;base64,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">
+        </div>
+    </div>
+    <div id="initia" style="display:none">
+        <div>
+            <img src="https://i.shgcdn.com/6288998b-545b-4de3-946e-6317b6fe72f6/-/format/auto/-/preview/3000x3000/-/quality/lighter/">
+        </div>
+        <div>
+            <h1>
+                Commitment to Farmers
+            </h1>
+            <p>
+                Himalaya works one-on-one with farmers and through non-governmental organizations to help bring poorer farming communities a link to the marketplace. Through fair trade cooperative agreements, our goal is to help economically empower small and marginal farmers so they can further their livelihood.
+
+            </p>
+    <p>
+        Himalaya’s fair trade practices assure farmers are paid a minimum of 15-20% higher than the actual cost of cultivation. In addition to favorable wages, other benefits to the farmers include an assured market for their crops, an assured price and income (we protect them from the ups and downs of the market), and the costs for their required certifications, packaging and transportation are borne by us, not them.
+
+    </p>
+        </div>
+
+    </div>
+    <div id="initiav" style="display:none">
+        <div>
+            <h1>Partnership with Vitamin Angels</h1>
+            <p>Himalaya continues to be a proud supporter of Vitamin Angels, a worldwide non-profit organization helping to save the lives and eyesight of nutrient deficient children. Vitamin Angels reduces child mortality by connecting infants and children under five with vital nutrients.
+
+            </p>
+            <p>
+                It only takes 50¢ to reach one child twice a year with enough vitamin A to reduce childhood mortality by 24% and ensure a child's eyesight. Vitamin Angels gives children a chance for a brighter future, and Himalaya is proud to be an ongoing supporter of their work.
+
+            </p>
+
+
+        </div>
+        <div>
+            <img src="https://i.shgcdn.com/68587d5b-0706-4d21-b1f1-59e35de255e8/-/format/auto/-/preview/3000x3000/-/quality/lighter/">
+        </div>
+
+    </div>
+    <div id="initiave" style="display:none">
+        <div>
+            <img src="https://i.shgcdn.com/f86febe0-9c1e-466f-b189-842f750669b3/-/format/auto/-/preview/3000x3000/-/quality/lighter/">
+
+        </div>
+        <div>
+            <h1>Trees for Life</h1>
+            <p>
+                Himalaya has been planting trees in the Western Ghats of India since 2011. The Western Ghats is identified as a biodiversity hotspot by UNESCO, the United Nations Educational, Scientific and Cultural Organization.
+
+            </p>
+<p>
+    To date, we have planted 750,000 trees, covering 900 acres in partnership with a local non-government organization, the Society for Environment and Biodiversity Conservation. Himalaya supports the planting of a mix of fruit, fodder, endemic, medicinal and other trees that support the local ecology and biodiversity.
+
+</p>
+<p>
+    Some of the medicinal trees planted include Ashwagandha, Arjuna, Amla and Hirada. The program also supports the planting of fruit trees such as mango, papaya, banana and cashew nut, which generate income to local farmers in the program and serve as supplementary nutrition. In addition, we have also planted Abutilon ranadei, a native plant that is critically endangered.
+
+</p>
+        </div>
+    </div>
+<div id="initiatives" style="display:none">
+    <div>
+        <h1>
+            Certification for Environmental Management
+        </h1>
+    <p>
+        Himalaya has taken several steps to conserve water, power and reduce pollution to meet National Quality Assurance (NQA) guidelines. The most significant achievement has been setting up a water treatment plant and sourcing water with low Total Dissolved Solids (TDS) externally. This has reduced Himalaya’s water consumption by as much as 10,000 liters a day.
+
+    </p>
+    <p>
+        Himalaya has been awarded ISO-14001:2004 certification, the most recognized standard globally, for environment management. The certification is granted by National Quality Assurance (NQA), the UK's largest established certification body.
+
+    </p>
+    </div>
+    <div>
+        <img src="https://i.shgcdn.com/6fdef74e-1e57-4bd4-8f3f-617132184feb/-/format/auto/-/preview/3000x3000/-/quality/lighter/">
+    </div>
+</div>
+<div id="initiativesa" style="display:none">
+    <div>
+        <img src="https://i.shgcdn.com/87244901-21ea-4e12-91a6-08edec634fe5/-/format/auto/-/preview/3000x3000/-/quality/lighter/">
+    </div>
+    <div>
+        <h1>
+            Autism Hope Alliance
+        </h1>
+        <p>
+            Himalaya Herbal Healthcare is a proud Autism Approved® sponsor of the Autism Hope Alliance. Himalaya’s continued charitable donation helps support families facing an autism diagnosis. The Autism Hope Alliance embodies hope for families through education, financial support and volunteerism. They are also the first nonprofit foundation for Autism to emerge from the natural foods industry.
+
+        </p>
+    </div>
+</div>
     <footer>
   
     </footer>

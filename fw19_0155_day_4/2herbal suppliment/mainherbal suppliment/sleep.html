@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleep</title>
+    <link rel="icon" href="//cdn.shopify.com/s/files/1/0399/1728/9633/files/H_Logo-01_32x32.png?v=1591028931" type="image/png">
+    <link rel="stylesheet" href="hs.css">
+    <link rel="stylesheet" type="text/css" href="index.css">    
+   <!-- swiper css -->
+   <link rel="stylesheet" type="text/css" href="swiper-bundle.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container"></div>
+</header>
+    <h1>Sleep</h1>
+    <select id="sortName">
+      <option>Sort By Name</option>
+      <option value="Name Ascending">Name Ascending</option>
+      <option value="Name Descending"> Name Descending</option>
+      <option value="Price Ascending">Price Ascending</option>
+      <option value="Price Descending">Price Descending</option>
+    </select>
+    
+    <div id="hs">
+      <div id="side">
+        <h1><a href="hs.html">Health-Interests</a></h1>
+        <a href="blood.html">Blood Suger</a><br>
+        <a href="brain.html">Brain & Cognitive</a><br>
+        <a href="digesition.html">Digestion</a><br>
+        <a href="energy.html">Energy & Vitality</a><br>
+        <a href="hair.html">Hair,Skin Nails</a><br>
+        <a href="heart.html">Heart & Cardio</a><br>
+        <a href="immune.html">Immune Support</a><br>
+        <a href="joint.html">Joint & Mobility</a><br>
+        <a href="liver.html">Liver & Cleanse</a><br>
+        <a href="mens.html">Men's Wellness</a><br>
+        <a href="res.html">Respiratory</a><br>
+        <a href="sleep.html">Sleep</a><br>
+        <a href="stres.html">Stress & Mood</a><br>
+        <a href="uranary.html">Urinary</a><br>
+        <a href="weight.html">Weight Management</a><br>
+        <a href="womens.html">Women's Wellness</a><br>
+      </div>      
+      <div id="container"></div>
+    </div>
+    <div id="footer"></div>
+    
+</body>
+</html>
+<script type="module">
+  import {toggle,navbar,footer,swiper,swiperfunctionality} from './navbar-footer.js'
+    console.log(navbar)
+    
+    let container=document.querySelector(".container")
+    container.innerHTML=navbar();
+    toggle()
+
+    let footerDiv=document.getElementById("footer")
+    footerDiv.innerHTML=footer()
+    swiper()
+    swiperfunctionality()
+    let data=[
+    {
+      "image": "https://himalayausa.com/collections/health-interests/products/chyavanprash",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/chyavanprash-105275_800x.png?v=1660858328",
+      "title": "Chyavanprash",
+      "price": "$15.95",
+      "description": "Chyavanprash has been used for centuries as an Ayurvedic superfood for energy, strength, vitality, immunity and good digestion. Himalaya Chyavanprash is an easy-to-take, convenient once-a-day vegetarian capsule.* Suggested Use Adults...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$15.95",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/health-interests/products/holy-basil",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/holy-basil-740180_800x.png?v=1660858325",
+      "title": "Holy Basil",
+      "price": "$13.95",
+      "description": "For tranquility and relaxation, Himalaya Holy Basil provides adrenal support and helps with stress relief. It's also famous for cleansing respiratory support, making it a gentle companion for relaxing, deep...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$13.95",
+      "active": "30 Capsules",
+      "active href": "https://himalayausa.com/collections/health-interests?view=all#",
+      "pt-options-swatch": "60 Capsules",
+      "pt-options-swatch href": "https://himalayausa.com/collections/health-interests?view=all#"
+    },
+    {
+      "image": "https://himalayausa.com/collections/health-interests/products/immunocare",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/immunocare-629100_800x.png?v=1660813422",
+      "title": "ImmunoCare®",
+      "price": "$24.95",
+      "description": "For situational, seasonal, or year-round immune system support, Himalaya ImmunoCare provides nourishing, plant-based ingredients to reinforce your body's own ability to find balance and wellness. During winter chill or summer...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$24.95",
+      "active": "120 Capsules",
+      "active href": "https://himalayausa.com/collections/health-interests?view=all#",
+      "pt-options-swatch": "240 Capsules",
+      "pt-options-swatch href": "https://himalayausa.com/collections/health-interests?view=all#"
+    },
+    {
+      "image": "https://himalayausa.com/collections/health-interests/products/koflet-lozenges",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/koflet-lozenges-625921_800x.png?v=1660813419",
+      "title": "Koflet Lozenges®",
+      "price": "$5.29",
+      "description": "Unwrap quick comfort with deliciously-soothing Himalaya Koflet Lozenges. The pleasing tingle of these plant-based lozenges help maintain your bronchial lubrication and provide you with warmth and soothing whenever you need...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$5.29",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    ]
+    let cartArr=JSON.parse(localStorage.getItem("cart"))||[]
+   let cont=document.getElementById("container")
+   diaspalyTable(data)
+   function diaspalyTable(data){
+   cont.innerHTML=null
+    data.forEach((el)=> {
+        let div=document.createElement("div")
+        let image=document.createElement("img")
+        image.src=el.lazyload
+        let title=document.createElement("h3")
+        title.innerText=el.title
+        let price=document.createElement("h1")
+        price.innerText=el.price
+        let btn=document.createElement("button")
+        btn.innerText="ADD TO CART"
+        btn.addEventListener("click",function(){
+          addcart(el)
+        })
+        div.append(image,title,price,btn)
+        cont.append(div)
+        
+    });
+   }
+ 
+   function addcart(el){
+    cartArr.push(el)
+    console.log(cartArr)
+    localStorage.setItem("cart",JSON.stringify(cartArr))
+    alert("Added to cart")
+    
+}
+
+
+
+
+  
+document.querySelector("#sortName").addEventListener("change",nameSort)
+
+    function nameSort(){
+      let selected=document.querySelector("#sortName").value
+      if(selected=="Name Ascending"){
+        
+        data.sort(function(a,b){
+        let x=a.title.toUpperCase()
+        let y=b.title.toUpperCase()
+          if(x>y) return 1
+          if(y>x) return -1
+          return 0
+        })
+        
+      }
+      if(selected=="Name Descending"){
+        data.sort(function(a,b){
+        let x=a.title.toUpperCase()
+        let y=b.title.toUpperCase()
+          if(x>y) return -1
+          if(y>x) return  1
+          return 0
+        })
+        
+        
+      }
+      if(selected=="Price Ascending"){
+        
+        data.sort(function(a,b){
+        let x=a.price.toUpperCase()
+        let y=b.price.toUpperCase()
+          if(x>y) return 1
+          if(y>x) return -1
+          return 0
+        })
+        
+      }
+      if(selected=="Price Descending"){
+        data.sort(function(a,b){
+        let x=a.price.toUpperCase()
+        let y=b.price.toUpperCase()
+          if(x>y) return -1
+          if(y>x) return  1
+          return 0
+        })
+        
+        
+      }
+      
+      diaspalyTable(data)
+      
+    }
+</script>

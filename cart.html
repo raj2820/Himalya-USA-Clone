@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0399/1728/9633/files/H_Logo-01_32x32.png?v=1591028931"
+        type="image/png">
+    <title>Your Shopping Cart - Himalaya Wellness (US) </title>
+    <link rel="stylesheet" href="./cart.css">
+    <link rel="stylesheet" href="./index.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- header start -->
+    <header class="header">
+        <div class="container">
+
+
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- cart -->
+    <div id="cartPage">
+        <h1 id="HEAD">Shopping Cart</h1>
+       
+        <div id="cartLogo">
+
+        </div>
+
+        <div id="Total">
+        
+            <div id="insideDiv1ID">
+
+                <a href="index.html"<p id="continueShop"> <span>
+                        < </span> Continue Shopping </p></a>
+            </div>
+            <div id="insideDiv2ID">
+                <h2 class="subtotal">Subtotal <span id="subtotalspan">0</span></h2>
+                <h1 id="grandTotal">Grand Total: <span>0</span></h1>
+                <a href=""><button id="ProceedID" >PROCEED TO CHECKOUT</button></a>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+    <!-- footer -->
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
+<script type="module">
+    import { toggle, navbar, footer } from './navbar-footer.js'
+    // console.log(navbar)
+
+    let container = document.querySelector(".container")
+    container.innerHTML = navbar(); toggle()
+
+    let footerDiv = document.querySelector("footer")
+    footerDiv.innerHTML = footer()
+</script>
+<script src="./cart.js"></script>

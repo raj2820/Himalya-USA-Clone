@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+#footer_main1,#footer_main_inner1{
+	display: none;
+}
 #footer,footer{
     width: 100%;
     background-color: #eef2f0;
@@ -10,6 +13,53 @@
 	bottom: 0;
 	width: 100%; */
 }
+
+
+#footer-div{
+  
+    width: 80%;
+    margin: auto;
+	
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+	font-size: 18px;
+	margin-bottom: 40px;
+}
+#footer-email{
+    width: 24px;
+    height: 24px;
+
+}
+#footer-bottom{
+    width: 80%;
+    margin: auto;
+}
+#dis{
+border: 1px solid black;
+font-size: 13px;
+color: #333333;
+padding: 10px;
+}
+#email-div{
+    background-color: white;
+  display: flex;
+  width: 70%;
+  padding: 5px;
+  
+}
+/* #footer-email{
+	
+} */
+#email-div input{
+    border: none;
+}
+#right-nav{
+	display: none;
+}
+
+
+
 
 #footer-div h2{
 	font-size: 18px;
@@ -35,6 +85,7 @@
 #footer-bottom p{
 	margin-bottom: 10px;
 }
+
 #footer-div{
   
     width: 80%;
@@ -74,6 +125,7 @@
 	#email-div input{
 		border: none;
 	}
+
 .header{
     position: absolute;
     width: 100%;
@@ -83,7 +135,7 @@ right: 0;
 top: 0;
 }
 #nav-image{
-	display: block;
+	/* display: block; */
 	overflow: hidden;
 
 }
@@ -231,6 +283,7 @@ a{
     margin-top: 15px;
     text-align: center;  
 }
+
 .header .menu > ul > li .sub-menu{
 	position: absolute;
 	z-index: 500;
@@ -256,7 +309,20 @@ a{
 	right: 0;
 	margin-right: 40px;
 }
+#nav-image{
+	display: none;
+	
 
+}
+/* #gayab3{
+	color: #333333;
+}
+#gayab4 a{
+	color: #333333;
+}
+.gayab5{
+	color: #333333;
+} */
 
 }
 .menu-item-has-children a{
@@ -588,7 +654,11 @@ a{
     justify-content: center;
     align-items: center;
 }
+<<<<<<< HEAD
 /* <<<<<<< HEAD */
+=======
+
+>>>>>>> f6c3885a765761c2f73c952a46069fb66803be65
 #top{
     background-image: url("https://cdn.shopify.com/s/files/1/0399/1728/9633/files/hero-desktop-ashwagandha_x720_78e6b5a9-d578-413f-8100-33c881ca05f7.webp?v=1660561979");
     display: flex;
@@ -710,6 +780,9 @@ padding: 10px;
 		.logo{
 			margin-left:10px ;
 			}
+			#footer_main1,#footer_main_inner1{
+				display: block;
+			}
 }
 #footer-div h2{
 	font-size: 18px;
@@ -735,5 +808,9 @@ padding: 10px;
 #footer-bottom p{
 	margin-bottom: 10px;
 }
+<<<<<<< HEAD
 /* =======
 >>>>>>> 88e40a6742a8edf00c807f0434e8cc070bbd62f2 */
+=======
+
+>>>>>>> f6c3885a765761c2f73c952a46069fb66803be65
