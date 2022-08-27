@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digestion</title>
+    <link rel="icon" href="//cdn.shopify.com/s/files/1/0399/1728/9633/files/H_Logo-01_32x32.png?v=1591028931" type="image/png">
+    <link rel="stylesheet" href="hs.css">
+    <link rel="stylesheet" href="hs.css">
+    <link rel="stylesheet" type="text/css" href="index.css">    
+   <!-- swiper css -->
+   <link rel="stylesheet" type="text/css" href="swiper-bundle.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container"></div>
+</header>
+    <h1>Digestion</h1>
+    <select id="sortName">
+      <option>Sort By Name</option>
+      <option value="Name Ascending">Name Ascending</option>
+      <option value="Name Descending"> Name Descending</option>
+      <option value="Price Ascending">Price Ascending</option>
+      <option value="Price Descending">Price Descending</option>
+    </select>
+    
+    <div id="hs">
+      <div id="side">
+        <h1><a href="hs.html">Health-Interests</a></h1>
+        <a href="blood.html">Blood Suger</a><br>
+        <a href="brain.html">Brain & Cognitive</a><br>
+        <a href="digesition.html">Digestion</a><br>
+        <a href="energy.html">Energy & Vitality</a><br>
+        <a href="hair.html">Hair,Skin Nails</a><br>
+        <a href="heart.html">Heart & Cardio</a><br>
+        <a href="immune.html">Immune Support</a><br>
+        <a href="joint.html">Joint & Mobility</a><br>
+        <a href="liver.html">Liver & Cleanse</a><br>
+        <a href="mens.html">Men's Wellness</a><br>
+        <a href="res.html">Respiratory</a><br>
+        <a href="sleep.html">Sleep</a><br>
+        <a href="stres.html">Stress & Mood</a><br>
+        <a href="uranary.html">Urinary</a><br>
+        <a href="weight.html">Weight Management</a><br>
+        <a href="womens.html">Women's Wellness</a><br>
+      </div>      
+      <div id="container"></div>
+    </div>
+    <div id="footer"></div>
+    
+</body>
+</html>
+<script type="module">
+  import {toggle,navbar,footer,swiper,swiperfunctionality} from './navbar-footer.js'
+    console.log(navbar)
+    
+    let container=document.querySelector(".container")
+    container.innerHTML=navbar();
+    toggle()
+
+    let footerDiv=document.getElementById("footer")
+    footerDiv.innerHTML=footer()
+    swiper()
+    swiperfunctionality()
+    let data=[
+    {
+      "image": "https://himalayausa.com/collections/health-interests/products/back-to-balance-cleanse",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/back-to-balance-cleanse-297598_800x.png?v=1660858351",
+      "title": "Back to Balance Cleanse™",
+      "price": "$29.95",
+      "description": "To keep your body cleaner and feel less bloated, you deserve more than just a quick herbal purge. You deserve the morning and evening wisdom of Himalaya Back to Balance...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$29.95",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/health-interests/products/comfortcleanse",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/comfortcleanse-636861_800x.png?v=1660858348",
+      "title": "ComfortCleanse®",
+      "price": "$22.95",
+      "description": "If you're seeking gentle, reliable colon cleansing and relief from occasional constipation, without the purging and cramping of other herbs you’ve tried, Himalaya’s ComfortCleanse with no Senna and no Cascara...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$22.95",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/health-interests/products/floravani",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/floravani-718088_800x.png?v=1660813425",
+      "title": "FlorAvani®",
+      "price": "$42.95",
+      "description": "FlorAvani is the plant-based alternative to probiotics, and it works in ways that probiotics can't. Instead of simply trying to add new strains of bacteria to your intestines, FlorAvani feeds...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$42.95",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/health-interests/products/organic-garlic",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/organic-garlic-712919_800x.png?v=1660858358",
+      "title": "Organic Garlic",
+      "price": "$17.95",
+      "description": "All around the world in many different cultures, countries, and traditional systems of healthcare, Garlic has been used consistently for heart health, cardiovascular and immune support. For wellness of the...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$17.95",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/health-interests/products/organic-ginger",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/organic-ginger-267736_800x.png?v=1660858348",
+      "title": "Organic Ginger",
+      "price": "$15.95",
+      "description": "When your stomach is in knots and you need fast relief from occasional nausea and gastric discomfort, Himalaya Organic Ginger can aid your digestion and soothe occasional heartburn and nausea....",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$15.95",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/health-interests/products/organic-licorice",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/organic-licorice-304556_800x.png?v=1660813420",
+      "title": "Organic Licorice",
+      "price": "$15.95",
+      "description": "For healthy digestion and occasional stomach upset, people of many different countries and medicinal cultures have turned to licorice root for thousands of years. For digestive relief and support, Himalaya...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$15.95",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/health-interests/products/organic-psyllium-husk-powder",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/organic-psyllium-husk-powder-626566_800x.jpg?v=1660858325",
+      "title": "Organic Psyllium Husk Powder",
+      "price": "$27.99",
+      "description": "History’s famous Psyllium plant has long been used for internal cleansing, gentle regularity and occasional constipation. When adding this finely-ground unflavored powder to your diet daily, fiber can also help...",
+      "pt-btn-addtocart": "",
+      "price 2": "",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/health-interests/products/organic-psyllium-husk",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/organic-psyllium-whole-husk-358146_800x.png?v=1660858319",
+      "title": "Organic Psyllium Whole Husk",
+      "price": "$16.99",
+      "description": "The husk of history's famous Psyllium plant has long been used for internal cleansing, gentle regularity and occasional constipation. When added to your diet daily, fiber can also help support...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$16.99",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/health-interests/products/organic-trikatu",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/organic-trikatu-145745_800x.png?v=1660858357",
+      "title": "Organic Trikatu",
+      "price": "$16.95",
+      "description": "For thousands of years, people in India and Asia have combined the three peppers of Trikatu – Black Pepper, Indian Long Pepper and Ginger – into a time-tested trio that...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$16.95",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/health-interests/products/organic-triphala",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/organic-triphala-502610_800x.png?v=1660858352",
+      "title": "Organic Triphala",
+      "price": "$11.59",
+      "description": "For digestive support and occasional constipation, people in India have turned to Triphala for centuries. Himalaya Organic Triphala tones the intestines for gentle regularity and provides you with an easy...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$11.59",
+      "active": "30 Caplets",
+      "active href": "https://himalayausa.com/collections/health-interests?view=all#",
+      "pt-options-swatch": "60 Caplets",
+      "pt-options-swatch href": "https://himalayausa.com/collections/health-interests?view=all#"
+    }   
+
+    ]
+    let cartArr=JSON.parse(localStorage.getItem("cart"))||[]
+   let cont=document.getElementById("container")
+   diaspalyTable(data)
+   function diaspalyTable(data){
+   cont.innerHTML=null
+    data.forEach((el)=> {
+        let div=document.createElement("div")
+        let image=document.createElement("img")
+        image.src=el.lazyload
+        let title=document.createElement("h3")
+        title.innerText=el.title
+        let price=document.createElement("h1")
+        price.innerText=el.price
+        let btn=document.createElement("button")
+        btn.innerText="ADD TO CART"
+        btn.addEventListener("click",function(){
+          addcart(el)
+        })
+        div.append(image,title,price,btn)
+        cont.append(div)
+        
+    });
+   }
+ 
+   function addcart(el){
+    cartArr.push(el)
+    console.log(cartArr)
+    localStorage.setItem("cart",JSON.stringify(cartArr))
+   
+    
+}
+
+
+
+
+  
+document.querySelector("#sortName").addEventListener("change",nameSort)
+
+    function nameSort(){
+      let selected=document.querySelector("#sortName").value
+      if(selected=="Name Ascending"){
+        
+        data.sort(function(a,b){
+        let x=a.title.toUpperCase()
+        let y=b.title.toUpperCase()
+          if(x>y) return 1
+          if(y>x) return -1
+          return 0
+        })
+        
+      }
+      if(selected=="Name Descending"){
+        data.sort(function(a,b){
+        let x=a.title.toUpperCase()
+        let y=b.title.toUpperCase()
+          if(x>y) return -1
+          if(y>x) return  1
+          return 0
+        })
+        
+        
+      }
+      if(selected=="Price Ascending"){
+        
+        data.sort(function(a,b){
+        let x=a.price.toUpperCase()
+        let y=b.price.toUpperCase()
+          if(x>y) return 1
+          if(y>x) return -1
+          return 0
+        })
+        
+      }
+      if(selected=="Price Descending"){
+        data.sort(function(a,b){
+        let x=a.price.toUpperCase()
+        let y=b.price.toUpperCase()
+          if(x>y) return -1
+          if(y>x) return  1
+          return 0
+        })
+        
+        
+      }
+      
+      diaspalyTable(data)
+      
+    }
+
+    
+</script>
