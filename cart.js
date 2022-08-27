@@ -1,30 +1,36 @@
 
 
-let cartData = JSON.parse(localStorage.getItem("cart"))
+let cartData = JSON.parse(localStorage.getItem("cart"))||[]
 // console.log(cartData);
 let arr = [];
 
+<<<<<<< HEAD
 
 if (cartData == null) {
+=======
+    if (cartData === "") {
+>>>>>>> b2ddbd62df0a6e0200d885eda20b7e821e93aca9
 
 
-    let Title = document.createElement("h1");
-    Title.innerText = `Shopping cart is empty`
-    // let Line= document.createElement("hr");
+        let Title = document.createElement("h1");
+        Title.innerText = `Shopping cart is empty`
+        // let Line= document.createElement("hr");
+    
+        let des = document.createElement("p");
+        des.innerText = `You have no items in your shopping cart.`
+    
+        let btn = document.createElement("button");
+        btn.innerText = `Continue Shopping`
+        btn.setAttribute("id", "shoppingBtn")
+        btn.addEventListener("click", function () {
+            ADDCART()
+        })
+    
+        document.querySelector("#cartLogo").append(Title, des, btn);
+    
+    }
 
-    let des = document.createElement("p");
-    des.innerText = `You have no items in your shopping cart.`
 
-    let btn = document.createElement("button");
-    btn.innerText = `Continue Shopping`
-    btn.setAttribute("id", "shoppingBtn")
-    btn.addEventListener("click", function () {
-        ADDCART()
-    })
-
-    document.querySelector("#cartLogo").append(Title, des, btn);
-
-}
 
 
 function display(cartData) {
@@ -32,7 +38,11 @@ function display(cartData) {
     document.querySelector("#cartLogo").innerHTML = null;
 
     cartData.forEach(function (el, index) {
+<<<<<<< HEAD
         // console.log(el)
+=======
+       
+>>>>>>> b2ddbd62df0a6e0200d885eda20b7e821e93aca9
 
 
         let div = document.createElement("div");
@@ -45,7 +55,11 @@ function display(cartData) {
         Trash.setAttribute("id", "TrashImg");
 
         Trash.addEventListener("click", function () {
+<<<<<<< HEAD
             remove(index)
+=======
+            remove(el, index)
+>>>>>>> b2ddbd62df0a6e0200d885eda20b7e821e93aca9
         })
 
 
@@ -102,6 +116,28 @@ function ADDCART() {
 }
 
 
+<<<<<<< HEAD
+=======
+function remove(el,index){
+    let abc = cartData.filter(function(el,i){
+
+        if(i == index)
+        {
+            remove(el)
+            window.location.reload()
+        }
+        else
+        {
+            return i!==index
+        }
+
+    })
+   localStorage.setItem("cart",JSON.stringify(abc))
+  
+
+
+}
+>>>>>>> b2ddbd62df0a6e0200d885eda20b7e821e93aca9
 
 // plus function
 

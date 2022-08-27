@@ -1,0 +1,35 @@
+.top{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 160px;
+}
+/* #logo{
+    width:70%;
+    height:auto;
+    border:1px solid red;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+.port{
+width:62%;
+display:grid;
+grid-template-columns: repeat(3,1fr);
+/* border:1px solid red; */
+margin:auto;
+gap:28px;
+text-align:left;
+align-items: center;
+justify-content: space-around;
+line-height: 25px;
+height:3700px;
+font-size:19px;
+}
+
+.port>div{
+justify-content: center;
+}
+.port>div>img{
+width:100%;
+}

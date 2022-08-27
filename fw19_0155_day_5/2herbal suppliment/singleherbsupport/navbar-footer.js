@@ -565,7 +565,6 @@ let closeMenu = menu.querySelector(".mobile-menu-close");
                    </g>
                </g>
                </svg></a>
-               
     </div>
  </div>
  
@@ -627,7 +626,6 @@ let closeMenu = menu.querySelector(".mobile-menu-close");
                       </div>
              </div>
           </li>
-        
           <li class="menu-item-has-children">
              <a href="about.html" style="font-size: 18px;     letter-spacing: 0.04em;">About <i class="fas fa-angle-down"></i></a>
              
@@ -636,8 +634,8 @@ let closeMenu = menu.querySelector(".mobile-menu-close");
              <a href="store.html" > <p style="font-size: 18px;    letter-spacing: 0.04em;">Store Locator </p><i class="fas fa-angle-down"></i></a>
              
           </li>
-    
-         
+             
+              
           
        </ul>
             
@@ -673,7 +671,7 @@ let closeMenu = menu.querySelector(".mobile-menu-close");
              </svg>
      </div></a>
  </div>
- 
+  
 </div>`
  }
 
@@ -685,14 +683,14 @@ let closeMenu = menu.querySelector(".mobile-menu-close");
         <a href="#"><p>Contact Us</p></a>
         <a href="#"><p>FAQ</p></a>
         <a href="#"><p>Blog</p></a>
-        <a href="store.html"><p>Store Locator</p></a>
+        <a href="#"><p>Store Locator</p></a>
         <a href="#"><p>Careers</p></a>
     </div>
     <div>
         <h2>Policies</h2>
         <a href="#"><p>Shipping & Returns</p></a>
-        <a href="Terms&condition.html"><p>Terms & Conditions</p></a>
-        <a href="privacy.html"><p>Privacy</p></a>
+        <a href="#"><p>Terms & Conditions</p></a>
+        <a href="#"><p>Privacy</p></a>
         <a href="#"><p>CCPA</p></a>
         <a href="#"><p>Accessibility</p></a>
     </div>
@@ -783,104 +781,3 @@ function swiperfunctionality(){
 }
 
 export {toggle,navbar,footer,swiper,swiperfunctionality}
-
-
-let home_Products_data=[
-    {
-      "image": "https://himalayausa.com/collections/all/products/ashwagandha-relax",
-      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/ashwagandharelax-787355_800x.png?v=1660858335",
-      "title": "Ashwagandha+Relax",
-      "price": "$23.99",
-      "description": "Discover the soothing strength of Ashwagandha+ Relax to help you rest and recharge.* Suggested Use Adults take 2 capsules once daily. Days of Supply Size (Capsules) 60 Supply (Months) 1...",
-      "pt-btn-addtocart": "ADD TO CART",
-      "price 2": "$23.99",
-      "active": "",
-      "active href": "",
-      "pt-options-swatch": "",
-      "pt-options-swatch href": ""
-    },
-    {
-      "image": "https://himalayausa.com/collections/all/products/back-to-balance-cleanse",
-      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/back-to-balance-cleanse-297598_800x.png?v=1660858351",
-      "title": "Back to Balance Cleanse™",
-      "price": "$29.95",
-      "description": "To keep your body cleaner and feel less bloated, you deserve more than just a quick herbal purge. You deserve the morning and evening wisdom of Himalaya Back to Balance...",
-      "pt-btn-addtocart": "ADD TO CART",
-      "price 2": "$29.95",
-      "active": "",
-      "active href": "",
-      "pt-options-swatch": "",
-      "pt-options-swatch href": ""
-    },
-    {
-      "image": "https://himalayausa.com/collections/all/products/bamboo-sea-salt-whitening-antiplaque-toothpaste",
-      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/bamboo-sea-salt-whitening-antiplaque-toothpaste-363920_800x.png?v=1660858353",
-      "title": "Bamboo & Sea Salt Whitening Antiplaque Toothpaste",
-      "price": "$5.99",
-      "description": "Get the smile you’ve been looking for with gentle Bamboo, which is famous for its strong fibers and silica, and purified Sea Salt for a clean, fresh mouth and healthy-looking...",
-      "pt-btn-addtocart": "ADD TO CART",
-      "price 2": "$5.99",
-      "active": "",
-      "active href": "",
-      "pt-options-swatch": "",
-      "pt-options-swatch href": ""
-    },
-    {
-      "image": "https://himalayausa.com/collections/all/products/body-bar-purifying-neem-turmeric",
-      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/body-bar-purifying-neem-turmeric-342355_800x.png?v=1660858341",
-      "title": "Body Bar: Purifying (Neem & Turmeric)",
-      "price": "$4.99",
-      "description": "Himalaya Botanique Purifying Neem & Turmeric Body Bar is a handcrafted combination of pure herbs and saponified essential oils that gently cleanse and moisturize. History’s original cleansing and detox plant,...",
-      "pt-btn-addtocart": "ADD TO CART",
-      "price 2": "$4.99",
-      "active": "",
-      "active href": "",
-      "pt-options-swatch": "",
-      "pt-options-swatch href": ""
-    },
-    {
-      "image": "https://himalayausa.com/collections/all/products/body-bar-refreshing-lavender-rosemary",
-      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/body-bar-refreshing-lavender-rosemary-879892_800x.png?v=1660858358",
-      "title": "Body Bar: Refreshing (Lavender & Rosemary)",
-      "price": "$4.99",
-      "description": "Calm your senses and rejuvenate your spirit with Himalaya Botanique's Lavender & Rosemary Body Bar. Rosemary awakens the senses and Lavendar leaves your skin feeling relaxed and clean. Gentle oils...",
-      "pt-btn-addtocart": "ADD TO CART",
-      "price 2": "$4.99",
-      "active": "",
-      "active href": "",
-      "pt-options-swatch": "",
-      "pt-options-swatch href": ""
-    },
-    {
-      "image": "https://himalayausa.com/collections/all/products/boswellia",
-      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/boswellia-829056_800x.png?v=1660858338",
-      "title": "Boswellia",
-      "price": "$15.95",
-      "description": "The crystalized resin from the Indian Frankincense tree known as Boswellia is famous throughout herbal history for supporting muscle relaxation and normal joint function to promote flexibility, movement and range...",
-      "pt-btn-addtocart": "ADD TO CART",
-      "price 2": "$15.95",
-      "active": "60 Capsules",
-      "active href": "https://himalayausa.com/collections/all#",
-      "pt-options-swatch": "120 Capsules",
-      "pt-options-swatch href": "https://himalayausa.com/collections/all#"
-    },
-    {
-      "image": "https://himalayausa.com/collections/all/products/charcoal-black-seed-oil-whitening-antiplaque-toothpaste",
-      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/charcoal-black-seed-oil-whitening-antiplaque-toothpaste-174005_800x.png?v=1660858351",
-      "title": "Charcoal & Black Seed Oil Whitening Antiplaque Toothpaste",
-      "price": "$5.99",
-      "description": "Let the powerful whitening action of Charcoal (derived from Coconut Shell Powder) and the famous cleansing ability of Black Seed Oil leave your mouth feeling fresher and brighter than ever....",
-      "pt-btn-addtocart": "",
-      "price 2": "",
-      "active": "",
-      "active href": "",
-      "pt-options-swatch": "",
-      "pt-options-swatch href": ""
-    }
-]
-
-
-function appendhomeProduct(){
-let swiper_wrapper=document.getElementsByClassName("swiper-wrapper")
-let image_content=document.getElementsByClassName
-}
