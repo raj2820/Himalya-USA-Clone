@@ -11,7 +11,7 @@ let initiav=document.getElementById("initiav")
 let initiave=document.getElementById("initiave")
 let initiatives=document.getElementById("initiatives")
 let initiativesa=document.getElementById("initiativesa")
-let iframe=document.querySelector("iframe")
+
 
 
 
@@ -107,14 +107,10 @@ about.style="display:none"
 king.style="display:none"
 rani.style="display:none"
 initi.style="display:grid:grid-template-columns:repeat(2,1fr);height:500px;"
-
 initia.style="display:grid:grid-template-columns:repeat(2,1fr);height:500px;"
 initiav.style="display:grid:grid-template-columns:repeat(2,1fr);height:500px;"
 initiave.style="display:grid:grid-template-columns:repeat(2,1fr);height:500px;"
 initiatives.style="display:grid:grid-template-columns:repeat(2,1fr);height:500px;"
 initiativesa.style="display:grid:grid-template-columns:repeat(2,1fr);height:500px;"
-iframe.style="display:block"
-
-
 
 }
