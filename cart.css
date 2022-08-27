@@ -1,22 +1,24 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
-html, body {
+
+html,
+body {
     width: 100%;
     height: 100%;
 }
 
-#cartPage{
-    margin-top: 120px;
+#cartPage {
+    margin-top: 100px;
     padding-top: 15px;
     padding-bottom: 25px;
     /* border: 1px solid red; */
 }
 
-#cartLogo > h1{
+#cartLogo>h1 {
     text-align: center;
     font-size: 36px;
     line-height: 43px;
@@ -25,14 +27,14 @@ html, body {
     margin-bottom: 10px;
 }
 
-#cartLogo{
+#cartLogo {
     text-align: center;
-    max-width: 1050px;
+    width: 90%;
     margin: auto;
     height: auto;
-    /* margin-top: 25px; */
-    border: 1px solid teal;
-    padding-top: 100px;
+    margin-top: 10px;
+    /* border: 1px solid teal; */
+    padding-top: 10px;
     padding-bottom: 50px;
 }
 
@@ -40,7 +42,7 @@ html, body {
 
 /*  */
 
-#cartLogo > p {
+#cartLogo>p {
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
@@ -69,35 +71,41 @@ html, body {
     border: 2px solid #333333;
 }
 
-.AddShopCart{
-    padding: 80px;
+.AddShopCart {
+
+    padding: 70px;
     display: flex;
-    gap: 50px;
+    gap: 20px;
+    /* margin-bottom: 10px; */
     justify-content:space-between;
     /* border: 2px solid black; */
+
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
 }
 
-#TrashImg{
-    width: 5%;
+#TrashImg {
+    width: 2%;
     /* border: 1px solid; */
-    height: 55px;
-    margin-top: 15px;
-    margin-left: -50px;
+    height: 32px;
+    margin-top: 25px;
+    margin-left: -20px;
+    margin-right: 10px;
     cursor: pointer;
 }
 
-#TrashImg:hover{
+#TrashImg:hover {
     transform: scale(1.05);
 }
 
 
-#MedImage{
+#MedImage {
     /* cursor: pointer; */
     /* border: 1px solid ; */
     width: 30%;
-    margin-top: -30px;
-    height: 150px;
+    margin-top: -20px;
+    height: 160px;
 }
+
 /* 
 #NameTitle{
     margin-top: 20px;
@@ -108,20 +116,38 @@ html, body {
 color: #777777;;
 } */
 
-.AddShopCart h2{
+#NameTitle {
     justify-content: center;
     align-items: center;
-    padding:30px;
-    margin-top: -15px;
+    /* padding:30px; */
+    color: #333333;
+    margin-top: 30px;
     cursor: pointer;
+    font-family: Poppins, sans-serif;
     /* border: 1px solid red; */
+    font-size: 24px;
+    line-height: 35px;
+    color: #333333;
+    font-weight: 500;
 }
 
-.AddShopCart h2:hover{
-   color: #777777;
+#PriceID {
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-family: Poppins, sans-serif;
+    font-size: 24px;
+    line-height: 35px;
+    color: #a3b49b;
+    font-weight: 500;
+
 }
 
-#MinsBtnID{
+#NameTitle:hover {
+    color: #777777;
+}
+
+#MinsBtnID {
     height: 50px;
     width: 10%;
     margin-top: 25px;
@@ -130,12 +156,13 @@ color: #777777;;
     border: 0.5px;
     cursor: pointer;
 }
-#MinsBtnID:hover{
+
+#MinsBtnID:hover {
     transform: scale(1.05);
 }
 
 
-#Plusbtn{
+#Plusbtn {
     height: 50px;
     width: 10%;
     margin-top: 25px;
@@ -145,11 +172,12 @@ color: #777777;;
     cursor: pointer;
 
 }
-#Plusbtn:hover{
+
+#Plusbtn:hover {
     transform: scale(1.05);
 }
 
-#quantity{
+#quantity {
     /* border: 1px solid; */
     height: 40px;
     font-size: 23px;
@@ -160,133 +188,198 @@ color: #777777;;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .AddShopCart{
-    padding: 80px;
+#Total {
+    /* border: 1px solid black; */
     display: flex;
-    gap: 50px;
-    justify-content:space-between;
-    /* border: 2px solid black; */
+    /* padding: 10px; */
+    gap: 20px;
+    width: 85%;
+    margin: auto;
 
-/* #TrashImg{
-    width: 5%;
-    /* border: 1px solid; */
-    /* height: 55px;
-    margin-top: 15px;
-    margin-left: -50px;
-    cursor: pointer; */
-
-
-/* #TrashImg:hover{
-    transform: scale(1.05);
-} */
-
-/* 
-#MedImage{
-    /* cursor: pointer; */
-    /* border: 1px solid ; */
-    /* width: 30%;
-    margin-top: -30px;
-    height: 150px; */
-
-/*  
-#NameTitle{
-    margin-top: 20px;
-    cursor: pointer;
-    color: #333333;
 }
-#NameTitle:hover{
-color: #777777;;
-} */
 
-/* .AddShopCart h2{
-    justify-content: center;
-    align-items: center;
-    padding:30px;
-    /* border: 1px solid red; */
- /* */ 
+#HEAD {
+    text-align: center;
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 500;
+    color: #333333;
+    font-family: Poppins, sans-serif;
+}
 
-/* .AddShopCart h2:hover{
+#Total div {
+    /* border: 1px solid teal; */
+    width: 50%;
+}
 
-*/
-/* 
-#CatButtonID{
-/* border: 2px solid red; */
-/* width: 30%;
-display: flex;
-justify-content: center;
-height: 50px;
-gap: 20px;
-margin-top: 30px;
-border-radius: 25px;
-background-color: #eef0ec; */
+#Total div:nth-child(1) {
+    text-align: left;
+    /* margin-left: 60px; */
+}
 
 
-/* #CatButtonID button{
-    width: 10%;
-    font-size: 21px;
-    border: 0px;
+#Total div:nth-child(2) {
+    /* border: 1px solid; */
+    padding: 35px;
+    line-height: 40px;
+    height: 200px;
+    text-align: center;
+    background-color: #66765f;
+}
+
+
+#insideDiv2ID h2 {
+    color: #eef2f0;
+    /* border: 1px solid black; */
+}
+
+#insideDiv2ID h1 {
+    color: #eef2f0;
+}
+
+#insideDiv2ID button {
+    margin-top: 20px;
+    padding: 10px;
+    width: 80%;
     cursor: pointer;
-    border-radius: 20px;
-} */
+    background-color: #a3b49b;
+    border: 0px;
+}
 
-/* .shivam{
-    /* border: 1px solid red; */
-    /* margin-top: 10px;
-    font-size: 21px; */
-
-
+#insideDiv2ID button:hover {
+    background-color: #eef2f0;
+}
 
 
+#continueShop {
+    /* border: 1px solid; */
+    width: 40%;
+    cursor: pointer;
+}
+
+#continueShop:hover {
+    text-decoration: underline;
+}
+
+
+
+@media all and (min-width: 401px) and (max-width: 800px) {
+
+
+
+    #cartLogo {
+        text-align: center;
+        width: 95%;
+        margin: auto;
+        height: auto;
+        margin-top: 10px;
+        /* border: 1px solid teal; */
+        /* padding-top: 10px; */
+        padding-bottom: 50px;
+    }
+
+
+    #cartLogo>p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+
+    .AddShopCart {
+        padding: 30px;
+        gap: 20px;
+        justify-content: space-evenly;
+        /* border: 2px solid black; */
+    }
+
+    #TrashImg {
+        width: 3%;
+        height: 35px;
+        margin-top: 25px;
+        margin-left: -10px;
+
+    }
+
+    #MedImage {
+        width: 20%;
+        margin-top: -20px;
+        height: 130px;
+    }
+
+    #NameTitle {
+        margin-top: 29px;
+        font-size: 14px;
+        line-height: 21px;
+
+    }
+
+    #PriceID {
+
+        margin-top: 25px;
+        font-family: Poppins, sans-serif;
+        font-size: 14px;
+        line-height: 35px;
+
+    }
+
+    #MinsBtnID {
+        height: 40px;
+        width: 10%;
+        margin-top: 25px;
+        font-size: 20px;
+        border-radius: 10px;
+        border: 0.5px;
+        cursor: pointer;
+        /* border: 2px solid red; */
+    }
+
+    #Plusbtn {
+        height: 40px;
+        width: 10%;
+        margin-top: 25px;
+        font-size: 20px;
+        border-radius: 10px;
+        border: 0.5px;
+        cursor: pointer;
+
+    }
+
+    #quantity {
+        /* border: 1px solid; */
+        height: 20px;
+        font-size: 16px;
+        margin-top: 35px;
+    }
+
+    #Total {
+        /* border: 1px solid black; */
+        width: 80%;
+
+        display: inline-block;
+        gap: 20px;
+        margin: auto;
+        margin-top: -30px;
+    }
+    #Total div:nth-child(1){
+        width: 100%;
+        text-align: center;
+        margin-left: 50px;
+        margin-bottom: 20px;
+        font-size: 19px;
+        /* margin-left: 60px; */
+        /* border: 1px solid red; */
+    }
+
+    #Total div:nth-child(2) {
+        padding: 10px;
+        width: 80%;
+        margin: auto;
+        /* border: 5px solid teal; */
+        margin-left: 100px;
+        line-height: 30px;
+        height: 150px;
+        font-size: 14px;
+        text-align: center;
+        background-color: #66765f;
+    }
+}
