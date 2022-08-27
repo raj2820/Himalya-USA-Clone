@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Himalaya Wellness: Blog-page=3</title>
+    <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0399/1728/9633/files/H_Logo-01_32x32.png?v=1591028931" type="image/png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="blog.css">
+    <style>
+        #three{
+            border:1px solid black;
+        }
+    
+    </style>
+  
+</head>
+<body>
+ <!-- header start -->
+ <header class="header">
+    <div class="container">
+    </div>
+</header>
+
+ 
+    <h1 class="top">Health</h1>
+    <div class="port">
+    </div>
+    <div id="btn">
+        <button id="one" onclick="one()">1</button>
+        <button id="two" onclick="two()">2</button>
+        <button id="three"onload="three()">3</button>
+    </div>
+ 
+<footer></footer>
+</body>
+</html>
+<script type="module">
+    import {toggle,navbar,footer} from './navbar-footer.js'
+    console.log(navbar)
+    
+    let container=document.querySelector(".container")
+    container.innerHTML=navbar();
+    toggle()
+
+    let footerDiv=document.querySelector("footer")
+    footerDiv.innerHTML=footer()
+</script>
+<script>
+let x=document.querySelector(".port")
+let data=[
+{image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/articles/good-stress-vs-bad-stress-whats-the-difference-613522_1024x1024.jpg?v=1660858717",
+title:"Good Stress vs. Bad Stress: What's the Difference?",
+description:"Good Stress vs. Bad Stress: What's the Difference? Stress is...",
+dt:"August 12, 2020  in Health",
+},
+{
+image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/articles/neem-toothpaste-101-what-it-is-and-how-it-can-benefit-your-oral-health-292989_1024x1024.jpg?v=1660858719",
+title:"Neem Toothpaste 101: What It Is And How It Can Benefit Your Oral Health",
+description:"Neem Toothpaste 101: What It Is And How It Can...",
+dt:"August 12, 2020  in Health",
+},
+{
+image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/articles/ashwagandha-health-benefits-being-studied-today-818355_1024x1024.jpg?v=1660858721",
+title:"Ashwagandha Health Benefits Being Studied Today",
+description:"Ashwagandha Health Benefits Being Studied Today Ashwagandha, also known as...",
+dt:"August 12, 2020  in Health",
+},
+{
+image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/articles/energy-up-does-ashwagandha-really-work-831992_1024x1024.jpg?v=1660858723",
+title:"Energy Up! Does Ashwagandha Really Work?",
+description:"Energy Up! Does Ashwagandha Really Work? Herbal supplements are a...",
+dt:"August 12, 2020  in Health"
+},
+{
+image:"",
+title:"",
+description:"",
+dt:"",
+},
+
+{
+image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/articles/3-ayurvedic-herbs-that-can-provide-cognitive-support-680750_1024x1024.jpg?v=1660858725",
+title:"3 Ayurvedic Herbs That Can Provide Cognitive Support",
+description:"3 Ayurvedic Herbs That Can Provide Cognitive Support As your...",
+dt:"August 12, 2020  in Health",
+},
+
+];
+
+
+
+for(let i=0;i<data.length;i++){
+    let j=document.createElement("div");
+    let p=document.createElement("img");
+ p.setAttribute("src",data[i].image)
+ let m=document.createElement("h4");
+ m.innerText=data[i].title
+ let mm=document.createElement("p");
+ mm.innerText=data[i].description
+ let n=document.createElement("p");
+ n.innerText=data[i].dt;
+ j.append(p,m,mm,n)
+ x.append(j)
+}
+
+let two=()=>{
+    window.location.href="blog2.html"
+}
+let three=()=>{
+    window.location.href="blog3.html"
+}
+let one=()=>{
+    window.location.href="blog.html"
+}
+</script>
