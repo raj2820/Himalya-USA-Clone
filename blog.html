@@ -20,6 +20,7 @@
     <h1 class="top">Health</h1>
     <div class="port">
     </div>
+    <div id="btn"></div>//pagination
  
 <footer></footer>
 </body>
@@ -178,32 +179,8 @@ dt:"August 12, 2020  in Health",
 },
 
 ];
-for(let i=0;i<data.length;i++){
-    let j=document.createElement("div");
-    let p=document.createElement("img");
- p.setAttribute("src",data[i].image)
- let k=document.createElement("img");
- let m=document.createElement("h4");
- m.innerText=data[i].title
- let mm=document.createElement("p");
- mm.innerText=data[i].description
- let n=document.createElement("p");
- n.innerText=data[i].dt;
- j.append(p,m,mm,n)
- x.append(j)
-}
-// for(let i=0;i<investors.length;i++){
-//     let j=document.createElement("div");
-//     let p=document.createElement("img");
-//  p.setAttribute("src",investors[i].image)
-//  let k=document.createElement("img");
-//  let m=document.createElement("h4");
-//  m.innerText=investors[i].name
-//  k.setAttribute("src",investors[i].companyLogo);
-//  let n=document.createElement("p");
-//  n.innerText=investors[i].role;
-//  j.append(p,m,n,k)
-//  x.append(j)
-// }
+
+
+
 </script>
 
