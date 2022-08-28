@@ -202,8 +202,6 @@ localStorage.setItem("TOTAL",JSON.stringify(TOTAL))
 
 
 
-
-
 document.querySelector("#ProceedID").addEventListener("click",checkoutFun);
 let CheckoutArr=[];
 function checkoutFun(cartData){
