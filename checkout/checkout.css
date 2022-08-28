@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+#main{
+
+    display: flex;
+    height: auto;
+    
+}
+
+#main>div{
+    border: 0.25px solid rgba(103, 107, 107,0.25);
+}
+
+#main div:nth-child(1){
+    width: 60%;  
+   
+}
+#right{
+  
+    width: 40%;
+    
+}
+#right>#up{
+  
+    width: 100%;
+    height: 30%;
+   
+
+}
+#logo1{
+    margin-top: 50px;
+}
+#down{
+  
+    width: 100%;
+    height: 50%;
+   
+
+}
+
+#logoImg{
+    width: 50%;
+    height: 60px;
+    margin-left: -75px;
+    
+}
+
+
+#logoLink{
+    font-size: 14px;
+    margin-top: -20px;
+    gap: 10px;
+    margin-left: -7px;
+}
+#logoLink span{
+    /* border: 1px solid; */
+    margin: 5px;
+    cursor: pointer;
+   
+}
+
+#logoLink span:nth-child(4){
+    /* border: 1px solid; */
+    color: blue;
+}
+#ExpressCheckOut{
+    margin-top: 20px;
+    
+}
+#ExpressCheckOut h4{
+    font-weight: lighter;
+
+}
+
+hr{
+    margin-top: 10px;
+    
+}
+#email{
+    margin-top: 20px;
+}
+#email,#country,#phone,#u_address{
+    width:80%;
+    height: 30px;
+    margin-bottom: 10px;font-size: 1.2rem;
+
+}
+#fname,#lname{
+    width:39%;
+    height: 30px;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+
+}
+#u_city,#state,#zipcode{
+    font-size: 1.2rem;
+    width:26%;
+    height: 30px;
+    margin-bottom: 15px;
+
+}
+#btn{
+    background-color: rgb(32, 63, 32);
+    padding: 10px 50px;
+    font-size: 1rem;
+    border: 0px;
+    border-radius: 20px;
+    color: aliceblue;
+    margin-left: 200px;
+}
+#down>div{
+    
+    margin: 10% 10%;
+    
+}
+#down>div button{
+    background-color: teal;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 5px;
+    margin-top: 30px;
+   
+    
+}
+#up div{
+    width:80%;   
+    margin: auto;
+    margin-top: 10%;
+    background-color: rgb(60, 149, 148);
+    color: white;
+
+
+}
+
+#display{
+    margin-top: 100px;
+    font-size: 2rem;
+}

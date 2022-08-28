@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information - Himalaya Wellness (US) - Checkout</title>
+    <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0399/1728/9633/files/H_Logo-01_32x32.png?v=1591028931" type="image/png">
+    <link rel="stylesheet" href="./checkout.css">
+</head>
+<body>
+    
+    <div id="main">
+
+        <div>
+            <div>
+               <img id="logoImg" src="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/new-logo.png?2326" alt="logo">
+            </div>
+
+            <div id="logo1">
+                <p id="logoLink"><Span>Cart</Span>><span>Information</span>><span>Shipping</span>><span>Payment</span></p>
+            </div>
+
+           
+
+            <hr>
+
+            <div>Contact information</div>
+            <input
+              type="text"
+              placeholder="Email or mobile phone number"
+              id="email"
+            />
+            <h2>Shipping address</h2>
+            <input type="text" name="" id="country" value="United States" /><br>
+            <input type="text" placeholder="First Name" id="fname" />
+            <input type="text" placeholder="Last Name" id="lname" /><br>
+            <input type="text" name="" id="u_address" placeholder="Address" /><br>
+            <input type="text" name="" id="u_city" placeholder="City" />
+            
+            <input type="text" placeholder="State" , id="state" />
+            <input type="text" placeholder="ZIP code" id="zipcode" /><br>
+            <input type="text" name="" id="phone" placeholder="Phone" /><br>
+            <a href="shop.html">Back to shopping</a>
+            <button id="btn">Continue Shopping</button>
+        </div>
+        <div id="right">
+            <div id="up"></div>
+            <div id="down"></div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
+<script>
+    let users=JSON.parse(localStorage.getItem("user"))||[]
+    // console.log('users: ', users); 
+    
+
+
+    let btn=document.getElementById("btn")
+    btn.onclick=()=>{
+        cdata()
+    }
+    let cdata=()=>{
+        users=[]
+        let obj={
+        email:document.getElementById("email").value,
+        country:document.getElementById("country").value,
+        first_name:document.getElementById("fname").value,
+        last_name:document.getElementById("lname").value,
+        address:document.getElementById("u_address").value,
+        city:document.getElementById("u_city").value,
+        state:document.getElementById("state").value,
+        zip:document.getElementById("zipcode").value,
+        phone:document.getElementById("phone").value,
+        }
+        
+        users.push(obj)       
+     
+        localStorage.setItem("user",JSON.stringify(users))
+        window.location.reload()
+    
+    }
+
+
+   
+
+    let cont2=document.getElementById("down")
+    let dispalyTab=(data)=>{
+        data.forEach((el)=> {
+            let div=document.createElement("div")
+            let p1=document.createElement("p")
+            p1.innerText="Coustomer Shipping address"
+            p1.style.color="blue"
+            let p2=document.createElement("p")
+            p2.innerText="Email:"+el.email
+            let p3=document.createElement("p")
+            p3.innerText="Name:"+el.first_name+" "+el.last_name
+            let p4=document.createElement("p")
+            p4.innerText="Address:"+el.address+" "+el.state+" "+el.city+" "+el.zip+" "+el.country
+            let p5=document.createElement("p")
+            p5.innerText="Phone No:"+" "+el.phone
+            let btn=document.createElement("button")
+
+            btn.innerText="Confirm Order"
+            btn.onclick=()=>{
+                alert("Order Placed sucessfully")
+            }
+
+
+
+            div.append(p1,p2,p3,p4,p5,btn)
+            cont2.append(div)
+            
+        });
+    }   
+         
+
+    
+    dispalyTab(users)
+    let updata=localStorage.getItem("TOTAL")
+    let cont3=document.getElementById("up")
+    let p=document.createElement("P")
+    p.id="display"
+    p.innerText="Total"+":  "+updata
+   let div= document.createElement("div")
+    div.append(p)
+    cont3.append(div)
+    
+</script>
