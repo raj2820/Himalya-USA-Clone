@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account – Himalaya Wellness (US)</title>
+    <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0399/1728/9633/files/H_Logo-01_32x32.png?v=1591028931"
+        type="image/png">
+    <link rel="stylesheet" href="./account.css">
+
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+
+    <!-- header start -->
+    <header class="header">
+        <div class="container">
+
+
+        </div>
+    </header>
+
+    <!-- account -->
+
+    <div id="accountshivam">
+        <h1>Account</h1>
+        <div id="myAcc">
+            <h2>My Account</h2>
+        </div>
+        <!-- <div id="orderHist">
+            <h3>Order History</h3>
+            <p>You haven't placed any orders yet.</p>
+        </div> -->
+        <div id="accDetails">
+            <h3>Account Details</h3>
+            <hr>
+            <div>
+                <p>Name:</p>
+                <p id="personName"></p>
+            </div>
+            <hr>
+            <div>
+                <p>E-mail:</p>
+                <p id="personEmail"></p>
+            </div>
+            <hr>
+            <div>
+                <p>Country:</p>
+                <p id="personCountry"></p>
+            </div>
+            <hr>
+            <div>
+                <p>Address:</p>
+                <p id="personAddress"></p>
+            </div>
+            <hr>
+            <div>
+                <p>Phone:</p>
+                <p id="personPhone"></p>
+            </div>
+            <hr>
+        </div>
+        <a href="index.html" id="AdreessLink">
+            <div id="addrBtn">
+                <p>Home</p>
+            </div>
+        </a>
+    </div>
+    <!-- footer -->
+
+    <div id="footer">
+
+    </div>
+</body>
+
+</html>
+<script type="module">
+    import {toggle,navbar,footer,swiper,swiperfunctionality} from './navbar-footer.js'
+    console.log(navbar)
+    
+    let container=document.querySelector(".container")
+    container.innerHTML=navbar();
+    toggle()
+
+    let footerDiv=document.getElementById("footer")
+    footerDiv.innerHTML=footer()
+    swiper()
+    swiperfunctionality()
+</script>
+
+
+<script src="./account.js"></script>
