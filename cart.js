@@ -192,13 +192,13 @@ function TotalDisplay(cartData){
 
     cartData.forEach(function(el){
        Number(el.price)
-        // TOTAL = TOTAL + el.price;
-        console.log(typeof el.price)
-        // document.querySelector("#subtotalspan").append(TOTAL)
-        // document.querySelector("#subgrandtotalspan").append(`$${TOTAL}`)
+        TOTAL = TOTAL + el.price;
     })
 }
 TotalDisplay(cartData);
+document.querySelector("#subtotalspan").append(`$${TOTAL}`)
+document.querySelector("#subgrandtotalspan").append(`$${TOTAL}`)
+localStorage.setItem("TOTAL",JSON.stringify(TOTAL))
 
 
 
