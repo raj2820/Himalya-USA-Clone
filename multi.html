@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy & Vitality</title>
+    <link rel="icon" href="//cdn.shopify.com/s/files/1/0399/1728/9633/files/H_Logo-01_32x32.png?v=1591028931" type="image/png">
+    <link rel="stylesheet" href="hs.css">
+    <link rel="stylesheet" type="text/css" href="index.css">    
+   <!-- swiper css -->
+   <link rel="stylesheet" type="text/css" href="swiper-bundle.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container"></div>
+</header>
+    <h1>Energy & Vitality</h1>
+    <select id="sortName">
+      <option>Sort By Name</option>
+      <option value="Name Ascending">Name Ascending</option>
+      <option value="Name Descending"> Name Descending</option>
+      <option value="Price Ascending">Price Ascending</option>
+      <option value="Price Descending">Price Descending</option>
+    </select>
+    
+    <div id="hs">
+      <div id="side">
+        <h1><a href="hs.html">Health-Interests</a></h1>
+        <a href="blood.html">Blood Suger</a><br>
+        <a href="brain.html">Brain & Cognitive</a><br>
+        <a href="digesition.html">Digestion</a><br>
+        <a href="energy.html">Energy & Vitality</a><br>
+        <a href="hair.html">Hair,Skin Nails</a><br>
+        <a href="heart.html">Heart & Cardio</a><br>
+        <a href="immune.html">Immune Support</a><br>
+        <a href="joint.html">Joint & Mobility</a><br>
+        <a href="liver.html">Liver & Cleanse</a><br>
+        <a href="mens.html">Men's Wellness</a><br>
+        <a href="res.html">Respiratory</a><br>
+        <a href="sleep.html">Sleep</a><br>
+        <a href="stres.html">Stress & Mood</a><br>
+        <a href="uranary.html">Urinary</a><br>
+        <a href="weight.html">Weight Management</a><br>
+        <a href="womens.html">Women's Wellness</a><br>
+      </div>      
+      <div id="container"></div>
+    </div>
+    <div id="footer"></div>
+
+
+
+    
+    
+</body>
+</html>
+<script type="module">
+  import {toggle,navbar,footer,swiper,swiperfunctionality} from './navbar-footer.js'
+    console.log(navbar)
+    
+    let container=document.querySelector(".container")
+    container.innerHTML=navbar();
+    toggle()
+
+    let footerDiv=document.getElementById("footer")
+    footerDiv.innerHTML=footer()
+    swiper()
+    swiperfunctionality()
+    let data=[
+    {
+      "image": "https://himalayausa.com/collections/supplements-formulas/products/ashwagandha-relax",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/ashwagandharelax-787355_800x.png?v=1660858335",
+      "title": "Ashwagandha+Relax",
+      "price": "$23.99",
+      "description": "Discover the soothing strength of Ashwagandha+ Relax to help you rest and recharge.* Suggested Use Adults take 2 capsules once daily. Days of Supply Size (Capsules) 60 Supply (Months) 1...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$23.99",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/supplements-formulas/products/back-to-balance-cleanse",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/back-to-balance-cleanse-297598_800x.png?v=1660858351",
+      "title": "Back to Balance Cleanse™",
+      "price": "$29.95",
+      "description": "To keep your body cleaner and feel less bloated, you deserve more than just a quick herbal purge. You deserve the morning and evening wisdom of Himalaya Back to Balance...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$29.95",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/supplements-formulas/products/comfortcleanse",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/comfortcleanse-636861_800x.png?v=1660858348",
+      "title": "ComfortCleanse®",
+      "price": "$22.95",
+      "description": "If you're seeking gentle, reliable colon cleansing and relief from occasional constipation, without the purging and cramping of other herbs you’ve tried, Himalaya’s ComfortCleanse with no Senna and no Cascara...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$22.95",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/supplements-formulas/products/curcumin-complete",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/curcumin-complete-187497_800x.png?v=1660858326",
+      "title": "Curcumin Complete™",
+      "price": "$19.99",
+      "description": "Try Curcumin Complete to promote range of motion and comfortable movement, and to assist your body in its own natural mechanisms that affect your joints.* Suggested Use Adults take 1...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$19.99",
+      "active": "30 Capsules",
+      "active href": "https://himalayausa.com/collections/supplements-formulas#",
+      "pt-options-swatch": "60 Capsules",
+      "pt-options-swatch href": "https://himalayausa.com/collections/supplements-formulas#"
+    },
+    {
+      "image": "https://himalayausa.com/collections/supplements-formulas/products/dermacare",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/dermacare-422043_800x.png?v=1660858352",
+      "title": "DermaCare®",
+      "price": "$23.95",
+      "description": "Himalaya DermaCare supports beautiful skin by promoting cellular health and immune system wellness to address redness, sensitive skin, and good detox and digestion, which helps address occasional acne, bringing beauty...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$23.95",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/supplements-formulas/products/floravani",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/floravani-718088_800x.png?v=1660813425",
+      "title": "FlorAvani®",
+      "price": "$42.95",
+      "description": "FlorAvani is the plant-based alternative to probiotics, and it works in ways that probiotics can't. Instead of simply trying to add new strains of bacteria to your intestines, FlorAvani feeds...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$42.95",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/supplements-formulas/products/glucocare",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/glucocare-445898_800x.png?v=1660858325",
+      "title": "GlucoCare®",
+      "price": "$26.49",
+      "description": "GlucoCare contains plant-based ingredients used for centuries in Ayurveda for supporting blood sugar levels already within normal range. It also provides support to the pancreas beta cells that store and...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$26.49",
+      "active": "90 Capsules",
+      "active href": "https://himalayausa.com/collections/supplements-formulas#",
+      "pt-options-swatch": "180 Capsules",
+      "pt-options-swatch href": "https://himalayausa.com/collections/supplements-formulas#"
+    },
+    {
+      "image": "https://himalayausa.com/collections/supplements-formulas/products/heartcare",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/heartcare-353117_800x.png?v=1660858339",
+      "title": "HeartCare®",
+      "price": "$24.95",
+      "description": "Many cultures consider the heart to be the center of physical and emotional wellness. Himalaya HeartCare is clinically studied to support HDL and LDL cholesterol levels already within normal range,...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$24.95",
+      "active": "120 Capsules",
+      "active href": "https://himalayausa.com/collections/supplements-formulas#",
+      "pt-options-swatch": "240 Capsules",
+      "pt-options-swatch href": "https://himalayausa.com/collections/supplements-formulas#"
+    },
+    {
+      "image": "https://himalayausa.com/collections/supplements-formulas/products/hello-calm-mind",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/hello-calm-mind-673401_800x.png?v=1660858335",
+      "title": "Hello Calm Mind",
+      "price": "$23.99",
+      "description": "Because days are so much easier with fewer racing thoughts, Himalaya Calm Mind is formulated to help you concentrate and be calm as you navigate through your day.* Suggested Use...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$23.99",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/supplements-formulas/products/hello-energy",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/hello-energy-997862_800x.jpg?v=1660858334",
+      "title": "Hello Energy®",
+      "price": "$23.99",
+      "description": "Who couldn't use a little extra help to boost energy throughout their day? Say goodbye to burnout and say hello to achieving your daily tasks without having to use stimulants...",
+      "pt-btn-addtocart": "",
+      "price 2": "",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/supplements-formulas/products/hello-joy",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/hello-joy-933428_800x.jpg?v=1660858335",
+      "title": "Hello Joy®",
+      "price": "$23.99",
+      "description": "Say hello to joy and goodbye to blues! Hello Joy® supports mood and emotional wellness when you need it most. No matter what we face in our day, our ability...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$23.99",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/supplements-formulas/products/hello-peace",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/hello-peace-589514_800x.jpg?v=1660858323",
+      "title": "Hello Peace®",
+      "price": "$23.99",
+      "description": "Remaining calm in stressful situations is a superpower. Say hello to peace and goodbye to anxiety with Hello Peace® which has been formulated to provide daily stress relief, support your...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$23.99",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/supplements-formulas/products/immunocare",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/immunocare-629100_800x.png?v=1660813422",
+      "title": "ImmunoCare®",
+      "price": "$24.95",
+      "description": "For situational, seasonal, or year-round immune system support, Himalaya ImmunoCare provides nourishing, plant-based ingredients to reinforce your body's own ability to find balance and wellness. During winter chill or summer...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$24.95",
+      "active": "120 Capsules",
+      "active href": "https://himalayausa.com/collections/supplements-formulas#",
+      "pt-options-swatch": "240 Capsules",
+      "pt-options-swatch href": "https://himalayausa.com/collections/supplements-formulas#"
+    },
+    {
+      "image": "https://himalayausa.com/collections/supplements-formulas/products/jointcare",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/jointcare-123162_800x.png?v=1660858349",
+      "title": "JointCare®",
+      "price": "$32.95",
+      "description": "Promote your freedom of movement and healthy range of motion every day with Himalaya JointCare, the clinically-studied plant-based support formula for healthy joints. Go beyond your daily Turmeric and Curcumin...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$32.95",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/supplements-formulas/products/koflet-lozenges",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/koflet-lozenges-625921_800x.png?v=1660813419",
+      "title": "Koflet Lozenges®",
+      "price": "$5.29",
+      "description": "Unwrap quick comfort with deliciously-soothing Himalaya Koflet Lozenges. The pleasing tingle of these plant-based lozenges help maintain your bronchial lubrication and provide you with warmth and soothing whenever you need...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$5.29",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/supplements-formulas/products/koflet-lozenges-orange-cardamom",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/koflet-lozenges-orange-cardamom-338868_800x.png?v=1660858324",
+      "title": "Koflet Lozenges® - Orange Cardamom",
+      "price": "$5.29",
+      "description": "Unwrap quick comfort with deliciously-soothing Himalaya Koflet Lozenges. Our plant-based lozenges provide a warm and soothing tingle to comfort you seasonally or all year round. A unique master blend of...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$5.29",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/supplements-formulas/products/koflet-lozenges-vanilla-chai",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/koflet-lozenges-vanilla-chai-899575_800x.png?v=1660858358",
+      "title": "Koflet Lozenges® - Vanilla Chai",
+      "price": "$5.29",
+      "description": "Unwrap quick comfort with deliciously-soothing Himalaya Koflet Lozenges. Our plant-based lozenges provide a warm and soothing tingle to comfort you seasonally or all year round.* A unique master blend of...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$5.29",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/supplements-formulas/products/leancare",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/leancare-847948_800x.png?v=1660858341",
+      "title": "LeanCare®",
+      "price": "$28.95",
+      "description": "Himalaya LeanCare avoids the magic diet pill myth by giving you a smart, solid, realistic start to your weight management goals. When you add it to regular exercise and good...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$28.95",
+      "active": "120 Capsules",
+      "active href": "https://himalayausa.com/collections/supplements-formulas#",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/supplements-formulas/products/livercare-liver-supplement",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/livercare-524140_800x.png?v=1660858343",
+      "title": "LiverCare®",
+      "price": "$17.95",
+      "description": "Not only is LiverCare one of the best-known supplements around for liver detox and liver cleanse, it also supports the metabolic capacity of your liver to promote liver performance. In...",
+      "pt-btn-addtocart": "SOLD OUT",
+      "price 2": "$17.95",
+      "active": "42 Capsules",
+      "active href": "https://himalayausa.com/collections/supplements-formulas#",
+      "pt-options-swatch": "90 Capsules",
+      "pt-options-swatch href": "https://himalayausa.com/collections/supplements-formulas#"
+    },
+    {
+      "image": "https://himalayausa.com/collections/supplements-formulas/products/menocare",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/menocare-174498_800x.png?v=1660858344",
+      "title": "MenoCare®",
+      "price": "$28.95",
+      "description": "Himalaya MenoCare provides soothing physical and emotional comfort during menopause by helping you with hot flashes, night sweats and occasional sleeplessness. MenoCare brings back balance and promotes cool menopausal wisdom.*...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$28.95",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/supplements-formulas/products/menstricare",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/menstricare-671572_800x.png?v=1660858338",
+      "title": "MenstriCare®",
+      "price": "$32.95",
+      "description": "Himalaya MenstriCare supports and comforts you every month during your period, with wise, time-honored ingredients that support emotional and hormone balance and reduce your cramping, fatigue and discomfort. MenstriCare addresses...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$32.95",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/supplements-formulas/products/mindcare",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/mindcare-700685_800x.png?v=1660858331",
+      "title": "MindCare®",
+      "price": "$24.49",
+      "description": "In our fast-paced world, focus and forgetfulness are a challenge for everybody. Himalaya MindCare supports memory, focus and logic, helps with occasional absentmindedness and the occasional lack of concentration.* Suggested...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$24.49",
+      "active": "60 Capsules",
+      "active href": "https://himalayausa.com/collections/supplements-formulas#",
+      "pt-options-swatch": "120 Capsules",
+      "pt-options-swatch href": "https://himalayausa.com/collections/supplements-formulas#"
+    },
+    {
+      "image": "https://himalayausa.com/collections/supplements-formulas/products/partysmart",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/partysmart-389967_800x.png?v=1660858347",
+      "title": "PartySmart®",
+      "price": "$22.99",
+      "description": "Put the fun back into your celebrations. PartySmart gives you an easier morning after a night out. The herbs in PartySmart support the liver's ability to process alcohol while you're...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$22.99",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/supplements-formulas/products/prostacare",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/prostacare-580028_800x.png?v=1660858347",
+      "title": "ProstaCare®",
+      "price": "$29.95",
+      "description": "Himalaya ProstaCare helps support normal urine flow by supporting your prostate and urinary tract health. The male urinary system is sensitive to aging, but the plant-based support in ProstaCare adds...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$29.95",
+      "active": "120 Capsules",
+      "active href": "https://himalayausa.com/collections/supplements-formulas#",
+      "pt-options-swatch": "240 Capsules",
+      "pt-options-swatch href": "https://himalayausa.com/collections/supplements-formulas#"
+    },
+    {
+      "image": "https://himalayausa.com/collections/supplements-formulas/products/respicare",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/respicare-901113_800x.png?v=1660858318",
+      "title": "RespiCare®",
+      "price": "$27.95",
+      "description": "For times when there's too much junk in the air, or times when you need seasonal or year-round breathing support, reach for Himalaya RespiCare to balance the underlying mechanisms linked...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$27.95",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/supplements-formulas/products/stresscare",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/stresscare-890975_800x.png?v=1660858323",
+      "title": "StressCare®",
+      "price": "$18.95",
+      "description": "Relax, Himalaya's got your back. StressCare is a top choice for anyone who needs steady relief in a stressed-out world. StressCare promotes healthy levels of relaxation, mood and energy, and...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$18.95",
+      "active": "60 Capsules",
+      "active href": "https://himalayausa.com/collections/supplements-formulas#",
+      "pt-options-swatch": "120 Capsules",
+      "pt-options-swatch href": "https://himalayausa.com/collections/supplements-formulas#"
+    },
+    {
+      "image": "https://himalayausa.com/collections/supplements-formulas/products/uricare",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/uricare-811929_800x.png?v=1660858346",
+      "title": "UriCare®",
+      "price": "$21.95",
+      "description": "For caffeine-free urinary tract support, Himalaya UriCare promotes normal bladder muscle contraction and relaxation to promote healthy urine flow. It also supports the normal filtration efforts of the kidneys, and...",
+      "pt-btn-addtocart": "SOLD OUT",
+      "price 2": "$21.95",
+      "active": "120 Capsules",
+      "active href": "https://himalayausa.com/collections/supplements-formulas#",
+      "pt-options-swatch": "240 Capsules",
+      "pt-options-swatch href": "https://himalayausa.com/collections/supplements-formulas#"
+    },
+    {
+      "image": "https://himalayausa.com/collections/supplements-formulas/products/veincare",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/veincare-770562_800x.png?v=1660858357",
+      "title": "VeinCare®",
+      "price": "$22.95",
+      "description": "Himalaya VeinCare was designed to address the elasticity and strength of your vein walls, including the comfort of the superficial veins of the rectum. VeinCare also promotes normal circulation, tissue...",
+      "pt-btn-addtocart": "",
+      "price 2": "",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    },
+    {
+      "image": "https://himalayausa.com/collections/supplements-formulas/products/vigorcare-for-men",
+      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/vigorcare-for-men-270414_800x.png?v=1660858355",
+      "title": "VigorCare® For Men",
+      "price": "$27.95",
+      "description": "When taken an hour before bedtime, Himalaya VigorCare for Men supports stamina, energy and sex drive for men. Not only does it support male reproductive function, it also includes plant-based...",
+      "pt-btn-addtocart": "ADD TO CART",
+      "price 2": "$27.95",
+      "active": "",
+      "active href": "",
+      "pt-options-swatch": "",
+      "pt-options-swatch href": ""
+    }
+   ]
+
+    let cartArr=JSON.parse(localStorage.getItem("cart"))||[]
+   let cont=document.getElementById("container")
+   diaspalyTable(data)
+   function diaspalyTable(data){
+   cont.innerHTML=null
+    data.forEach((el)=> {
+        let div=document.createElement("div")
+        let image=document.createElement("img")
+        image.src=el.lazyload
+        let title=document.createElement("h3")
+        title.innerText=el.title
+        let price=document.createElement("h1")
+        price.innerText=el.price
+        let btn=document.createElement("button")
+        btn.innerText="ADD TO CART"
+        btn.addEventListener("click",function(){
+          addcart(el)
+        })
+        div.append(image,title,price,btn)
+        cont.append(div)
+        
+    });
+   }
+ 
+   function addcart(el){
+    cartArr.push(el)
+    console.log(cartArr)
+    localStorage.setItem("cart",JSON.stringify(cartArr))
+    alert("Added to cart")
+    
+}
+
+
+
+
+  
+document.querySelector("#sortName").addEventListener("change",nameSort)
+
+    function nameSort(){
+      let selected=document.querySelector("#sortName").value
+      if(selected=="Name Ascending"){
+        
+        data.sort(function(a,b){
+        let x=a.title.toUpperCase()
+        let y=b.title.toUpperCase()
+          if(x>y) return 1
+          if(y>x) return -1
+          return 0
+        })
+        
+      }
+      if(selected=="Name Descending"){
+        data.sort(function(a,b){
+        let x=a.title.toUpperCase()
+        let y=b.title.toUpperCase()
+          if(x>y) return -1
+          if(y>x) return  1
+          return 0
+        })
+        
+        
+      }
+      if(selected=="Price Ascending"){
+        
+        data.sort(function(a,b){
+        let x=a.price.toUpperCase()
+        let y=b.price.toUpperCase()
+          if(x>y) return 1
+          if(y>x) return -1
+          return 0
+        })
+        
+      }
+      if(selected=="Price Descending"){
+        data.sort(function(a,b){
+        let x=a.price.toUpperCase()
+        let y=b.price.toUpperCase()
+          if(x>y) return -1
+          if(y>x) return  1
+          return 0
+        })
+        
+        
+      }
+      
+      diaspalyTable(data)
+      
+    }
+</script>

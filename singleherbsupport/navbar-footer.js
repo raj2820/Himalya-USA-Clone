@@ -565,7 +565,6 @@ let closeMenu = menu.querySelector(".mobile-menu-close");
                    </g>
                </g>
                </svg></a>
-               
     </div>
  </div>
  
@@ -588,29 +587,27 @@ let closeMenu = menu.querySelector(".mobile-menu-close");
                       <div class="list-item">
                            <h4 class="title">Herbal Suppliments</h4>
                            <ul>
-                               <li><a href="single.html">Single Herb Suppliments</a></li>
-                               <li><a href="multi.html">Multi-Ingredient Suppliments</a></li>
+                               <li><a href="#">Single Herb Suppliments</a></li>
+                               <li><a href="#">Multi-Ingredient Suppliments</a></li>
                                
                            </ul>
                         
-                           <a href="#"><h4 class="title">Health Intrests</h4></a>
+                           <h4 class="title">Health Intrests</h4>
                            <ul>
-                               <li><a href="blood.html">Blood Sugar</a></li>
-                               <li><a href="brain.html">Brain & Cognitive</a></li>
-                               <li><a href="digestion.html">Digestion</a></li>
-                            <li><a href="energy.html">Energy & Vitality</a></li>
-                            <li><a href="hair.html">Hair,Skin & Nails</a></li>
-                            <li><a href="immune.html">Immune Support</a></li>
-                            <li><a href="joint.html">Joint & Mobility</a></li>
-                            <li><a href="liver.html">Liver & Cleanse</a></li>
+                               <li><a href="#">Blood Sugar</a></li>
+                               <li><a href="#">Brain & Cognitive</a></li>
+                               <li><a href="#">Digestion</a></li>
+                            <li><a href="#">Energy & Vitality</a></li>
+                            <li><a href="#">Hair,Skin & Nails</a></li>
+                            <li><a href="#">Immune Support</a></li>
                            </ul>
                       </div>
                       <div class="list-item">
                        
                          <h4 class="title">Oral Care</h4>
                          <ul>
-                               <li><a href="adult.html">Adult Toothpaste</a></li>
-                               <li><a href="kids.html">Kids Toothpaste</a></li>
+                               <li><a href="#">Adult Toothpaste</a></li>
+                               <li><a href="#">Kids Toothpaste</a></li>
                                
                            </ul>
                   
@@ -618,15 +615,10 @@ let closeMenu = menu.querySelector(".mobile-menu-close");
                       <div class="list-item">
                          <h4 class="title">Personal Care</h4>
                          <ul>
-                               <li><a href="face.html">Face Care</a></li>
-                               <li><a href="bar.html">Cleansing Bars</a></li>
-                               <li><a href="balms.html">Balm</a></li>
-                              <li><a href="mens.html">Men's Wellness</a></li>
-                              <li><a href="res.html">Respiratory</a></li>
-                              <li><a href="sleep.html">Sleep</a></li>
-                              <li><a href="uranary.html">Urinary</a></li>
-                              <li><a href="weight.html">Weight Management</a></li>
-                              <li><a href="womens.html">Women's Wellness</a></li>
+                               <li><a href="#">Face Care</a></li>
+                               <li><a href="#">Cleansing Bars</a></li>
+                               <li><a href="#">Balm</a></li>
+                              
                            </ul>
                       </div>
                       <div class="list-item" id="nav-image">
@@ -634,7 +626,6 @@ let closeMenu = menu.querySelector(".mobile-menu-close");
                       </div>
              </div>
           </li>
-        
           <li class="menu-item-has-children">
              <a href="about.html" style="font-size: 18px;     letter-spacing: 0.04em;">About <i class="fas fa-angle-down"></i></a>
              
@@ -643,8 +634,8 @@ let closeMenu = menu.querySelector(".mobile-menu-close");
              <a href="store.html" > <p style="font-size: 18px;    letter-spacing: 0.04em;">Store Locator </p><i class="fas fa-angle-down"></i></a>
              
           </li>
-    
-         
+             
+              
           
        </ul>
             
@@ -652,7 +643,7 @@ let closeMenu = menu.querySelector(".mobile-menu-close");
  </div>
  <!-- menu end here -->
  <div id="left-nav" class="header-item item-right">
-   <a href="#">  <div id="search">
+   <a href="search.html">  <div id="search">
          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
                  <path fill="currentColor" d="M23.6,22.4l-4.3-4.3C21,16.3,22,13.7,22,11c0-6.1-4.9-11-11-11S0,4.9,0,11s4.9,11,11,11c2.7,0,5.3-1,7.2-2.7
                      l4.3,4.3L23.6,22.4z M1.6,11c0-5.2,4.2-9.4,9.4-9.4c5.2,0,9.4,4.2,9.4,9.4c0,5.2-4.2,9.4-9.4,9.4C5.8,20.4,1.6,16.2,1.6,11z"></path>
@@ -680,7 +671,7 @@ let closeMenu = menu.querySelector(".mobile-menu-close");
              </svg>
      </div></a>
  </div>
- 
+  
 </div>`
  }
 
@@ -691,15 +682,15 @@ let closeMenu = menu.querySelector(".mobile-menu-close");
         <h2>Info</h2>
         <a href="#"><p>Contact Us</p></a>
         <a href="#"><p>FAQ</p></a>
-        <a href="blog.html"><p>Blog</p></a>
-        <a href="store.html"><p>Store Locator</p></a>
-        <a href="careers.html"><p>Careers</p></a>
+        <a href="#"><p>Blog</p></a>
+        <a href="#"><p>Store Locator</p></a>
+        <a href="#"><p>Careers</p></a>
     </div>
     <div>
         <h2>Policies</h2>
         <a href="#"><p>Shipping & Returns</p></a>
-        <a href="Terms&condition.html"><p>Terms & Conditions</p></a>
-        <a href="privacy.html"><p>Privacy</p></a>
+        <a href="#"><p>Terms & Conditions</p></a>
+        <a href="#"><p>Privacy</p></a>
         <a href="#"><p>CCPA</p></a>
         <a href="#"><p>Accessibility</p></a>
     </div>
@@ -790,104 +781,3 @@ function swiperfunctionality(){
 }
 
 export {toggle,navbar,footer,swiper,swiperfunctionality}
-
-
-let home_Products_data=[
-    {
-      "image": "https://himalayausa.com/collections/all/products/ashwagandha-relax",
-      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/ashwagandharelax-787355_800x.png?v=1660858335",
-      "title": "Ashwagandha+Relax",
-      "price": "$23.99",
-      "description": "Discover the soothing strength of Ashwagandha+ Relax to help you rest and recharge.* Suggested Use Adults take 2 capsules once daily. Days of Supply Size (Capsules) 60 Supply (Months) 1...",
-      "pt-btn-addtocart": "ADD TO CART",
-      "price 2": "$23.99",
-      "active": "",
-      "active href": "",
-      "pt-options-swatch": "",
-      "pt-options-swatch href": ""
-    },
-    {
-      "image": "https://himalayausa.com/collections/all/products/back-to-balance-cleanse",
-      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/back-to-balance-cleanse-297598_800x.png?v=1660858351",
-      "title": "Back to Balance Cleanse™",
-      "price": "$29.95",
-      "description": "To keep your body cleaner and feel less bloated, you deserve more than just a quick herbal purge. You deserve the morning and evening wisdom of Himalaya Back to Balance...",
-      "pt-btn-addtocart": "ADD TO CART",
-      "price 2": "$29.95",
-      "active": "",
-      "active href": "",
-      "pt-options-swatch": "",
-      "pt-options-swatch href": ""
-    },
-    {
-      "image": "https://himalayausa.com/collections/all/products/bamboo-sea-salt-whitening-antiplaque-toothpaste",
-      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/bamboo-sea-salt-whitening-antiplaque-toothpaste-363920_800x.png?v=1660858353",
-      "title": "Bamboo & Sea Salt Whitening Antiplaque Toothpaste",
-      "price": "$5.99",
-      "description": "Get the smile you’ve been looking for with gentle Bamboo, which is famous for its strong fibers and silica, and purified Sea Salt for a clean, fresh mouth and healthy-looking...",
-      "pt-btn-addtocart": "ADD TO CART",
-      "price 2": "$5.99",
-      "active": "",
-      "active href": "",
-      "pt-options-swatch": "",
-      "pt-options-swatch href": ""
-    },
-    {
-      "image": "https://himalayausa.com/collections/all/products/body-bar-purifying-neem-turmeric",
-      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/body-bar-purifying-neem-turmeric-342355_800x.png?v=1660858341",
-      "title": "Body Bar: Purifying (Neem & Turmeric)",
-      "price": "$4.99",
-      "description": "Himalaya Botanique Purifying Neem & Turmeric Body Bar is a handcrafted combination of pure herbs and saponified essential oils that gently cleanse and moisturize. History’s original cleansing and detox plant,...",
-      "pt-btn-addtocart": "ADD TO CART",
-      "price 2": "$4.99",
-      "active": "",
-      "active href": "",
-      "pt-options-swatch": "",
-      "pt-options-swatch href": ""
-    },
-    {
-      "image": "https://himalayausa.com/collections/all/products/body-bar-refreshing-lavender-rosemary",
-      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/body-bar-refreshing-lavender-rosemary-879892_800x.png?v=1660858358",
-      "title": "Body Bar: Refreshing (Lavender & Rosemary)",
-      "price": "$4.99",
-      "description": "Calm your senses and rejuvenate your spirit with Himalaya Botanique's Lavender & Rosemary Body Bar. Rosemary awakens the senses and Lavendar leaves your skin feeling relaxed and clean. Gentle oils...",
-      "pt-btn-addtocart": "ADD TO CART",
-      "price 2": "$4.99",
-      "active": "",
-      "active href": "",
-      "pt-options-swatch": "",
-      "pt-options-swatch href": ""
-    },
-    {
-      "image": "https://himalayausa.com/collections/all/products/boswellia",
-      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/boswellia-829056_800x.png?v=1660858338",
-      "title": "Boswellia",
-      "price": "$15.95",
-      "description": "The crystalized resin from the Indian Frankincense tree known as Boswellia is famous throughout herbal history for supporting muscle relaxation and normal joint function to promote flexibility, movement and range...",
-      "pt-btn-addtocart": "ADD TO CART",
-      "price 2": "$15.95",
-      "active": "60 Capsules",
-      "active href": "https://himalayausa.com/collections/all#",
-      "pt-options-swatch": "120 Capsules",
-      "pt-options-swatch href": "https://himalayausa.com/collections/all#"
-    },
-    {
-      "image": "https://himalayausa.com/collections/all/products/charcoal-black-seed-oil-whitening-antiplaque-toothpaste",
-      "lazyload": "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/charcoal-black-seed-oil-whitening-antiplaque-toothpaste-174005_800x.png?v=1660858351",
-      "title": "Charcoal & Black Seed Oil Whitening Antiplaque Toothpaste",
-      "price": "$5.99",
-      "description": "Let the powerful whitening action of Charcoal (derived from Coconut Shell Powder) and the famous cleansing ability of Black Seed Oil leave your mouth feeling fresher and brighter than ever....",
-      "pt-btn-addtocart": "",
-      "price 2": "",
-      "active": "",
-      "active href": "",
-      "pt-options-swatch": "",
-      "pt-options-swatch href": ""
-    }
-]
-
-
-function appendhomeProduct(){
-let swiper_wrapper=document.getElementsByClassName("swiper-wrapper")
-let image_content=document.getElementsByClassName
-}
