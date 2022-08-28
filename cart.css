@@ -101,7 +101,7 @@ body {
 #MedImage {
     /* cursor: pointer; */
     /* border: 1px solid ; */
-    width: 30%;
+    width: 28%;
     margin-top: -20px;
     height: 160px;
 }
@@ -155,6 +155,7 @@ color: #777777;;
     border-radius: 10px;
     border: 0.5px;
     cursor: pointer;
+
 }
 
 #MinsBtnID:hover {

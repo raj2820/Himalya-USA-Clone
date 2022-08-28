@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#accountshivam {
+    /* border: 1px solid; */
+    margin: auto;
+    max-width: 1000px;
+    text-align: center;
+    color: #333333;
+    padding-top: 120px;
+    padding-bottom: 30px;
+}
+
+#accountshivam > h1 {
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 500;
+}
+
+#myAcc {
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+#myAcc > h2 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#orderHist {
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+#orderHist > h3{
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+#orderHist > p {
+    color: #777777;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#accDetails {
+    text-align: left;
+}
+
+#accDetails > h3 {
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 26px;
+}
+
+#accDetails > div {
+    display: flex;
+    gap: 60px;
+    padding-top: 9px;
+    padding-bottom: 8px;
+    font-size: 16px;
+}
+
+#accDetails > div > p:nth-child(1) {
+    font-weight: 500;
+    color: #333333;
+    min-width: 134px;
+    padding: 5px;
+}
+
+#accDetails > div > p:nth-child(2) {
+    font-size: 18px;
+    font-weight: 400;
+    color: #777777;
+    line-height: 28px;
+}
+
+hr {
+    color: #777777;
+}
+
+#addrBtn {
+    width: 200px;
+    text-align: left;
+    color: #333333;
+    font-size: 14px;
+    border: 1px solid #a3b49b;
+    height: 44px;
+    padding-left: 29px;
+    padding-right: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#addrBtn:hover{
+    border: 3px solid ;
+}
+
+
+
+#logout {
+    color: #777777;
+}
+
+
+#AdreessLink{
+    text-decoration: none;
+}

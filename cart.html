@@ -28,7 +28,7 @@
 
     <!-- cart -->
     <div id="cartPage">
-        <h1 id="HEAD">Shopping Cart</h1>
+        <h1 id="HEAD"></h1>
        
         <div id="cartLogo">
 
@@ -42,8 +42,8 @@
                         < </span> Continue Shopping </p></a>
             </div>
             <div id="insideDiv2ID">
-                <h2 class="subtotal">Subtotal <span id="subtotalspan">0</span></h2>
-                <h1 id="grandTotal">Grand Total: <span>0</span></h1>
+                <h2 class="subtotal">Subtotal <span id="subtotalspan"></span></h2>
+                <h1 id="grandTotal">Grand Total: <span id="subgrandtotalspan"></span></h1>
                 <a href=""><button id="ProceedID" >PROCEED TO CHECKOUT</button></a>
             </div>
         </div>
@@ -69,7 +69,8 @@
     // console.log(navbar)
 
     let container = document.querySelector(".container")
-    container.innerHTML = navbar(); toggle()
+    container.innerHTML = navbar(); 
+    toggle()
 
     let footerDiv = document.querySelector("footer")
     footerDiv.innerHTML = footer()
