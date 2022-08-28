@@ -26,28 +26,13 @@ if (cartData.length ===0) {
     
     
 }else{
-
-
-    
-
-
-
-    
+  
 function display(cartData) {
 
     document.querySelector("#cartLogo").innerHTML = null;
 
     cartData.forEach(function (el, index) {
-
-        // console.log(el)
-        let count = 0
-        for(let i=0;i<cartData.length;i++){
-
-            if(cartData[i].title.includes(el.title) && cartData.length!=0){
-                count++
-                
-            }
-        }
+ 
                 let div = document.createElement("div");
                 div.setAttribute("class", "AddShopCart");
         
@@ -84,12 +69,9 @@ function display(cartData) {
                 Minsbtn.addEventListener("click", function () {
                     SubFun(count, index)
                 })
-        
-                
-        
-        
+
                 let quantity = document.createElement("h3");
-                quantity.innerText = `${count}`
+                quantity.innerText = el.quantity
                 quantity.setAttribute("id", "quantity");
         
         
@@ -97,7 +79,7 @@ function display(cartData) {
                 Plusbtn.innerText = `+`
                 Plusbtn.setAttribute("id", "Plusbtn")
                 Plusbtn.addEventListener("click", function () {
-                    AddFun(count, index,el)
+                    AddFun(cartData ,index)
                 })
         
                
@@ -145,36 +127,26 @@ function remove(el,index){
 }
 
 
-// plus function
 
 
 let sum = 0
-
-function AddFun(count, index,el) {
-    // sum = sum + count
-    // console.log(index, sum);
-    cartData.push(el);
+function AddFun(cartData ,index) {
+  
+   cartData[index].quantity++
     localStorage.setItem("cart",JSON.stringify(cartData))
-    document.querySelector("#quantity").innerText = sum;
+   
     display(cartData)
 }
 
+ let TOTAL=0;
 
+function SubFun(carData, index) {
 
-// sub 
-
-function SubFun(count, index) {
-
-    document.querySelector("#quantity").innerHTML = null
-    // sum = sum - count;
-    // console.log(sum);
-    cartData.splice(index,1)
-    document.querySelector("#quantity").append(sum);
+    cartData[index].quantity--
+    
     localStorage.setItem("cart",JSON.stringify(cartData))
     display(cartData)
 }
-
-// remove
 
 function remove(index) {
     cartData.splice(index, 1)
@@ -184,25 +156,19 @@ function remove(index) {
     localStorage.setItem("cart", JSON.stringify(cartData));
 }
 
-
-
-
-let TOTAL=0;
 function TotalDisplay(cartData){
 
     cartData.forEach(function(el){
        Number(el.price)
         TOTAL = TOTAL + el.price;
+        TOTAL*=el.quantity;
     })
+        display(cartData)
 }
 TotalDisplay(cartData);
 document.querySelector("#subtotalspan").append(`$${TOTAL}`)
 document.querySelector("#subgrandtotalspan").append(`$${TOTAL}`)
 localStorage.setItem("TOTAL",JSON.stringify(TOTAL))
-
-
-
-
 
 document.querySelector("#ProceedID").addEventListener("click",checkoutFun);
 let CheckoutArr=[];
