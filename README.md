@@ -2,7 +2,7 @@
 https://630c7ea5fe01ec7d8a7acb5f--aquamarine-khapse-1fb54c.netlify.app/
 
 
-<img scr="https://raj2820.github.io./himalya.png" >
+
 
 Group members:-
 <ul>
@@ -12,3 +12,4 @@ Group members:-
    <li>Shivam Singh.</li>
    <li>Ashish Kumar.</li>
 </ul>
+<img scr="https://raj2820.github.io./himalya.png" >
