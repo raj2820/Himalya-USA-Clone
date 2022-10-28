@@ -12,4 +12,4 @@ Group members:-
    <li>Shivam Singh.</li>
    <li>Ashish Kumar.</li>
 </ul>
-![image]("https://raj2820.github.io./himalya.png" )
+![image](https://raj2820.github.io./himalya.png)
