@@ -2,4 +2,4 @@
 https://630c7ea5fe01ec7d8a7acb5f--aquamarine-khapse-1fb54c.netlify.app/
 
 
-<h1 text-align="center"> HIMALYA USA CLONE</h1>
+<h1 style=" text-align:center;"> HIMALYA USA CLONE</h1>
