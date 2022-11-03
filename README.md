@@ -4,7 +4,13 @@ https://630c7ea5fe01ec7d8a7acb5f--aquamarine-khapse-1fb54c.netlify.app/
 Description:- 
 Himalaya USA is a website selling wellness products in the United States of America. It was a group project. Our task was to clone the website. Features of the website are:-
 Responsive , Sign in/Sign up pages , Cart page , Dynamic.
-
+TECH-STACK:- HTML , CSS and JavaScript .
+Key responsibilities:
+Lead team of five for the project.
+Developed Home page.
+Developed Navigation bar.
+Developed Footer.
+Debugging other team members' code.
 
 Group members:-
 <ul>
