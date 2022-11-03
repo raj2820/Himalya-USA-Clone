@@ -5,14 +5,7 @@ Description:-
 Himalaya USA is a website selling wellness products in the United States of America. It was a group project. Our task was to clone the website. Features of the website are:-
 Responsive , Sign in/Sign up pages , Cart page , Dynamic.</br>
 TECH-STACK:- HTML , CSS and JavaScript .</br>
-Key responsibilities:
 
-<ul>
-  <li> Lead team of five for the project. </li>
-  <li> Developed Home page. </li>
-  <li> Developed Navigation bar. </li>
-  <li>Developed Footer.  </li>
-  <li> Debugging other team members' code. </li>
 Group members:-
 <ul>
   <li>Raj Shinde (Team-lead).</li>
