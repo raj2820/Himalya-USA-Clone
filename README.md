@@ -27,7 +27,7 @@ Team members :-
   <li>Raj Shinde (Team-lead)</li>
 <li>Ankita Deb</li>
   <li>Shivam Gote</li>
-    <li>Ashish Kumar</li>
+  <li>  <a href="https://github.com/Ashish33000">   Ashish Kumar </a></li>
    <li>Shivam Singh</li>
   </ul>
 
