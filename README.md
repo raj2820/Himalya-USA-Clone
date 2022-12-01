@@ -9,6 +9,8 @@ Features :
 <li> Sign in/Sign up pages </li>
 <li> Cart page </li>
 <li> Dynamic  </li>
+  <li> Store Locator </li>
+  <li> Product pages</li>
 <li> DOM manipulation </li>
 </ul></br>
 
@@ -18,9 +20,16 @@ TECH-STACK:
 <li> CSS </li>
 <li> JavaScript </li>
 </ul>
-A solo project built over a period of 5 days.
+A group project built over a period of 5 days.
 
-
+Team members :-
+<ul>
+  <li>Raj Shinde (Team-lead)</li>
+<li>Ankita Deb</li>
+  <li>Shivam Gote</li>
+    <li>Ashish Kumar</li>
+   <li>Shivam Singh</li>
+  </ul>
 
 <h3> Home Page</h3>
 
