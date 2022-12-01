@@ -24,11 +24,11 @@ A group project built over a period of 5 days.
 
 Team members :-
 <ul>
-  <li> <a href="https://github.com/raj2820"  >  Raj Shinde (Team-lead). </a> </li>
-  <li>  <a href="https://github.com/anki2001ta">  Ankita Deb. </a>   </li>
-  <li> <a href="https://github.com/Shivamt2107" > Shivam Gote.  </a> </li>
-  <li>  <a href="https://github.com/Ashish33000">   Ashish Kumar. </a></li>
-   <li> <a href="https://github.com/shivam061095"  > Shivam Singh.   </a></li>
+  <li> <a href="https://github.com/raj2820"  >  Raj Shinde (Team-lead)</a> </li>
+  <li>  <a href="https://github.com/anki2001ta">  Ankita Deb  </a>   </li>
+  <li> <a href="https://github.com/Shivamt2107" > Shivam Gote   </a> </li>
+  <li>  <a href="https://github.com/Ashish33000">   Ashish Kumar  </a></li>
+   <li> <a href="https://github.com/shivam061095"  > Shivam Singh    </a></li>
   </ul>
 
 <h3> Home Page</h3>
