@@ -36,6 +36,31 @@ Team members :-
 ![image](https://raj2820.github.io./himalya.png)
 
 
+## About Page
+![About Page Screenshot](![Screenshot (256)](https://user-images.githubusercontent.com/107462155/214122951-c48dc703-947f-4562-9330-ddcbde7d60f5.png)
+.png)
 
+## Login Page
+![Login Page Screenshot](![Screenshot (259)](https://user-images.githubusercontent.com/107462155/214123696-12f0b9a7-73ca-4460-9e46-7c29a84f7170.png)
+)
 
+## Store Page
+![Store Page Screenshot](![Screenshot (264)](https://user-images.githubusercontent.com/107462155/214123787-389d500b-30cb-4be6-897f-f6b3c8fffcc7.png)
+)
+
+## Product Page
+![Product Screenshot](![Screenshot (260)](https://user-images.githubusercontent.com/107462155/214123912-d54686a7-4eea-4439-87e8-1a8fc4d30cd1.png)
+)
+
+## Cart Page
+![ Cart  Page Screenshot](![Screenshot (261)](https://user-images.githubusercontent.com/107462155/214124023-d6ef18a2-6291-4fe5-b2c0-f42ff15f3161.png)
+)
+
+## Checkout Page
+![Checkout Screenshot](![Screenshot (263)](https://user-images.githubusercontent.com/107462155/214124124-3462838e-a897-414d-ad0d-fe6c49c199e0.png)
+)
+
+## Responsiveness
+![Responsiveness Screenshot](![Screenshot (257)](https://user-images.githubusercontent.com/107462155/214124230-a59576f4-99a7-4a8c-8fd6-4da9ad381f53.png)
+)
 
