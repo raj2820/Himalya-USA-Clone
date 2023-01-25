@@ -38,7 +38,7 @@ Team members :-
 
 ## About Page
 ![Screenshot (256)](https://user-images.githubusercontent.com/107462155/214122951-c48dc703-947f-4562-9330-ddcbde7d60f5.png)
-.png
+
 
 ## Login Page
 ![Screenshot (259)](https://user-images.githubusercontent.com/107462155/214123696-12f0b9a7-73ca-4460-9e46-7c29a84f7170.png)
