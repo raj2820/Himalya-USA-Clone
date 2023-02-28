@@ -33,33 +33,41 @@ Team members :-
 
 <h3> Home Page</h3>
 
-![image](https://raj2820.github.io./himalya.png)
+![Home_Page](https://user-images.githubusercontent.com/104616395/221761660-68833261-5d2f-4680-809d-fb2f724e8767.png)
+
 
 
 ## About Page
-![Screenshot (256)](https://user-images.githubusercontent.com/107462155/214122951-c48dc703-947f-4562-9330-ddcbde7d60f5.png)
+![About_Page](https://user-images.githubusercontent.com/104616395/221761684-cd8a2192-780f-49ba-be40-1fbfaa35f096.png)
+
 
 
 ## Login Page
-![Screenshot (259)](https://user-images.githubusercontent.com/107462155/214123696-12f0b9a7-73ca-4460-9e46-7c29a84f7170.png)
+![Login_Img](https://user-images.githubusercontent.com/104616395/221761722-b4d7191c-85b4-4486-89a4-7d93e317fc6f.png)
+
 
 
 ## Store Page
-![Screenshot (264)](https://user-images.githubusercontent.com/107462155/214123787-389d500b-30cb-4be6-897f-f6b3c8fffcc7.png)
+![Store_Img](https://user-images.githubusercontent.com/104616395/221761750-5a503dee-7451-4073-bfd9-e5dc5a053e2b.png)
+
 
 
 ## Product Page
-![Screenshot (260)](https://user-images.githubusercontent.com/107462155/214123912-d54686a7-4eea-4439-87e8-1a8fc4d30cd1.png)
+![Product_Img](https://user-images.githubusercontent.com/104616395/221761781-d9d5ab45-dc57-4f2b-b924-fe052b1baec2.png)
+
 
 
 ## Cart Page
-![Screenshot (261)](https://user-images.githubusercontent.com/107462155/214124023-d6ef18a2-6291-4fe5-b2c0-f42ff15f3161.png)
+![Cart_Img](https://user-images.githubusercontent.com/104616395/221761809-d531d81e-b245-4110-8723-333ecfe0ee60.png)
+
 
 
 ## Checkout Page
-![Screenshot (263)](https://user-images.githubusercontent.com/107462155/214124124-3462838e-a897-414d-ad0d-fe6c49c199e0.png)
+![Checkout_Img](https://user-images.githubusercontent.com/104616395/221761827-a420a387-41b1-433d-94a9-a53a67e95afc.png)
+
 
 
 ## Responsiveness
-![Screenshot (257)](https://user-images.githubusercontent.com/107462155/214124230-a59576f4-99a7-4a8c-8fd6-4da9ad381f53.png)
+![Responsive_Img](https://user-images.githubusercontent.com/104616395/221761854-d0bf0220-a91b-4eb3-9cf7-f76f1a16caa8.png)
+
 
